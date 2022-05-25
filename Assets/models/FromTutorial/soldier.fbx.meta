@@ -5,28 +5,31 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: idle
+    second: player_idle
   - first:
       74: 4052061570572371388
     second: walk
   - first:
       74: 6200578666267062213
-    second: run
+    second: player_run
   - first:
       74: -2576800663138258374
-    second: jump
+    second: player_jump
   - first:
       74: -1504929105726005784
-    second: fall
+    second: player_fall
   - first:
       74: 4461826734956849724
-    second: land
+    second: player_land
   - first:
       74: -7035209371819106318
-    second: meele
+    second: player_meele
   - first:
       74: -3353190784875397501
-    second: neutralFrame
+    second: player_neutralFrame
+  - first:
+      74: 4052061570572371388
+    second: player_walk
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -57,7 +60,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: player_idle
       takeName: Take 001
       internalID: 0
       firstFrame: 1
@@ -86,7 +89,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: walk
+      name: player_walk
       takeName: Take 001
       internalID: 0
       firstFrame: 76
@@ -115,7 +118,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: run
+      name: player_run
       takeName: Take 001
       internalID: 0
       firstFrame: 101
@@ -144,7 +147,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: jump
+      name: player_jump
       takeName: Take 001
       internalID: 0
       firstFrame: 121
@@ -173,7 +176,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: fall
+      name: player_fall
       takeName: Take 001
       internalID: 0
       firstFrame: 125
@@ -202,7 +205,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: land
+      name: player_land
       takeName: Take 001
       internalID: 0
       firstFrame: 129
@@ -231,7 +234,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: meele
+      name: player_meele
       takeName: Take 001
       internalID: 0
       firstFrame: 140
@@ -260,7 +263,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: neutralFrame
+      name: player_neutralFrame
       takeName: Take 001
       internalID: 0
       firstFrame: 1
