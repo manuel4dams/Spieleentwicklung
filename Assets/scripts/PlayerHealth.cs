@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void KillPlayer()
+    public void KillPlayer()
     {
         Instantiate(playerDeathFX, transform.position, Quaternion.Euler(Vector3.zero));
         Destroy(gameObject);
