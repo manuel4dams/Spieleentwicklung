@@ -5,21 +5,21 @@ public class FireProjectile : MonoBehaviour
     public float fireRate = 0.15f;
     public GameObject projectile;
 
-    private float nextBullet;
+    private float nextBulletAllowed;
 
     // Start is called before the first frame update
     void Start()
     {
-        nextBullet = 0f;
+        nextBulletAllowed = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
         var playerController = transform.root.GetComponent<PlayerController>();
-        if (Input.GetAxisRaw("Fire1") > 0f && nextBullet < Time.time)
+        if (Input.GetAxisRaw("Fire1") > 0f && nextBulletAllowed < Time.time)
         {
-            nextBullet = Time.time + fireRate;
+            nextBulletAllowed = Time.time + fireRate;
             Vector3 rotation;
             if (playerController.GetFacingDirection() == 0f)
             {

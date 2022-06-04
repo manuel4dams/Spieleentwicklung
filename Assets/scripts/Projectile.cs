@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float lifetime = 1f;
     public float maximalTravelDistance = 10f;
     public float damage;
 
@@ -13,9 +12,6 @@ public class Projectile : MonoBehaviour
 
     private void Awake()
     {
-        // destroy bullet at the end of the lifetime
-        Destroy(gameObject, lifetime);
-        
         layerMask = LayerMask.GetMask("Shootable");
         gunLine = GetComponent<LineRenderer>();
 
