@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     // movement parameters
     public float runSpeedMultiplier;
     public float walkSpeedMultiplier;
+    private bool running;
 
     private bool facingRight = true;
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        running = false;
         rigidbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
@@ -37,15 +39,24 @@ public class PlayerController : MonoBehaviour
         float shooting = Input.GetAxisRaw("Fire1");
         animator.SetFloat("shooting", shooting);
 
+        // walking
         if ((sneaking > 0f || shooting > 0f) && grounded)
         {
-            // walking
             rigidbody.velocity = new Vector3(movementSpeed * walkSpeedMultiplier, rigidbody.velocity.y, 0);
+            running = false;
         }
+        // running
         else
         {
-            // running
             rigidbody.velocity = new Vector3(movementSpeed * runSpeedMultiplier, rigidbody.velocity.y, 0);
+            if (Mathf.Abs(movementSpeed) == 0f)
+            {
+                running = false;
+            }
+            else
+            {
+                running = true;
+            }
         }
 
         // handle jump
@@ -84,5 +95,10 @@ public class PlayerController : MonoBehaviour
     public float GetFacingDirection()
     {
         return facingRight ? 1f : 0f;
+    }
+
+    public bool Running()
+    {
+        return running;
     }
 }

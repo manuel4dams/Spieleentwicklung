@@ -258,8 +258,108 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: master
+        weight: 0
+      - path: master/rig
+        weight: 0
+      - path: master/rig/bx_root
+        weight: 0
+      - path: master/rig/bx_root/bn_lower_spine
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_fingers_1_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_fingers_1_L/bn_fingers_2_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_fingers_1_L/bn_fingers_2_L/bn_fingers_3_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_index_1_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_index_1_L/bn_index_2_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_palm_L/bn_index_1_L/bn_index_2_L/bn_index_3_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_thumb_1_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_L/bn_shoulder_L/bn_elbow_L/bn_wrist_L/bn_hand_L/bn_thumb_1_L/bn_thumb_2_L
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_fingers_1_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_fingers_1_R/bn_fingers_2_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_fingers_1_R/bn_fingers_2_R/bn_fingers_3_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_index_1_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_index_1_R/bn_index_2_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_palm_R/bn_index_1_R/bn_index_2_R/bn_index_3_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_thumb_1_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_clavical_R/bn_shoulder_R/bn_elbow_R/bn_wrist_R/bn_hand_R/bn_thumb_1_R/bn_thumb_2_R
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_neck
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_neck/bx_jaw_1
+        weight: 1
+      - path: master/rig/bx_root/bn_lower_spine/bn_spine/bn_neck/bx_jaw_1/bn_jaw
+        weight: 1
+      - path: master/rig/bx_root/bx_Pelvis
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_crotch
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_L
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_L/bn_knee_L
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_L/bn_knee_L/bn_ankle_L
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_L/bn_knee_L/bn_ankle_L/bn_ball_L
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_L/bn_knee_L/bn_ankle_L/bn_ball_L/bx_toe_L
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_R
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_R/bn_knee_R
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_R/bn_knee_R/bn_ankle_R
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_R/bn_knee_R/bn_ankle_R/bn_ball_R
+        weight: 0
+      - path: master/rig/bx_root/bx_Pelvis/bn_hip_R/bn_knee_R/bn_ankle_R/bn_ball_R/bx_toe_R
+        weight: 0
+      - path: soldier
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
