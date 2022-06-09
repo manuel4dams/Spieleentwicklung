@@ -1,31 +1,35 @@
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class Projectile : MonoBehaviour
 {
-    public float maximalTravelDistance = 10f;
     public float damage;
+    public float speed;
 
-    private Ray shootRay;
-    private RaycastHit targetHit;
-    private int layerMask;
-    private LineRenderer gunLine;
+    private Rigidbody rigidbody;
 
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        layerMask = LayerMask.GetMask("Shootable");
-        gunLine = GetComponent<LineRenderer>();
-
-        shootRay.origin = transform.position;
-        shootRay.direction = transform.forward;
-        gunLine.SetPosition(0, transform.position);
-
-        if (Physics.Raycast(shootRay, out targetHit, maximalTravelDistance, layerMask))
+        rigidbody = GetComponentInParent<Rigidbody>();
+        // player facing right
+        if (transform.rotation.y > 0f)
         {
-            gunLine.SetPosition(1, targetHit.point);
+            rigidbody.AddForce(Vector3.right * speed, ForceMode.Impulse);
         }
+        // player facing left
         else
         {
-            gunLine.SetPosition(1, shootRay.origin + shootRay.direction * maximalTravelDistance);
+            rigidbody.AddForce(Vector3.right * -speed, ForceMode.Impulse);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Shootable"))
+        {
+            rigidbody.velocity = Vector3.zero;
+            Destroy(gameObject);
         }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 74047161645935284}
   - component: {fileID: 74047161645935285}
   m_Layer: 7
-  m_Name: burned_barrel
+  m_Name: Burned Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7143497526339970954}
   m_Layer: 0
-  m_Name: platform_grass_simple
+  m_Name: Platform Grass_simple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

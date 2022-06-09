@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class FireProjectile : MonoBehaviour
+public class Shoot : MonoBehaviour
 {
     public float fireRate = 0.15f;
     public GameObject projectile;
+    public string keyBind = "Fire1";
 
     private float nextBulletAllowed;
 
@@ -17,7 +18,7 @@ public class FireProjectile : MonoBehaviour
     void Update()
     {
         var playerController = transform.root.GetComponent<PlayerController>();
-        if (Input.GetAxisRaw("Fire1") > 0f && nextBulletAllowed < Time.time)
+        if (Input.GetAxisRaw(keyBind) > 0f && nextBulletAllowed < Time.time)
         {
             nextBulletAllowed = Time.time + fireRate;
             Vector3 rotation;
