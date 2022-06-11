@@ -9,7 +9,7 @@ public class Cleaner : MonoBehaviour
         {
             case "Player":
                 var playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.KillPlayer();
+                playerHealth.KillPlayer(true);
                 break;
 
             default:
