@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7384335156199825741
+--- !u!1 &5191579890031000487
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7384335156199825742}
+  - component: {fileID: 5191579890031000484}
   m_Layer: 0
   m_Name: Ammunition Pickup
   m_TagString: Untagged
@@ -16,28 +16,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7384335156199825742
+--- !u!4 &5191579890031000484
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7384335156199825741}
+  m_GameObject: {fileID: 5191579890031000487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.61, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5136787532098377291}
+  - {fileID: 7584016552232668321}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4666626922650562976
+--- !u!1001 &7977405057207348042
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7384335156199825742}
+    m_TransformParent: {fileID: 5191579890031000484}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4f30fb691c338e24c9178bf45ebcf46d, type: 3}
       propertyPath: m_RootOrder
@@ -109,32 +109,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f30fb691c338e24c9178bf45ebcf46d, type: 3}
---- !u!1 &5044794489450435982 stripped
+--- !u!1 &7526898198051901284 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8736554836875090898, guid: 4f30fb691c338e24c9178bf45ebcf46d, type: 3}
-  m_PrefabInstance: {fileID: 4666626922650562976}
+  m_PrefabInstance: {fileID: 7977405057207348042}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &4395913444603729126
+--- !u!135 &1402647159632547340
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044794489450435982}
+  m_GameObject: {fileID: 7526898198051901284}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0.5, y: 7.97, z: 0}
---- !u!95 &4395913444603729124
+--- !u!95 &1402647159632547342
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044794489450435982}
+  m_GameObject: {fileID: 7526898198051901284}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 041b50ae300163e4aaf63c1ad3a9f4fe, type: 2}
@@ -147,21 +147,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4395913444603729125
+--- !u!114 &1402647159632547343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5044794489450435982}
+  m_GameObject: {fileID: 7526898198051901284}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ed854d37fc2fae42b2131110ccf1cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ammunitionAmount: 30
---- !u!4 &5136787532098377291 stripped
+  healthPickupSound: {fileID: 8300000, guid: 8818b6f70f59c054a865daad54a4bd2d, type: 3}
+--- !u!4 &7584016552232668321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4f30fb691c338e24c9178bf45ebcf46d, type: 3}
-  m_PrefabInstance: {fileID: 4666626922650562976}
+  m_PrefabInstance: {fileID: 7977405057207348042}
   m_PrefabAsset: {fileID: 0}

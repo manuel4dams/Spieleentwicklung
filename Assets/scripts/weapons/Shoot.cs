@@ -6,6 +6,9 @@ public class Shoot : MonoBehaviour
     public float fireRate = 0.15f;
     public GameObject projectile;
     public string keyBind = "Fire1";
+    private AudioSource GunMuzzleAudioSource;
+    public AudioClip shootSound;
+    public AudioClip reloadSound;
 
     public Slider AmmunitionSlider;
     public int maxRounds = 100;
@@ -22,6 +25,8 @@ public class Shoot : MonoBehaviour
 
         AmmunitionSlider.maxValue = maxRounds;
         AmmunitionSlider.value = remainingRounds;
+
+        GunMuzzleAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +47,10 @@ public class Shoot : MonoBehaviour
             }
 
             Instantiate(projectile, transform.position, Quaternion.Euler(rotation));
+
+            GunMuzzleAudioSource.clip = shootSound;
+            GunMuzzleAudioSource.Play();
+
             remainingRounds--;
             AmmunitionSlider.value = remainingRounds;
         }
@@ -60,6 +69,8 @@ public class Shoot : MonoBehaviour
         {
             remainingRounds = maxRounds;
         }
+        GunMuzzleAudioSource.clip = reloadSound;
+        GunMuzzleAudioSource.Play();
         AmmunitionSlider.value = remainingRounds;
         return true;
     }

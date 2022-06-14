@@ -17,12 +17,16 @@ public class PlayerHealth : MonoBehaviour
     private float playerDamageIndicatorFadeSpeed = 5f;
     private bool playerIsDamaged = false;
 
+    private AudioSource playerAudioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         playerHealthSlider.maxValue = maxHealth;
         playerHealthSlider.value = currentHealth;
+
+        playerAudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -46,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
 
         playerHealthSlider.value = currentHealth;
         playerIsDamaged = true;
+        playerAudioSource.Play();
 
         if (currentHealth <= 0)
         {
