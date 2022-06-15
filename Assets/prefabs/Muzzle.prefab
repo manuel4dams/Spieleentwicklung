@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3207282959441973810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.93, y: 8.21, z: 0.16}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48,7 +48,9 @@ MonoBehaviour:
   fireRate: 0.15
   projectile: {fileID: 8981068127002387711, guid: 24018d9164abf8644994a648805113ce, type: 3}
   keyBind: Fire1
-  AmmunitionSlider: {fileID: 0}
+  shootSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  ammunitionSlider: {fileID: 0}
   maxRounds: 180
   startRounds: 30
 --- !u!114 &3207282959441973823
@@ -63,7 +65,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf5f8c7e9454b943ba4458665b3ef02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockBack: 10
   knockBackRadius: 0.5
   attackRate: 0.5

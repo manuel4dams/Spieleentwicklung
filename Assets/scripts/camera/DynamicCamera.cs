@@ -15,6 +15,7 @@ public class DynamicCamera : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (target == null) return;
         var targetCameraPosition = target.position + offset;
 
         transform.position = Vector3.Lerp(transform.position, targetCameraPosition, smoothing * Time.deltaTime);

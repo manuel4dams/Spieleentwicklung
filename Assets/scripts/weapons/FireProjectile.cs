@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Shoot : MonoBehaviour
+public class FireProjectile: MonoBehaviour
 {
     public float fireRate = 0.15f;
     public GameObject projectile;

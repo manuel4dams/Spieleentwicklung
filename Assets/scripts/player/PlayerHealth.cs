@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth: MonoBehaviour
 {
     public float maxHealth = 10f;
     public bool godMode;
