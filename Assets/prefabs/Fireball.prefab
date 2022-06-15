@@ -4840,8 +4840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad902736d1c63f14f9cfeffff47f6965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  speed: 6
+  damage: 8
+  speed: 10
 --- !u!108 &4439007558354308716
 Light:
   m_ObjectHideFlags: 0
@@ -4916,7 +4916,7 @@ GameObject:
   - component: {fileID: 826488655241480991}
   - component: {fileID: 826488655241480984}
   m_Layer: 0
-  m_Name: Projectile Grenade
+  m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -26,6 +26,20 @@ public class Fireball : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer != LayerMask.NameToLayer("Shootable")) return;
+        switch (other.gameObject.tag)
+        {
+            case "Enemy":
+                var enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+                enemyHealth.DamageEnemy(damage);
+                enemyHealth.AddFire();
+                break;
+            case "Crate":
+                other.gameObject.GetComponent<Crate>().DestroyCrate();
+                break;
+            case "Barrel":
+                other.gameObject.GetComponent<Barrel>().HitBarrel();
+                break;
+        }
         rigidbody.velocity = Vector3.zero;
         Destroy(gameObject);
     }

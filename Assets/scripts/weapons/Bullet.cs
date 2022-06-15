@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float maximalTravelDistance = 10f;
+    public float maximalTravelDistance;
     public float damage;
 
     private Ray shootRay;
@@ -23,6 +23,20 @@ public class Bullet : MonoBehaviour
 
         if (Physics.Raycast(shootRay, out targetHit, maximalTravelDistance, layerMask))
         {
+            switch (targetHit.collider.tag)
+            {
+                case "Enemy":
+                    var enemyHealth = targetHit.collider.GetComponent<EnemyHealth>();
+                    enemyHealth.DamageEnemy(damage);
+                    enemyHealth.DamageFX(targetHit.point, -shootRay.direction);
+                    break;
+                case "Crate":
+                    targetHit.collider.GetComponent<Crate>().DestroyCrate();
+                    break;
+                case "Barrel":
+                    targetHit.collider.GetComponent<Barrel>().HitBarrel();
+                    break;
+            }
             gunLine.SetPosition(1, targetHit.point);
         }
         else
