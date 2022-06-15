@@ -57,7 +57,7 @@ public class EnemyHealth : MonoBehaviour
         enemySound.Play();
         if (currentHealth <= 0)
         {
-            Kill();
+            KillEnemy();
         }
     }
 
@@ -70,11 +70,11 @@ public class EnemyHealth : MonoBehaviour
         nextBurn = Time.time + burnTickRate;
     }
 
-    private void Kill()
+    public void KillEnemy(bool forceKill = false)
     {
         AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
         Destroy(gameObject.transform.root.gameObject);
-        if (drops.Length == 0) return;
+        if (drops.Length == 0 || forceKill) return;
         foreach (var drop in drops)
         {
             var transform1 = transform;
@@ -84,6 +84,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void DamageFX(Vector3 point, Vector3 rotation)
     {
-        Instantiate(damageParticles, point, Quaternion.Euler(rotation));
+        Instantiate(damageParticles, point, Quaternion.identity);
     }
 }

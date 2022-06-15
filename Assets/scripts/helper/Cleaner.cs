@@ -10,7 +10,10 @@ public class Cleaner : MonoBehaviour
                 var playerHealth = other.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.KillPlayer(true);
                 break;
-
+            case "Enemy":
+                var enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+                enemyHealth.KillEnemy(true);
+                break;
             default:
                 Destroy(other.gameObject);
                 break;
