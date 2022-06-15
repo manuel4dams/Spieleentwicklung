@@ -6,11 +6,11 @@ public class Shoot : MonoBehaviour
     public float fireRate = 0.15f;
     public GameObject projectile;
     public string keyBind = "Fire1";
-    private AudioSource GunMuzzleAudioSource;
+    private AudioSource gunMuzzleAudioSource;
     public AudioClip shootSound;
     public AudioClip reloadSound;
 
-    public Slider AmmunitionSlider;
+    public Slider ammunitionSlider;
     public int maxRounds = 100;
     public int startRounds = 100;
     private int remainingRounds;
@@ -23,37 +23,27 @@ public class Shoot : MonoBehaviour
         nextBulletAllowed = 0f;
         remainingRounds = startRounds;
 
-        AmmunitionSlider.maxValue = maxRounds;
-        AmmunitionSlider.value = remainingRounds;
+        ammunitionSlider.maxValue = maxRounds;
+        ammunitionSlider.value = remainingRounds;
 
-        GunMuzzleAudioSource = GetComponent<AudioSource>();
+        gunMuzzleAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         var playerController = transform.root.GetComponent<PlayerController>();
-        if (Input.GetAxisRaw(keyBind) > 0f && nextBulletAllowed < Time.time && remainingRounds > 0)
-        {
-            nextBulletAllowed = Time.time + fireRate;
-            Vector3 rotation;
-            if (playerController.GetFacingDirection() == 0f)
-            {
-                rotation = new Vector3(0, -90, 0);
-            }
-            else
-            {
-                rotation = new Vector3(0, 90, 0);
-            }
+        if (!(Input.GetAxisRaw(keyBind) > 0f) || !(nextBulletAllowed < Time.time) || remainingRounds <= 0) return;
+        nextBulletAllowed = Time.time + fireRate;
+        var rotation = playerController.GetFacingDirection() == 0f ? new Vector3(0, -90, 0) : new Vector3(0, 90, 0);
 
-            Instantiate(projectile, transform.position, Quaternion.Euler(rotation));
+        Instantiate(projectile, transform.position, Quaternion.Euler(rotation));
 
-            GunMuzzleAudioSource.clip = shootSound;
-            GunMuzzleAudioSource.Play();
+        gunMuzzleAudioSource.clip = shootSound;
+        gunMuzzleAudioSource.Play();
 
-            remainingRounds--;
-            AmmunitionSlider.value = remainingRounds;
-        }
+        remainingRounds--;
+        ammunitionSlider.value = remainingRounds;
     }
 
     // return false if player can't be store more ammunition
@@ -69,9 +59,9 @@ public class Shoot : MonoBehaviour
         {
             remainingRounds = maxRounds;
         }
-        GunMuzzleAudioSource.clip = reloadSound;
-        GunMuzzleAudioSource.Play();
-        AmmunitionSlider.value = remainingRounds;
+        gunMuzzleAudioSource.clip = reloadSound;
+        gunMuzzleAudioSource.Play();
+        ammunitionSlider.value = remainingRounds;
         return true;
     }
 }

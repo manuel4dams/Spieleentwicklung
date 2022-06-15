@@ -1,13 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.Sockets;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public float damage;
-    public float knockBack;
     public float knockBackRadius;
     public float attackRate;
 

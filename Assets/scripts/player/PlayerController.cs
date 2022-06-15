@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("sneaking", sneaking);
         animator.SetFloat("movementSpeed", Mathf.Abs(movementSpeed));
 
-        float shooting = Input.GetAxisRaw("Fire1");
+        var shooting = Input.GetAxisRaw("Fire1");
         animator.SetFloat("shooting", shooting);
 
         // walking
@@ -49,14 +49,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             rigidbody.velocity = new Vector3(movementSpeed * runSpeedMultiplier, rigidbody.velocity.y, 0);
-            if (Mathf.Abs(movementSpeed) == 0f)
-            {
-                running = false;
-            }
-            else
-            {
-                running = true;
-            }
+            running = Mathf.Abs(movementSpeed) != 0f;
         }
 
         // handle jump
@@ -70,26 +63,25 @@ public class PlayerController : MonoBehaviour
         // create ground collider
         groundCollisions = Physics.OverlapSphere(groundCheck.position, groundColliderRadius, groundLayer);
         // check ground collision
-        if (groundCollisions.Length > 0)
-        {
-            grounded = true;
-        }
-        else
-        {
-            grounded = false;
-        }
+        grounded = groundCollisions.Length > 0;
         animator.SetBool("grounded", grounded);
 
-        if (movementSpeed > 0 && !facingRight) Flip();
-        else if (movementSpeed < 0 && facingRight) Flip();
+        switch (movementSpeed)
+        {
+            case > 0 when !facingRight:
+            case < 0 when facingRight:
+                Flip();
+                break;
+        }
     }
 
     private void Flip()
     {
         facingRight = !facingRight;
-        var scale = transform.localScale;
+        var transform1 = transform;
+        var scale = transform1.localScale;
         scale.z *= -1;
-        transform.localScale = scale;
+        transform1.localScale = scale;
     }
 
     public float GetFacingDirection()

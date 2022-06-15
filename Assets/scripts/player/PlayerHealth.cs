@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,9 +12,9 @@ public class PlayerHealth : MonoBehaviour
     // GUI
     public Slider playerHealthSlider;
     public Image playerDamageIndicatorImage;
-    private Color playerDamageIndicatorFlashColor = new Color(255f, 255f, 255f, 1f);
-    private float playerDamageIndicatorFadeSpeed = 5f;
-    private bool playerIsDamaged = false;
+    private readonly Color playerDamageIndicatorFlashColor = new(255f, 255f, 255f, 1f);
+    private const float PLAYER_DAMAGE_INDICATOR_FADE_SPEED = 5f;
+    private bool playerIsDamaged;
 
     private AudioSource playerAudioSource;
 
@@ -31,14 +30,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (playerIsDamaged)
-        {
-            playerDamageIndicatorImage.color = playerDamageIndicatorFlashColor;
-        }
-        else
-        {
-            playerDamageIndicatorImage.color = Color.Lerp(playerDamageIndicatorImage.color, Color.clear, playerDamageIndicatorFadeSpeed);
-        }
+        playerDamageIndicatorImage.color = playerIsDamaged
+            ? playerDamageIndicatorFlashColor
+            : Color.Lerp(playerDamageIndicatorImage.color, Color.clear, PLAYER_DAMAGE_INDICATOR_FADE_SPEED);
         playerIsDamaged = false;
     }
 
@@ -52,11 +46,9 @@ public class PlayerHealth : MonoBehaviour
         playerIsDamaged = true;
         playerAudioSource.Play();
 
-        if (currentHealth <= 0)
-        {
-            playerDamageIndicatorImage.color = playerDamageIndicatorFlashColor;
-            KillPlayer();
-        }
+        if (!(currentHealth <= 0)) return;
+        playerDamageIndicatorImage.color = playerDamageIndicatorFlashColor;
+        KillPlayer();
     }
 
     // return false if player can't be healed further
@@ -67,7 +59,7 @@ public class PlayerHealth : MonoBehaviour
         {
             return false;
         }
-        
+
         currentHealth += healing;
         if (currentHealth > maxHealth)
         {

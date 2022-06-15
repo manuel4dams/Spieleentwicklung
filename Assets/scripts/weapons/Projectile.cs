@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
 
 public class Projectile : MonoBehaviour
 {
     public float damage;
     public float speed;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +25,8 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Shootable"))
-        {
-            rigidbody.velocity = Vector3.zero;
-            Destroy(gameObject);
-        }
+        if (other.gameObject.layer != LayerMask.NameToLayer("Shootable")) return;
+        rigidbody.velocity = Vector3.zero;
+        Destroy(gameObject);
     }
 }

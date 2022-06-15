@@ -7,13 +7,9 @@ public class AmmoPickupController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Equals("Player"))
-        {
-            if (other.GetComponentInChildren<Shoot>().RestockAmmunition(ammunitionAmount))
-            {
-                Destroy(transform.gameObject);
-                AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
-            }
-        }
+        if (!other.tag.Equals("Player")) return;
+        if (!other.GetComponentInChildren<Shoot>().RestockAmmunition(ammunitionAmount)) return;
+        Destroy(transform.gameObject);
+        AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
     }
 }

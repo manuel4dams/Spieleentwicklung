@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthPickupController : MonoBehaviour
@@ -10,13 +7,9 @@ public class HealthPickupController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Equals("Player"))
-        {
-            if (other.GetComponent<PlayerHealth>().HealPlayer(healthAmount))
-            {
-                Destroy(transform.gameObject);
-                AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
-            }
-        }
+        if (!other.tag.Equals("Player")) return;
+        if (!other.GetComponent<PlayerHealth>().HealPlayer(healthAmount)) return;
+        Destroy(transform.gameObject);
+        AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
     }
 }

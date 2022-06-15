@@ -15,9 +15,11 @@ public class Bullet : MonoBehaviour
         layerMask = LayerMask.GetMask("Shootable");
         gunLine = GetComponent<LineRenderer>();
 
-        shootRay.origin = transform.position;
-        shootRay.direction = transform.forward;
-        gunLine.SetPosition(0, transform.position);
+        var transform1 = transform;
+        var position = transform1.position;
+        shootRay.origin = position;
+        shootRay.direction = transform1.forward;
+        gunLine.SetPosition(0, position);
 
         if (Physics.Raycast(shootRay, out targetHit, maximalTravelDistance, layerMask))
         {
