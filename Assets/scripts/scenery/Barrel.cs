@@ -3,6 +3,7 @@ using UnityEngine;
 public class Barrel : MonoBehaviour
 {
     public bool explosiv;
+    public GameObject explosionFX;
     public GameObject[] drops;
     public AudioClip deathSound;
 
@@ -10,12 +11,15 @@ public class Barrel : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
         if (!explosiv) return;
-        Destroy(gameObject.transform.parent.gameObject);
-        if (drops.Length == 0) return;
-        foreach (var drop in drops)
+        var transform1 = transform;
+        Instantiate(explosionFX, transform1.position, transform1.rotation);
+        if (drops.Length == 0)
         {
-            var transform1 = transform;
-            Instantiate(drop, transform1.position, transform1.rotation);
+            foreach (var drop in drops)
+            {
+                Instantiate(drop, transform1.position, transform1.rotation);
+            }
         }
+        Destroy(gameObject);
     }
 }

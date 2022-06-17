@@ -4,6 +4,10 @@ using Random = UnityEngine.Random;
 
 public class ZombieController : MonoBehaviour
 {
+    // TODO
+    // Movement behavior is strange zombie should walk and only change to run
+    // when player enters trigger and certain time has passed, on trigger exit should walk again
+
     public GameObject gameObject;
     public AudioClip[] idleSounds;
     public float idleSoundTime;
@@ -52,12 +56,10 @@ public class ZombieController : MonoBehaviour
         }
 
         var velocity = rigidbody.velocity;
-        velocity = alerted switch
-        {
-            true when !facingRight => new Vector3(movementSpeed * -1, velocity.y, 0),
-            true when facingRight => new Vector3(movementSpeed, velocity.y, 0),
-            _ => velocity
-        };
+        if (alerted && !facingRight)
+            velocity = new Vector3(movementSpeed * -1, velocity.y, 0);
+        else if (alerted && facingRight)
+            velocity = new Vector3(movementSpeed, velocity.y, 0);
         rigidbody.velocity = velocity;
 
         if (!running && alerted)
@@ -93,6 +95,7 @@ public class ZombieController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
+        
         firstDetection = false;
         if (!running) return;
         animator.SetTrigger("run");
