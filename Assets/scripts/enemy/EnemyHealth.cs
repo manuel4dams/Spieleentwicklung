@@ -72,6 +72,11 @@ public class EnemyHealth : MonoBehaviour
 
     public void KillEnemy(bool forceKill = false)
     {
+        var zombieController = GetComponentInChildren<ZombieController>();
+        if (zombieController != null)
+        {
+            zombieController.RagDollDeath();
+        }
         AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
         Destroy(gameObject.transform.root.gameObject);
         if (drops.Length == 0 || forceKill) return;

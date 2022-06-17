@@ -8,7 +8,8 @@ public class ZombieController : MonoBehaviour
     // Movement behavior is strange zombie should walk and only change to run
     // when player enters trigger and certain time has passed, on trigger exit should walk again
 
-    public GameObject gameObject;
+    public GameObject modelToFlip;
+    public GameObject ragDollDead;
     public AudioClip[] idleSounds;
     public float idleSoundTime;
     private AudioSource audioSource;
@@ -95,7 +96,7 @@ public class ZombieController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
-        
+
         firstDetection = false;
         if (!running) return;
         animator.SetTrigger("run");
@@ -106,9 +107,57 @@ public class ZombieController : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        var transform1 = gameObject.transform;
+        var transform1 = modelToFlip.transform;
         var scale = transform1.localScale;
         scale.z *= -1;
-        gameObject.transform.localScale = scale;
+        modelToFlip.transform.localScale = scale;
+    }
+
+    public void RagDollDeath()
+    {
+        var root = transform.root;
+        var ragDoll = Instantiate(ragDollDead, root.transform.position, Quaternion.identity) as GameObject;
+        var ragDollMaster = ragDoll.transform.Find("master");
+        var zombieMaster = root.Find("master");
+
+        // workaround for zombie rotation we scale -1 instead of actually rotate the charackter 
+        var wasFacingRight = true;
+        if (!facingRight)
+        {
+            wasFacingRight = false;
+            Flip();
+        }
+
+        var ragDollJoints = ragDollMaster.GetComponentsInChildren<Transform>();
+        var currentJoints = zombieMaster.GetComponentsInChildren<Transform>();
+        
+        for (var i = 0; i < ragDollJoints.Length; i++)
+        {
+            for (var j = 0; j < currentJoints.Length; j++)
+            {
+                if (currentJoints[j].name == ragDollJoints[i].name)
+                {
+                    ragDollJoints[i].position = currentJoints[j].position;
+                    ragDollJoints[i].rotation = currentJoints[j].rotation;
+                    break;
+                }
+            }
+        }
+        
+        if (wasFacingRight)
+        {
+            var rotation = new Vector3(0, 0, 0);
+            ragDoll.transform.rotation = Quaternion.Euler(rotation);
+        }
+        else
+        {
+            var rotation = new Vector3(0, 90, 0);
+            ragDoll.transform.rotation = Quaternion.Euler(rotation);
+        }
+        
+        var zombieMesh = transform.root.transform.Find("Zombie Soldier");
+        var ragDollMesh = ragDoll.transform.Find("Zombie Soldier");
+        
+        ragDollMesh.GetComponent<Renderer>().material = zombieMesh.GetComponent<Renderer>().material;
     }
 }
