@@ -109,7 +109,7 @@ public class ZombieController : MonoBehaviour
         facingRight = !facingRight;
         var transform1 = modelToFlip.transform;
         var scale = transform1.localScale;
-        scale.z *= -1;
+        scale.z *= -1f;
         modelToFlip.transform.localScale = scale;
     }
 

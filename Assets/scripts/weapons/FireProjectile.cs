@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FireProjectile: MonoBehaviour
+public class FireProjectile : MonoBehaviour
 {
     public float fireRate = 0.15f;
     public GameObject projectile;
     public string keyBind = "Fire1";
-    private AudioSource gunMuzzleAudioSource;
+    public AudioSource gunMuzzleAudioSource;
     public AudioClip shootSound;
     public AudioClip reloadSound;
 
@@ -17,6 +17,9 @@ public class FireProjectile: MonoBehaviour
 
     private float nextBulletAllowed;
 
+    public Sprite weaponIcon;
+    public Image weaponImage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,16 @@ public class FireProjectile: MonoBehaviour
         ammunitionSlider.maxValue = maxRounds;
         ammunitionSlider.value = remainingRounds;
 
-        gunMuzzleAudioSource = GetComponent<AudioSource>();
+    }
+
+    public void InitWeapon()
+    {
+        gunMuzzleAudioSource.clip = reloadSound;
+        gunMuzzleAudioSource.Play();
+        nextBulletAllowed = 0f;
+        ammunitionSlider.maxValue = maxRounds;
+        ammunitionSlider.value = remainingRounds;
+        weaponImage.sprite = weaponIcon;
     }
 
     // Update is called once per frame

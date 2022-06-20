@@ -4,7 +4,8 @@ public class MeleeAttack : MonoBehaviour
 {
     public float knockBackRadius;
     public float attackRate;
-
+    public float damage;
+    
     private float nextMeleeAttack;
 
     private int shootableLayerMask;
@@ -32,6 +33,14 @@ public class MeleeAttack : MonoBehaviour
             nextMeleeAttack = Time.time + attackRate;
 
             var attackedObjects = Physics.OverlapSphere(transform.position, knockBackRadius, shootableLayerMask);
+            foreach (var collider in attackedObjects)
+            {
+                if (collider.CompareTag("Enemy"))
+                {
+                    var enemyHealth = collider.GetComponent<EnemyHealth>();
+                    enemyHealth.DamageEnemy(damage);
+                }
+            }
         }
     }
 }

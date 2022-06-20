@@ -9,7 +9,7 @@ public class AmmoPickupController : MonoBehaviour
     {
         if (!other.tag.Equals("Player")) return;
         if (!other.GetComponentInChildren<FireProjectile>().RestockAmmunition(ammunitionAmount)) return;
-        Destroy(transform.root.gameObject);
+        Destroy(transform.gameObject);
         AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
     }
 }

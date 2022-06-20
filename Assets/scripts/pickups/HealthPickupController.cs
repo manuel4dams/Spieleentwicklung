@@ -9,7 +9,7 @@ public class HealthPickupController : MonoBehaviour
     {
         if (!other.tag.Equals("Player")) return;
         if (!other.GetComponent<PlayerHealth>().HealPlayer(healthAmount)) return;
-        Destroy(transform.root.gameObject);
+        Destroy(transform.gameObject);
         AudioSource.PlayClipAtPoint(healthPickupSound, transform.position, 0.4f);
     }
 }

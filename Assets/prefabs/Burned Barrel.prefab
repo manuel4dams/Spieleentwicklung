@@ -4847,7 +4847,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123186474478899065}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.682, y: 0.536, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4900,6 +4900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosiv: 0
+  explosionFX: {fileID: 0}
   drops: []
   deathSound: {fileID: 8300000, guid: f2e0d7952e3742447b04dc78b2054c79, type: 3}
 --- !u!1 &2636041078033860641
@@ -5076,8 +5077,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.06474723, b: 0.06474723, a: 1}
-  m_Intensity: 2
-  m_Range: 1
+  m_Intensity: 6
+  m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
