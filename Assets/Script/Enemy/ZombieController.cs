@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,7 +22,7 @@ public class ZombieController : MonoBehaviour
     public bool facingRight = true;
     private float movementSpeed;
     private bool running;
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     private Animator animator;
     private Transform detectedPlayer;
 

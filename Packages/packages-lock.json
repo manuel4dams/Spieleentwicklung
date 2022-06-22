@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.domybest.mybox": {
-      "version": "https://github.com/Deadcows/MyBox.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "hash": "553c6fa73386138a42aff8b00e096183149a4fbb"
-    },
     "com.unity.cinemachine": {
       "version": "2.8.6",
       "depth": 0,
@@ -170,6 +161,16 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "de.michiruf.gamegraph": {
+      "version": "https://github.com/michiruf/GameGraph.git?path=/GameGraph#upgrade-2021",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ide.rider": "1.1.4",
+        "com.unity.ide.vscode": "1.1.4"
+      },
+      "hash": "9b36294ae04baec87a2ddfe34660bcde8ba41358"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

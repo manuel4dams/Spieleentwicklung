@@ -1,0 +1,296 @@
+{
+    "serializedVersion": 206,
+    "parameters": [
+        {
+            "idInternal": "09871a4a-6d6e-42aa-a2d7-937dc7a697d0",
+            "nameInternal": "HealthPickup",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.HealthPickup, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "9083b2a7-d427-4480-913b-e8ed6d1e47e1",
+            "nameInternal": "Collider",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "afa3feb3-58a2-4780-a541-655264d32163",
+            "nameInternal": "HealthPickupGO",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "1e73b470-575e-4604-8c48-93ce29621966",
+            "nameInternal": "AudioSourceTransform",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        }
+    ],
+    "nodes": [
+        {
+            "idInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.HealthPickupControllerGG, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1384.0,
+                "y": 436.0
+            }
+        },
+        {
+            "idInternal": "e48bb987-9169-4136-a676-cf3949dc4a38",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.HealthPickup, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "09871a4a-6d6e-42aa-a2d7-937dc7a697d0",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 538.0,
+                "y": 469.0
+            }
+        },
+        {
+            "idInternal": "697afe6c-1060-4fdd-86f4-9823bfe4a40e",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "9083b2a7-d427-4480-913b-e8ed6d1e47e1",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 550.0,
+                "y": 553.0
+            }
+        },
+        {
+            "idInternal": "879391cb-8fd0-414e-94a0-9fc9df1197a6",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Destroy, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1761.0,
+                "y": 436.0
+            }
+        },
+        {
+            "idInternal": "f1729d91-1ad9-4e9f-80cc-418afbcb8088",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "afa3feb3-58a2-4780-a541-655264d32163",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1587.0,
+                "y": 640.0
+            }
+        },
+        {
+            "idInternal": "fb544a1c-2b9f-4991-8acd-38b80acc9fb1",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GetComponent, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "type"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "GameGraph.GraphSerializableType, GameGraph, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"assemblyQualifiedName\":\"ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\"}"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 915.0,
+                "y": 553.0
+            }
+        },
+        {
+            "idInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.IfNull, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1169.0,
+                "y": 553.0
+            }
+        },
+        {
+            "idInternal": "2202765f-aec4-4bda-9be5-ef91ca9f3f46",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "1e73b470-575e-4604-8c48-93ce29621966",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1149.0,
+                "y": 430.0
+            }
+        },
+        {
+            "idInternal": "78f721fd-47e7-4169-9e5b-8fd68c082022",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandlerNew, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 696.0,
+                "y": 553.0
+            }
+        }
+    ],
+    "edges": [
+        {
+            "outputConnection": {
+                "nodeIdInternal": "e48bb987-9169-4136-a676-cf3949dc4a38",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "healthPickup"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "onHealed"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "879391cb-8fd0-414e-94a0-9fc9df1197a6",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "f1729d91-1ad9-4e9f-80cc-418afbcb8088",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "879391cb-8fd0-414e-94a0-9fc9df1197a6",
+                "portNameInternal": "object"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "fb544a1c-2b9f-4991-8acd-38b80acc9fb1",
+                "portNameInternal": "fetched"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+                "portNameInternal": "false"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "Heal"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+                "portNameInternal": "object"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "playerState"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "2202765f-aec4-4bda-9be5-ef91ca9f3f46",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "audioSourceTransform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "fb544a1c-2b9f-4991-8acd-38b80acc9fb1",
+                "portNameInternal": "component"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+                "portNameInternal": "object"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "78f721fd-47e7-4169-9e5b-8fd68c082022",
+                "portNameInternal": "onEnter"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "fb544a1c-2b9f-4991-8acd-38b80acc9fb1",
+                "portNameInternal": "Fetch"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "78f721fd-47e7-4169-9e5b-8fd68c082022",
+                "portNameInternal": "hitGameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "fb544a1c-2b9f-4991-8acd-38b80acc9fb1",
+                "portNameInternal": "sourceGameObject"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "697afe6c-1060-4fdd-86f4-9823bfe4a40e",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "78f721fd-47e7-4169-9e5b-8fd68c082022",
+                "portNameInternal": "collider"
+            }
+        }
+    ],
+    "autoSave": true
+}

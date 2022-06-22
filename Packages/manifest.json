@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.domybest.mybox": "https://github.com/Deadcows/MyBox.git",
+    "de.michiruf.gamegraph": "https://github.com/michiruf/GameGraph.git?path=/GameGraph#upgrade-2021",
     "com.unity.cinemachine": "2.8.6",
     "com.unity.collab-proxy": "1.17.0",
     "com.unity.feature.development": "1.0.1",
