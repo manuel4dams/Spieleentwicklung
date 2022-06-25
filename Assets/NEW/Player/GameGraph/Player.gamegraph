@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 413,
+    "serializedVersion": 493,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -48,6 +48,14 @@
                 "assemblyQualifiedName": "UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "b3e0309c-2075-45f8-b517-f6cb4378c985",
+            "nameInternal": "PlayerFacade",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerFacade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": true
         }
     ],
     "nodes": [
@@ -267,7 +275,7 @@
             },
             "positionInternal": {
                 "x": 581.0,
-                "y": 780.0
+                "y": 857.0
             }
         },
         {
@@ -282,7 +290,7 @@
             },
             "positionInternal": {
                 "x": 429.0,
-                "y": 634.0
+                "y": 711.0
             }
         },
         {
@@ -329,8 +337,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1011.0,
-                "y": 1508.0
+                "x": 1090.0,
+                "y": 1429.0
             }
         },
         {
@@ -353,8 +361,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 662.0,
-                "y": 1506.0
+                "x": 741.0,
+                "y": 1427.0
             }
         },
         {
@@ -369,7 +377,7 @@
             },
             "positionInternal": {
                 "x": 383.0,
-                "y": 1396.0
+                "y": 1202.0
             }
         },
         {
@@ -384,7 +392,7 @@
             },
             "positionInternal": {
                 "x": 477.0,
-                "y": 1318.0
+                "y": 1124.0
             }
         },
         {
@@ -398,8 +406,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 617.0,
-                "y": 1334.0
+                "x": 696.0,
+                "y": 1255.0
             }
         },
         {
@@ -499,6 +507,75 @@
             "positionInternal": {
                 "x": 1479.0,
                 "y": 898.0
+            }
+        },
+        {
+            "idInternal": "fd479de8-7886-4c88-9442-e5ec5f9126c2",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerFacade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "b3e0309c-2075-45f8-b517-f6cb4378c985",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 324.0,
+                "y": 1450.0
+            }
+        },
+        {
+            "idInternal": "16c4db28-9b25-48cf-8109-fbd43678db3a",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 521.0,
+                "y": -785.0
+            }
+        },
+        {
+            "idInternal": "4a9ee911-dbae-4aad-8a14-8816ba211faa",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerFacade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "b3e0309c-2075-45f8-b517-f6cb4378c985",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 522.0,
+                "y": -979.0
+            }
+        },
+        {
+            "idInternal": "d598e71f-a3bc-4c8d-8751-cac5a02518a1",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerStateController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "healthAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 860.0,
+                "y": -905.0
             }
         }
     ],
@@ -781,6 +858,56 @@
             "inputConnection": {
                 "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
                 "portNameInternal": "animator"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "fd479de8-7886-4c88-9442-e5ec5f9126c2",
+                "portNameInternal": "restockAmmunition"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "RestockAmmunition"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "fd479de8-7886-4c88-9442-e5ec5f9126c2",
+                "portNameInternal": "restockAmmunitionAmount"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "restockAmmunitionAmount"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "4a9ee911-dbae-4aad-8a14-8816ba211faa",
+                "portNameInternal": "healthChange"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "d598e71f-a3bc-4c8d-8751-cac5a02518a1",
+                "portNameInternal": "ApplyHealthChange"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "4a9ee911-dbae-4aad-8a14-8816ba211faa",
+                "portNameInternal": "healthChangeAmount"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "d598e71f-a3bc-4c8d-8751-cac5a02518a1",
+                "portNameInternal": "healthAmount"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "16c4db28-9b25-48cf-8109-fbd43678db3a",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "d598e71f-a3bc-4c8d-8751-cac5a02518a1",
+                "portNameInternal": "playerState"
             }
         }
     ],

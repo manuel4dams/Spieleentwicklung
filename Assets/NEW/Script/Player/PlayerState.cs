@@ -11,10 +11,10 @@ namespace ScriptGG
         [Header("Health")] //
         public float maxHealth = 10f;
         public bool godMode = false;
-        [ReadOnly, SerializeField] 
-        private float currentHealth;
+        [ReadOnly, SerializeField]
+        protected internal float currentHealth;
         public bool isAlive => currentHealth > 0;
-        
+
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;
         public float walkSpeedMultiplier = 1f;
@@ -24,11 +24,11 @@ namespace ScriptGG
         public float jumpHeight = 10f;
         public float jumpTimeout = 0.1f;
         public float groundColliderRadius = 0.2f;
-        
+
         [Header("Weapons")] //
         [NonReorderable] // Because unity sucks in drawing their UI, disabling reorder fixes a failure where the first entry overlaps some content
         public List<CompoundWeapon> weapons;
-        
+
         // Controlled state
         // TODO Maybe eliminate this intermediate variable?
         public bool isShooting { get; set; }
@@ -38,10 +38,14 @@ namespace ScriptGG
             currentHealth = maxHealth;
         }
 
-        public bool ApplyHealthChange(float amount)
+        public bool ApplyAmmunitionChange()
         {
             // TODO Min max logic
-            currentHealth += amount;
+            Debug.Log("Attempt Restock");
+            // playerWeaponController.RestockAmmunition();
+            var gg = GetComponent<GameGraphBehaviour>();
+            var controller = gg.executor.GetInstance<PlayerWeaponController>();
+            controller.RestockAmmunition();
             return true;
         }
     }

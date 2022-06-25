@@ -7,30 +7,30 @@ namespace ScriptGG
 {
     [GameGraph]
     [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-    public class HealthPickupControllerGG
+    public class AmmunitionPickupControllerGG
     {
         // References
-        public HealthPickup healthPickup;
+        public AmmunitionPickup ammunitionPickup;
         public Transform audioSourceTransform;
 
         // Input
         public PlayerFacade playerFacade;
 
         // Output
-        public event Action onHealed;
+        public event Action restocked;
 
-        public void Heal()
+        public void Restock()
         {
             if (!playerFacade)
                 return;
 
-            playerFacade.ApplyHealthChange(healthPickup.healthAmount);
+            playerFacade.RestockAmmunition(ammunitionPickup.ammunitionAmount);
         }
 
-        public void HealHappened()
+        public void RestockHappened()
         {
-            AudioSource.PlayClipAtPoint(healthPickup.healthPickupSound, audioSourceTransform.position, 0.4f);
-            onHealed?.Invoke();
+            AudioSource.PlayClipAtPoint(ammunitionPickup.ammunitionPickupSound, audioSourceTransform.position, 0.4f);
+            restocked?.Invoke();
         }
     }
 }

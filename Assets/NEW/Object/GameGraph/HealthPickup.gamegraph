@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 206,
+    "serializedVersion": 208,
     "parameters": [
         {
             "idInternal": "09871a4a-6d6e-42aa-a2d7-937dc7a697d0",
@@ -125,7 +125,7 @@
                         "type": {
                             "assemblyQualifiedName": "GameGraph.GraphSerializableType, GameGraph, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                         },
-                        "objectInternal": "{\"assemblyQualifiedName\":\"ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\"}"
+                        "objectInternal": "{\"assemblyQualifiedName\":\"ScriptGG.PlayerFacade, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\"}"
                     }
                 ]
             },
@@ -233,16 +233,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
-                "portNameInternal": "object"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
-                "portNameInternal": "playerState"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "2202765f-aec4-4bda-9be5-ef91ca9f3f46",
                 "portNameInternal": "!Instance"
             },
@@ -289,6 +279,16 @@
             "inputConnection": {
                 "nodeIdInternal": "78f721fd-47e7-4169-9e5b-8fd68c082022",
                 "portNameInternal": "collider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "64bafadd-2f6c-42c8-9520-2efbafcd948a",
+                "portNameInternal": "object"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c9404a03-0845-4739-a354-346fe45798e8",
+                "portNameInternal": "playerFacade"
             }
         }
     ],
