@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 632,
+    "serializedVersion": 748,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -56,6 +56,22 @@
                 "assemblyQualifiedName": "UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "8c604c64-9477-47c3-ab84-7f4d7c7c85f8",
+            "nameInternal": "PlayerDeathParticlesPrefab",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "b29e630d-847b-4e6f-a4aa-dceb007d3171",
+            "nameInternal": "PlayerDeathTransform",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
         }
     ],
     "nodes": [
@@ -100,8 +116,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1305.0,
-                "y": -8.0
+                "x": 1240.0,
+                "y": 312.0
             }
         },
         {
@@ -115,8 +131,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 865.0,
-                "y": 307.0
+                "x": 800.0,
+                "y": 627.0
             }
         },
         {
@@ -160,8 +176,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1727.0,
-                "y": 577.0
+                "x": 1662.0,
+                "y": 897.0
             }
         },
         {
@@ -175,8 +191,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1090.0,
-                "y": 521.0
+                "x": 1025.0,
+                "y": 841.0
             }
         },
         {
@@ -190,8 +206,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1121.0,
-                "y": 599.0
+                "x": 1056.0,
+                "y": 919.0
             }
         },
         {
@@ -205,8 +221,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 523.0,
-                "y": 183.0
+                "x": 458.0,
+                "y": 503.0
             }
         },
         {
@@ -229,8 +245,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 569.0,
-                "y": -111.0
+                "x": 504.0,
+                "y": 209.0
             }
         },
         {
@@ -244,8 +260,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1250.0,
-                "y": 752.0
+                "x": 1185.0,
+                "y": 1072.0
             }
         },
         {
@@ -259,8 +275,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1046.0,
-                "y": 25.0
+                "x": 981.0,
+                "y": 345.0
             }
         },
         {
@@ -274,8 +290,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 581.0,
-                "y": 857.0
+                "x": 516.0,
+                "y": 1177.0
             }
         },
         {
@@ -289,8 +305,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 429.0,
-                "y": 711.0
+                "x": 364.0,
+                "y": 1031.0
             }
         },
         {
@@ -313,8 +329,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 969.0,
-                "y": -111.0
+                "x": 904.0,
+                "y": 209.0
             }
         },
         {
@@ -337,8 +353,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1314.0,
-                "y": 1354.0
+                "x": 1326.0,
+                "y": 1942.0
             }
         },
         {
@@ -361,8 +377,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 741.0,
-                "y": 1427.0
+                "x": 753.0,
+                "y": 2015.0
             }
         },
         {
@@ -376,8 +392,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 383.0,
-                "y": 1226.0
+                "x": 395.0,
+                "y": 1814.0
             }
         },
         {
@@ -391,8 +407,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 477.0,
-                "y": 1148.0
+                "x": 489.0,
+                "y": 1736.0
             }
         },
         {
@@ -406,8 +422,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 696.0,
-                "y": 1255.0
+                "x": 708.0,
+                "y": 1843.0
             }
         },
         {
@@ -421,8 +437,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 385.0,
-                "y": 2328.0
+                "x": 397.0,
+                "y": 2916.0
             }
         },
         {
@@ -436,8 +452,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 242.0,
-                "y": 2328.0
+                "x": 254.0,
+                "y": 2916.0
             }
         },
         {
@@ -451,8 +467,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 323.0,
-                "y": 1678.0
+                "x": 335.0,
+                "y": 2266.0
             }
         },
         {
@@ -475,8 +491,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 547.0,
-                "y": 2328.0
+                "x": 559.0,
+                "y": 2916.0
             }
         },
         {
@@ -490,8 +506,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 424.0,
-                "y": 2130.0
+                "x": 436.0,
+                "y": 2718.0
             }
         },
         {
@@ -505,8 +521,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1479.0,
-                "y": 898.0
+                "x": 1414.0,
+                "y": 1218.0
             }
         },
         {
@@ -529,8 +545,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 287.0,
-                "y": 1474.0
+                "x": 299.0,
+                "y": 2062.0
             }
         },
         {
@@ -553,8 +569,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1597.0,
-                "y": 1678.0
+                "x": 1609.0,
+                "y": 2266.0
             }
         },
         {
@@ -568,8 +584,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1385.0,
-                "y": 1943.0
+                "x": 1397.0,
+                "y": 2531.0
             }
         },
         {
@@ -583,8 +599,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1209.0,
-                "y": 1978.0
+                "x": 1221.0,
+                "y": 2566.0
             }
         },
         {
@@ -598,8 +614,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -76.0,
-                "y": 1722.0
+                "x": -64.0,
+                "y": 2310.0
             }
         },
         {
@@ -610,7 +626,8 @@
             "parameterIdInternal": "",
             "propertyValuesInternal": {
                 "keys": [
-                    "healthAmount"
+                    "healthAmount",
+                    "playerPosition"
                 ],
                 "values": [
                     {
@@ -618,12 +635,18 @@
                             "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                         },
                         "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":0,\"y\":0,\"z\":0}"
                     }
                 ]
             },
             "positionInternal": {
-                "x": 985.0,
-                "y": -821.0
+                "x": 1189.0,
+                "y": -840.0
             }
         },
         {
@@ -685,8 +708,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1406.0,
-                "y": -1044.0
+                "x": 1708.0,
+                "y": -1008.0
             }
         },
         {
@@ -701,7 +724,7 @@
             },
             "positionInternal": {
                 "x": 985.0,
-                "y": -550.0
+                "y": -645.0
             }
         },
         {
@@ -715,8 +738,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1895.0,
-                "y": -573.0
+                "x": 1292.0,
+                "y": -1693.0
             }
         },
         {
@@ -739,8 +762,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 2068.0,
-                "y": -696.0
+                "x": 1465.0,
+                "y": -1816.0
             }
         },
         {
@@ -754,8 +777,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1766.0,
-                "y": -495.0
+                "x": 1163.0,
+                "y": -1615.0
             }
         },
         {
@@ -769,8 +792,92 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1672.0,
-                "y": -719.0
+                "x": 1069.0,
+                "y": -1839.0
+            }
+        },
+        {
+            "idInternal": "2ae4dff1-a19b-49ac-a22e-ef4a6945e23a",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.If, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "condition"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 941.0,
+                "y": -319.0
+            }
+        },
+        {
+            "idInternal": "72c3c9b4-cd73-4dac-be78-4ecefe705a7c",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 573.0,
+                "y": -283.0
+            }
+        },
+        {
+            "idInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Destroy, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1684.0,
+                "y": -395.0
+            }
+        },
+        {
+            "idInternal": "48e2f86a-890a-423d-8972-7ac817c03c92",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "8c604c64-9477-47c3-ab84-7f4d7c7c85f8",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 957.0,
+                "y": -518.0
+            }
+        },
+        {
+            "idInternal": "0f34c43f-4e55-4ffb-95fa-68b87b039da4",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "b29e630d-847b-4e6f-a4aa-dceb007d3171",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 985.0,
+                "y": -413.0
             }
         }
     ],
@@ -1243,6 +1350,76 @@
             "inputConnection": {
                 "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
                 "portNameInternal": "SetValue"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+                "portNameInternal": "isAlive"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae4dff1-a19b-49ac-a22e-ef4a6945e23a",
+                "portNameInternal": "condition"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "2ae4dff1-a19b-49ac-a22e-ef4a6945e23a",
+                "portNameInternal": "false"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "InstantiatePlayerDeathParticles"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "72c3c9b4-cd73-4dac-be78-4ecefe705a7c",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae4dff1-a19b-49ac-a22e-ef4a6945e23a",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
+                "portNameInternal": "object"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "OnPlayerDeathParticlesInstantiated"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "48e2f86a-890a-423d-8972-7ac817c03c92",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerDeathParticlesPrefab"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0f34c43f-4e55-4ffb-95fa-68b87b039da4",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerDeathTransform"
             }
         }
     ],

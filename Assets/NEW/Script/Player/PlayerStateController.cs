@@ -1,6 +1,8 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
+using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 namespace ScriptGG
 {
@@ -15,6 +17,11 @@ namespace ScriptGG
         public float healthAmount { private get; set; }
         public bool healthChanged { get; private set; }
         public event Action OnHealthChanged;
+
+        // Death
+        public GameObject playerDeathParticlesPrefab;
+        public Transform playerDeathTransform;
+        public event Action OnPlayerDeathParticlesInstantiated;
 
         public void ApplyHealthChange()
         {
@@ -36,6 +43,12 @@ namespace ScriptGG
 
             // Return that health was picked up
             return true;
+        }
+
+        public void InstantiatePlayerDeathParticles()
+        {
+            UnityEngine.Object.Instantiate(playerDeathParticlesPrefab, playerDeathTransform.position, Quaternion.identity);
+            OnPlayerDeathParticlesInstantiated?.Invoke();
         }
     }
 }

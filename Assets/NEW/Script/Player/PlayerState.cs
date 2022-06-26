@@ -10,11 +10,12 @@ namespace ScriptGG
     {
         [Header("Health")] //
         public float maxHealth = 10f;
-        public bool godMode = false;
-        [ReadOnly, SerializeField]
+        public bool godMode;
+        // [ReadOnly, SerializeField]
+        [SerializeField]
         private float currentHealthInternal;
         public float currentHealth { get => currentHealthInternal; protected internal set => currentHealthInternal = value; }
-        public bool isAlive => currentHealthInternal > 0;
+        public bool isAlive => godMode || currentHealthInternal > 0;
 
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;
