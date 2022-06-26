@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ScriptGG.Helper
+namespace ScriptGG
 {
     public class LayerMaskHelper
     {

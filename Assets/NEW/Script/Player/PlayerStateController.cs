@@ -14,12 +14,28 @@ namespace ScriptGG
         // Health
         public float healthAmount { private get; set; }
         public bool healthChanged { get; private set; }
+        public event Action OnHealthChanged;
 
         public void ApplyHealthChange()
         {
-            // TODO Min max logic
+            healthChanged = ApplyHealthChangeInternal();
+            OnHealthChanged?.Invoke();
+        }
+
+        private bool ApplyHealthChangeInternal()
+        {
+            // If we cannot pick up health, skip and notify
+            if (playerState.currentHealth >= playerState.maxHealth)
+                return false;
+
             playerState.currentHealth += healthAmount;
-            healthChanged = true;
+
+            // Cap the health to the max
+            if (playerState.currentHealth > playerState.maxHealth)
+                playerState.currentHealth = playerState.maxHealth;
+
+            // Return that health was picked up
+            return true;
         }
     }
 }

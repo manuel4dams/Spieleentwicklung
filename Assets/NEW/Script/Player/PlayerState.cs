@@ -12,8 +12,9 @@ namespace ScriptGG
         public float maxHealth = 10f;
         public bool godMode = false;
         [ReadOnly, SerializeField]
-        protected internal float currentHealth;
-        public bool isAlive => currentHealth > 0;
+        private float currentHealthInternal;
+        public float currentHealth { get => currentHealthInternal; protected internal set => currentHealthInternal = value; }
+        public bool isAlive => currentHealthInternal > 0;
 
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;
@@ -35,18 +36,7 @@ namespace ScriptGG
 
         void Start()
         {
-            currentHealth = maxHealth;
-        }
-
-        public bool ApplyAmmunitionChange()
-        {
-            // TODO Min max logic
-            Debug.Log("Attempt Restock");
-            // playerWeaponController.RestockAmmunition();
-            var gg = GetComponent<GameGraphBehaviour>();
-            var controller = gg.executor.GetInstance<PlayerWeaponController>();
-            controller.RestockAmmunition();
-            return true;
+            currentHealthInternal = maxHealth;
         }
     }
 }

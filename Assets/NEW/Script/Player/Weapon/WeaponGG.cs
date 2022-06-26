@@ -50,6 +50,10 @@ namespace ScriptGG
             if (Time.realtimeSinceStartup < timeNextBulletAllowed)
                 return;
 
+            // Check if rounds are available
+            if (ammunitionEnabled && remainingRoundsInternal <= 0)
+                return;
+
             timeNextBulletAllowed = Time.realtimeSinceStartup + fireRate;
 
             // Play shoot sound

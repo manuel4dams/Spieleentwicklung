@@ -1,3 +1,4 @@
+using System;
 using GameGraph;
 using JetBrains.Annotations;
 using UnityEngine.UI;
@@ -19,6 +20,7 @@ namespace ScriptGG
         public int equippedWeaponIndex { get; private set; }
         public CompoundWeapon currentWeapon => playerState.weapons[equippedWeaponIndex];
         public bool restockHappened { get; private set; }
+        public event Action afterRestock;
 
         public void Init()
         {
@@ -46,6 +48,12 @@ namespace ScriptGG
                     restocked |= weaponPart.weapon.RestockAmmunition(restockAmmunitionAmount);
             }
             restockHappened = restocked;
+            afterRestock?.Invoke();
+        }
+
+        public void UpdateAmmunitionSlider()
+        {
+            currentWeapon.UpdateAmmunitionSlider();
         }
     }
 }

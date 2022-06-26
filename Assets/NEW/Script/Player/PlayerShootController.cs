@@ -22,8 +22,6 @@ namespace ScriptGG
                     // TODO The transform here should not be used in general
                     part.weapon.Fire(shootDirection);
             });
-
-            currentWeapon.UpdateAmmunitionSlider();
         }
     }
 }

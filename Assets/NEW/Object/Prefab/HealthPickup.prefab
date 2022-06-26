@@ -143,7 +143,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9039340277149978924}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthAmount: 1
   healthPickupSound: {fileID: 8300000, guid: 98e3af002ec34f549abc4c17f3ccf8ab, type: 3}
+  audioSourceTransform: {fileID: 9039340277149978927}
 --- !u!114 &8713755683617100559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,15 +179,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a16fcf5ed4deda3d8276de05764af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: -5475051401550479605, guid: c7b581846e4cf1a4cb5650cd4e423189, type: 3}
+  graph: {fileID: -5475051401550479605, guid: 328d91516ec001540bd73315c18737a0, type: 3}
   parameterInstancesInternal:
     keys:
-    - 09871a4a-6d6e-42aa-a2d7-937dc7a697d0
-    - 9083b2a7-d427-4480-913b-e8ed6d1e47e1
-    - afa3feb3-58a2-4780-a541-655264d32163
-    - 1e73b470-575e-4604-8c48-93ce29621966
+    - 673fb409-266d-4ede-b699-ed26f4a0d89e
+    - eb6a6199-30fd-4c29-ba76-65493833ce3a
+    - 39ea7244-ff62-41f2-b767-91c8589b5b9f
     values:
     - {fileID: 7477589980051899187}
     - {fileID: 4299678132454207742}
-    - {fileID: 9039340277149978924}
-    - {fileID: 9039340276863862180}
+    - {fileID: 9039340277149978927}
