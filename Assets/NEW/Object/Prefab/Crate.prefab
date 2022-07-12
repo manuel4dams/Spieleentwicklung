@@ -178,6 +178,7 @@ MonoBehaviour:
   healthAmount: 10
   containedPickups: []
   hitSound: {fileID: 0}
+  hitVolume: 2
   objectTransform: {fileID: 5327666726458817936}
   objectGameObject: {fileID: 5327666727744922730}
   healthSlider: {fileID: 8604589986032586543}
@@ -208,7 +209,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8604589984963342821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:

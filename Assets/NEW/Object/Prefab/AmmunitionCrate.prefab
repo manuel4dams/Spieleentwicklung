@@ -344,7 +344,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5438062011803948232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -673,6 +673,7 @@ MonoBehaviour:
   containedPickups:
   - {fileID: 4996654175530847997, guid: bac2fb97e5b75f945a4bd595280fae0f, type: 3}
   hitSound: {fileID: 0}
+  hitVolume: 2
   objectTransform: {fileID: 7293948822055459503}
   objectGameObject: {fileID: 7293948823747242256}
   healthSlider: {fileID: 5438062010170629444}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace ScriptGG
@@ -9,6 +10,7 @@ namespace ScriptGG
 
         [Header("References")] //
         public new Rigidbody rigidbody;
+        public GameObject fire;
 
         void Start()
         {
@@ -17,7 +19,7 @@ namespace ScriptGG
 
         void OnTriggerEnter(Collider other)
         {
-            if (!LayerMaskHelper.LayerIsInMask(gameObject.layer, hittableLayerMask))
+            if (!LayerMaskHelper.LayerIsInMask(other.gameObject.layer, hittableLayerMask))
                 return;
 
             var hittable = other.GetComponentInChildren<IHittable>();
@@ -25,6 +27,10 @@ namespace ScriptGG
             // ReSharper disable once UseNullPropagation
             if (hittable != null)
                 hittable.OnHit(damage);
+
+            // Spawn fire at impact location
+            var transform = other.gameObject.transform;
+            Instantiate(fire, transform.position, transform.rotation);
 
             // Finally destroy the object, because we hit something
             Destroy(gameObject);

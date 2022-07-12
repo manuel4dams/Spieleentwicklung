@@ -32,7 +32,7 @@ namespace ScriptGG
         private bool ApplyHealthChangeInternal()
         {
             // If we cannot pick up health, skip and notify
-            if (playerState.currentHealth >= playerState.maxHealth)
+            if (playerState.currentHealth >= playerState.maxHealth && healthAmount >= 0f)
                 return false;
 
             playerState.currentHealth += healthAmount;
