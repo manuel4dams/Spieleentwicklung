@@ -5,13 +5,14 @@ namespace ScriptGG
     public class DynamicCamera : MonoBehaviour
     {
         public Transform target;
+        public Vector3 offset;
+        public bool calculateOffsetOnStart;
         public float lerp;
-
-        private Vector3 offset;
 
         void Start()
         {
-            offset = transform.position - target.position;
+            if (calculateOffsetOnStart)
+                offset = transform.position - target.position;
         }
 
         void FixedUpdate()
