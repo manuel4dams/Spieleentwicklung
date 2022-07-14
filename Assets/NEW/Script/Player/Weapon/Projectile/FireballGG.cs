@@ -30,7 +30,6 @@ namespace ScriptGG
                 hittable.OnHit(damage);
 
             // Spawn fire at impact location
-            var transform = other.gameObject.transform;
             Instantiate(fire, transform.position, fire.transform.rotation);
 
             // Finally destroy the object, because we hit something

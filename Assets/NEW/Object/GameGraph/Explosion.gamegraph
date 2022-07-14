@@ -1,0 +1,263 @@
+{
+    "serializedVersion": 64,
+    "parameters": [
+        {
+            "idInternal": "37018512-1f08-4cfd-8b32-274ed11dc4c1",
+            "nameInternal": "State",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.ExplosionState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": true
+        },
+        {
+            "idInternal": "59ca5435-6a7e-4bd7-ac6c-a2a09ba43305",
+            "nameInternal": "Origin",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "4b466613-5ffc-4d7e-a921-90fd80c5bffe",
+            "nameInternal": "LightSource",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        }
+    ],
+    "nodes": [
+        {
+            "idInternal": "ad6772b8-dd85-4bf0-aa24-0dd0d75765f1",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Starter, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 559.0,
+                "y": 179.0
+            }
+        },
+        {
+            "idInternal": "a56567a6-b8d1-4fd8-b1ac-88ba116e4efe",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 311.0,
+                "y": 257.0
+            }
+        },
+        {
+            "idInternal": "dd168f35-7d23-48af-a076-1318d685454b",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "59ca5435-6a7e-4bd7-ac6c-a2a09ba43305",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 540.0,
+                "y": 403.0
+            }
+        },
+        {
+            "idInternal": "61ed980f-9258-490a-874d-9fc8b8aac87b",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "4b466613-5ffc-4d7e-a921-90fd80c5bffe",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 535.0,
+                "y": 481.0
+            }
+        },
+        {
+            "idInternal": "7e9fb5f3-3c1a-48de-94e9-3a645baf6cd4",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.ExplosionState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "37018512-1f08-4cfd-8b32-274ed11dc4c1",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 437.0,
+                "y": 559.0
+            }
+        },
+        {
+            "idInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.ExplosionController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 731.0,
+                "y": 257.0
+            }
+        },
+        {
+            "idInternal": "50dbea82-f029-44e3-ba91-c95dcec7b1e7",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GetGameObject, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 761.0,
+                "y": 539.0
+            }
+        },
+        {
+            "idInternal": "7fb50e24-a0b9-42fc-9062-d332a69b12d0",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.DamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "damage"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1108.0,
+                "y": 495.0
+            }
+        }
+    ],
+    "edges": [
+        {
+            "outputConnection": {
+                "nodeIdInternal": "ad6772b8-dd85-4bf0-aa24-0dd0d75765f1",
+                "portNameInternal": "start"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "Explode"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a56567a6-b8d1-4fd8-b1ac-88ba116e4efe",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "LightFlash"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "7e9fb5f3-3c1a-48de-94e9-3a645baf6cd4",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "state"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "dd168f35-7d23-48af-a076-1318d685454b",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "origin"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "61ed980f-9258-490a-874d-9fc8b8aac87b",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "lightSource"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "7e9fb5f3-3c1a-48de-94e9-3a645baf6cd4",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "50dbea82-f029-44e3-ba91-c95dcec7b1e7",
+                "portNameInternal": "component"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "onHit"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7fb50e24-a0b9-42fc-9062-d332a69b12d0",
+                "portNameInternal": "Fire"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5d364d82-b401-4b85-883e-377a7692fdf6",
+                "portNameInternal": "currentHitObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7fb50e24-a0b9-42fc-9062-d332a69b12d0",
+                "portNameInternal": "target"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "50dbea82-f029-44e3-ba91-c95dcec7b1e7",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7fb50e24-a0b9-42fc-9062-d332a69b12d0",
+                "portNameInternal": "source"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "7e9fb5f3-3c1a-48de-94e9-3a645baf6cd4",
+                "portNameInternal": "damage"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7fb50e24-a0b9-42fc-9062-d332a69b12d0",
+                "portNameInternal": "damage"
+            }
+        }
+    ],
+    "autoSave": true
+}

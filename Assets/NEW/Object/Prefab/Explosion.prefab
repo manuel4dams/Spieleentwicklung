@@ -14450,6 +14450,8 @@ GameObject:
   - component: {fileID: 297262251776650043}
   - component: {fileID: 297262251776650041}
   - component: {fileID: 297262251776650040}
+  - component: {fileID: 8655194985296213929}
+  - component: {fileID: 4479884683028859862}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -19381,6 +19383,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 1.5
+--- !u!114 &8655194985296213929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297262251776650037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e5e89965d71ac4d8afe34c59205fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionForce: 100
+  explosionUpwardsModifier: 0.05
+  explosionRadius: 10
+  damage: 4
+--- !u!114 &4479884683028859862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297262251776650037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452a16fcf5ed4deda3d8276de05764af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: -5475051401550479605, guid: 4bede2dfe5c93a445880e98064d7e7c1, type: 3}
+  parameterInstancesInternal:
+    keys:
+    - 37018512-1f08-4cfd-8b32-274ed11dc4c1
+    - 59ca5435-6a7e-4bd7-ac6c-a2a09ba43305
+    - 4b466613-5ffc-4d7e-a921-90fd80c5bffe
+    values:
+    - {fileID: 8655194985296213929}
+    - {fileID: 297262251776650036}
+    - {fileID: 297262252021222313}
 --- !u!1 &297262252021222308
 GameObject:
   m_ObjectHideFlags: 0

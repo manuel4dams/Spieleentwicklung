@@ -1,3 +1,4 @@
+using System;
 using GameGraph;
 using JetBrains.Annotations;
 using UnityEngine;
@@ -48,6 +49,15 @@ namespace ScriptGG
         {
             healthSlider.gameObject.SetActive(true);
             healthSliderVisible = true;
+        }
+
+        void OnDrawGizmos()
+        {
+            if (explosive)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(transform.position, explosionParticlePrefab.GetComponent<ExplosionState>().explosionRadius);
+            }
         }
     }
 }
