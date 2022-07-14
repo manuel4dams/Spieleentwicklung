@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 801,
+    "serializedVersion": 806,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -935,6 +935,30 @@
                 "x": 952.0,
                 "y": -260.0
             }
+        },
+        {
+            "idInternal": "14d1d1f1-c3f0-4363-a90b-413251551a17",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "updateType"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater+UpdaterType, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"FixedUpdate\""
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1916.0,
+                "y": -785.0
+            }
         }
     ],
     "edges": [
@@ -1506,6 +1530,16 @@
             "inputConnection": {
                 "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
                 "portNameInternal": "InstantiatePlayerDeathParticles"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "14d1d1f1-c3f0-4363-a90b-413251551a17",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "UpdateHitIndicator"
             }
         }
     ],

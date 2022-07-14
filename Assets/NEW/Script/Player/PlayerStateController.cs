@@ -2,7 +2,6 @@ using System;
 using GameGraph;
 using JetBrains.Annotations;
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
 
 namespace ScriptGG
 {
@@ -35,6 +34,9 @@ namespace ScriptGG
             if (playerState.currentHealth >= playerState.maxHealth && healthAmount >= 0f)
                 return false;
 
+            if (healthAmount < 0)
+                playerState.playerDamageIndicatorImage.color = new Color(255f, 255f, 255f, 1f);
+
             playerState.currentHealth += healthAmount;
 
             // Cap the health to the max
@@ -49,6 +51,11 @@ namespace ScriptGG
         {
             UnityEngine.Object.Instantiate(playerDeathParticlesPrefab, playerDeathTransform.position, Quaternion.identity);
             OnPlayerDeathParticlesInstantiated?.Invoke();
+        }
+
+        public void UpdateHitIndicator()
+        {
+            playerState.playerDamageIndicatorImage.color = Color.Lerp(playerState.playerDamageIndicatorImage.color, Color.clear, 0.5f);
         }
     }
 }

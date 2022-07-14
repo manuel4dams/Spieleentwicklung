@@ -6,6 +6,9 @@ public class DestroyGameObjectDelayed : MonoBehaviour
 
     void Awake()
     {
+        if (lifetime == 0f)
+            return;
+
         Destroy(gameObject, lifetime);
     }
 }

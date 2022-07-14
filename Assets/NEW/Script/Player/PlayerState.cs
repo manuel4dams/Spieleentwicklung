@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using GameGraph;
-using MyBox;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ScriptGG
 {
@@ -16,6 +16,7 @@ namespace ScriptGG
         private float currentHealthInternal;
         public float currentHealth { get => currentHealthInternal; protected internal set => currentHealthInternal = value; }
         public bool isAlive => godMode || currentHealthInternal > 0;
+        public Image playerDamageIndicatorImage;
 
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;

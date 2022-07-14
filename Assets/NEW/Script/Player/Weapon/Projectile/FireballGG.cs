@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Vector3 = GameGraph.Common.Blocks.Vector3;
 
 namespace ScriptGG
 {
@@ -30,7 +31,7 @@ namespace ScriptGG
 
             // Spawn fire at impact location
             var transform = other.gameObject.transform;
-            Instantiate(fire, transform.position, transform.rotation);
+            Instantiate(fire, transform.position, fire.transform.rotation);
 
             // Finally destroy the object, because we hit something
             Destroy(gameObject);
