@@ -30,12 +30,10 @@ namespace ScriptGG
 
         public void Move()
         {
-            var sneakingOriginal = Input.GetAxisRaw("Fire3");
-            Console.WriteLine(sneakingOriginal);
-
             // Walking
             if ((shellSneak || playerState.isShooting) && grounded)
             {
+                // TODO Z 0 is bad
                 rigidbody.velocity = new Vector3(horizontalMovement * playerState.walkSpeedMultiplier, rigidbody.velocity.y, 0);
                 isRunning = false;
                 isSneaking = true;
@@ -43,6 +41,7 @@ namespace ScriptGG
             // Running
             else
             {
+                // TODO Z 0 is bad
                 rigidbody.velocity = new Vector3(horizontalMovement * playerState.runSpeedMultiplier, rigidbody.velocity.y, 0);
                 isRunning = Mathf.Abs(horizontalMovement) != 0f;
                 isSneaking = false;

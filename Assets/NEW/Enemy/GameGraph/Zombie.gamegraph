@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 355,
+    "serializedVersion": 593,
     "parameters": [
         {
             "idInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
@@ -8,14 +8,6 @@
                 "assemblyQualifiedName": "ScriptGG.ZombieState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "isGameGraphTypeInternal": true
-        },
-        {
-            "idInternal": "716e58c5-5027-4081-917a-42f704358062",
-            "nameInternal": "MeshRenderer",
-            "typeInternal": {
-                "assemblyQualifiedName": "UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "isGameGraphTypeInternal": false
         },
         {
             "idInternal": "5c2e5188-4ab9-4e99-acc6-0b57fd3bcbcf",
@@ -48,69 +40,25 @@
                 "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "c6bd1969-e5cf-4416-ab79-2f7cfbb75361",
+            "nameInternal": "Rigidbody",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Rigidbody, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "a492cc44-8166-410d-9002-226d8ab60481",
+            "nameInternal": "Animator",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
         }
     ],
     "nodes": [
-        {
-            "idInternal": "f2c89273-88d9-4f3b-b970-596130e6dcb5",
-            "typeInternal": {
-                "assemblyQualifiedName": "ScriptGG.ZombieState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": -138.0,
-                "y": 14.0
-            }
-        },
-        {
-            "idInternal": "d2258a51-21a9-450b-b19b-0843b76e88dd",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.Starter, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": -56.0,
-                "y": -64.0
-            }
-        },
-        {
-            "idInternal": "fd621274-6c7d-4b4f-9dbd-160f7b0d13bc",
-            "typeInternal": {
-                "assemblyQualifiedName": "ScriptGG.ZombieStateController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": 109.0,
-                "y": -59.0
-            }
-        },
-        {
-            "idInternal": "f6163f60-2825-4412-9611-3e3c28e27fd1",
-            "typeInternal": {
-                "assemblyQualifiedName": "UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "716e58c5-5027-4081-917a-42f704358062",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": -95.0,
-                "y": 160.0
-            }
-        },
         {
             "idInternal": "aeaddd9f-866c-4aa2-b445-2487f38d9b07",
             "typeInternal": {
@@ -146,8 +94,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -62.0,
-                "y": -1235.0
+                "x": -83.0,
+                "y": -1032.0
             }
         },
         {
@@ -161,8 +109,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -92.0,
-                "y": -1157.0
+                "x": -113.0,
+                "y": -954.0
             }
         },
         {
@@ -176,8 +124,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -62.0,
-                "y": -1079.0
+                "x": -83.0,
+                "y": -876.0
             }
         },
         {
@@ -191,8 +139,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -92.0,
-                "y": -1001.0
+                "x": -113.0,
+                "y": -798.0
             }
         },
         {
@@ -215,8 +163,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -3205.0
+                "x": 625.0,
+                "y": -1793.0
             }
         },
         {
@@ -239,8 +187,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -3025.0
+                "x": 625.0,
+                "y": -1613.0
             }
         },
         {
@@ -263,8 +211,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -2845.0
+                "x": 625.0,
+                "y": -1433.0
             }
         },
         {
@@ -287,8 +235,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -2665.0
+                "x": 625.0,
+                "y": -1253.0
             }
         },
         {
@@ -311,8 +259,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -2492.0
+                "x": 625.0,
+                "y": -1080.0
             }
         },
         {
@@ -335,8 +283,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -2312.0
+                "x": 625.0,
+                "y": -900.0
             }
         },
         {
@@ -359,8 +307,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -2132.0
+                "x": 625.0,
+                "y": -720.0
             }
         },
         {
@@ -383,8 +331,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -1952.0
+                "x": 625.0,
+                "y": -540.0
             }
         },
         {
@@ -407,8 +355,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1325.0,
-                "y": -1772.0
+                "x": 625.0,
+                "y": -360.0
             }
         },
         {
@@ -420,6 +368,8 @@
             "propertyValuesInternal": {
                 "keys": [
                     "waitTimeWhenPositionReached",
+                    "movementBoundsLeft",
+                    "movementBoundsRight",
                     "startIdlingOnStart"
                 ],
                 "values": [
@@ -431,15 +381,27 @@
                     },
                     {
                         "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":0,\"y\":0,\"z\":0}"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":0,\"y\":0,\"z\":0}"
+                    },
+                    {
+                        "type": {
                             "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                         },
-                        "objectInternal": "false"
+                        "objectInternal": "true"
                     }
                 ]
             },
             "positionInternal": {
-                "x": 563.0,
-                "y": 623.0
+                "x": 879.0,
+                "y": 1257.0
             }
         },
         {
@@ -450,9 +412,16 @@
             "parameterIdInternal": "",
             "propertyValuesInternal": {
                 "keys": [
+                    "shellRun",
                     "moveTowardsPosition"
                 ],
                 "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
                     {
                         "type": {
                             "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -462,7 +431,7 @@
                 ]
             },
             "positionInternal": {
-                "x": 1037.0,
+                "x": 1430.0,
                 "y": 516.0
             }
         },
@@ -477,8 +446,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 545.0,
-                "y": 1489.0
+                "x": 493.0,
+                "y": 223.0
             }
         },
         {
@@ -501,32 +470,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 678.0,
-                "y": 1649.0
-            }
-        },
-        {
-            "idInternal": "7f88aed6-0402-4d01-b6bb-0a1b9b335f64",
-            "typeInternal": {
-                "assemblyQualifiedName": "ScriptGG.RangeDetector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [
-                    "followDuringAttack"
-                ],
-                "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "false"
-                    }
-                ]
-            },
-            "positionInternal": {
-                "x": 65.0,
-                "y": 1348.0
+                "x": 645.0,
+                "y": 223.0
             }
         },
         {
@@ -549,42 +494,209 @@
                 ]
             },
             "positionInternal": {
-                "x": 65.0,
-                "y": 539.0
+                "x": 54.0,
+                "y": 516.0
+            }
+        },
+        {
+            "idInternal": "de2aee0c-c033-4ecc-bee4-c84555433a8e",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "5c2e5188-4ab9-4e99-acc6-0b57fd3bcbcf",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": -137.0,
+                "y": 741.0
+            }
+        },
+        {
+            "idInternal": "eefcc27c-dd09-4047-8019-f2410c73e458",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "1a334814-cdea-4544-9095-6a7268d8aebb",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": -167.0,
+                "y": 819.0
+            }
+        },
+        {
+            "idInternal": "b7728c4d-5cfc-426d-b93c-c70cec3f6954",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "f3f5d9af-d91a-43fe-b4d7-20482cd6018b",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": -137.0,
+                "y": 897.0
+            }
+        },
+        {
+            "idInternal": "5a3fb72f-9e6c-4270-b3dd-bfad84684c75",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "11efa496-4a08-4188-8481-0fe499beb091",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": -167.0,
+                "y": 975.0
+            }
+        },
+        {
+            "idInternal": "c6c9928b-ec88-4ff8-aff9-824812b2fb88",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Merge, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "distinctPerFrame"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 557.0,
+                "y": 888.0
+            }
+        },
+        {
+            "idInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.ZombieState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 250.0,
+                "y": 1197.0
+            }
+        },
+        {
+            "idInternal": "6a16950b-0977-42c2-b122-61331dcb327b",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Rigidbody, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "c6bd1969-e5cf-4416-ab79-2f7cfbb75361",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 997.0,
+                "y": 1014.0
+            }
+        },
+        {
+            "idInternal": "9e36e909-a3d0-4e6e-ad89-07a164caf6cc",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.IfToBool, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 789.0,
+                "y": 654.0
+            }
+        },
+        {
+            "idInternal": "df9e8b90-49a7-4850-a123-32ff49928c56",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.ZombieAnimation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "walking",
+                    "running",
+                    "attacking"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 2092.0,
+                "y": 572.0
+            }
+        },
+        {
+            "idInternal": "d8e44d11-f24d-45ca-a388-dc39957f8e45",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1538.0,
+                "y": 354.0
+            }
+        },
+        {
+            "idInternal": "4a86f582-4318-49a6-8268-f13c6d438e23",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "a492cc44-8166-410d-9002-226d8ab60481",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1934.0,
+                "y": 946.0
             }
         }
     ],
     "edges": [
-        {
-            "outputConnection": {
-                "nodeIdInternal": "f2c89273-88d9-4f3b-b970-596130e6dcb5",
-                "portNameInternal": "!Instance"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "fd621274-6c7d-4b4f-9dbd-160f7b0d13bc",
-                "portNameInternal": "zombieState"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "d2258a51-21a9-450b-b19b-0843b76e88dd",
-                "portNameInternal": "start"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "fd621274-6c7d-4b4f-9dbd-160f7b0d13bc",
-                "portNameInternal": "SetupMaterial"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "f6163f60-2825-4412-9611-3e3c28e27fd1",
-                "portNameInternal": "!Instance"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "fd621274-6c7d-4b4f-9dbd-160f7b0d13bc",
-                "portNameInternal": "skinnedMeshRenderer"
-            }
-        },
         {
             "outputConnection": {
                 "nodeIdInternal": "b37f4172-0e74-4f09-93fe-1a367e936b4f",
@@ -727,16 +839,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "7f88aed6-0402-4d01-b6bb-0a1b9b335f64",
-                "portNameInternal": "doAttack"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "25a5eac9-716f-4e89-bd17-91b23d110f35",
-                "portNameInternal": "Attack"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
                 "portNameInternal": "nextPosition"
             },
@@ -753,26 +855,6 @@
             "inputConnection": {
                 "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
                 "portNameInternal": "HandleIdleState"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
-                "portNameInternal": "startDoNothing"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
-                "portNameInternal": "StartIdling"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
-                "portNameInternal": "reachedPosition"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
-                "portNameInternal": "CalculateNextPosition"
             }
         },
         {
@@ -803,6 +885,216 @@
             "inputConnection": {
                 "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
                 "portNameInternal": "moveTowardsTransform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "de2aee0c-c033-4ecc-bee4-c84555433a8e",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "followTrigger"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eefcc27c-dd09-4047-8019-f2410c73e458",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "stopFollowTrigger"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b7728c4d-5cfc-426d-b93c-c70cec3f6954",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "attackTrigger"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5a3fb72f-9e6c-4270-b3dd-bfad84684c75",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "stopAttackTrigger"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "doAttack"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "25a5eac9-716f-4e89-bd17-91b23d110f35",
+                "portNameInternal": "Attack"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "reachedPosition"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c6c9928b-ec88-4ff8-aff9-824812b2fb88",
+                "portNameInternal": "In1"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "startDoNothing"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "c6c9928b-ec88-4ff8-aff9-824812b2fb88",
+                "portNameInternal": "In2"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "movementBoundsLeft"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
+                "portNameInternal": "movementBoundsLeft"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "movementBoundsRight"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
+                "portNameInternal": "movementBoundsRight"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "idleWaitTime"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
+                "portNameInternal": "waitTimeWhenPositionReached"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c6c9928b-ec88-4ff8-aff9-824812b2fb88",
+                "portNameInternal": "out"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59c69a67-f448-4735-b7c4-a6aa935fb79e",
+                "portNameInternal": "StartIdling"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "zombieState"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "6a16950b-0977-42c2-b122-61331dcb327b",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "rigidbody"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "startFollow"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "9e36e909-a3d0-4e6e-ad89-07a164caf6cc",
+                "portNameInternal": "True"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "endFollow"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "9e36e909-a3d0-4e6e-ad89-07a164caf6cc",
+                "portNameInternal": "False"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "9e36e909-a3d0-4e6e-ad89-07a164caf6cc",
+                "portNameInternal": "result"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "shellRun"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d8e44d11-f24d-45ca-a388-dc39957f8e45",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "df9e8b90-49a7-4850-a123-32ff49928c56",
+                "portNameInternal": "Handle"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "isRunning"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "df9e8b90-49a7-4850-a123-32ff49928c56",
+                "portNameInternal": "running"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "isWalking"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "df9e8b90-49a7-4850-a123-32ff49928c56",
+                "portNameInternal": "walking"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "4a86f582-4318-49a6-8268-f13c6d438e23",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "df9e8b90-49a7-4850-a123-32ff49928c56",
+                "portNameInternal": "animator"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "endFollow"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
+                "portNameInternal": "DoNotMove"
             }
         }
     ],

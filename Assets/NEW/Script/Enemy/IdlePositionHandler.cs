@@ -1,41 +1,35 @@
 using System;
 using GameGraph;
+using JetBrains.Annotations;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace ScriptGG
 {
     [GameGraph]
-    public class IdlePositionHandler : IStartHook
+    [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
+    public class IdlePositionHandler
     {
         public float waitTimeWhenPositionReached;
-        public Transform movementBoundsLeft;
-        public Transform movementBoundsRight;
+        public Vector3 movementBoundsLeft;
+        public Vector3 movementBoundsRight;
         public bool startIdlingOnStart;
 
         public Vector3 nextPosition { get; private set; }
         public event Action idleMovement;
 
-        public void CalculateNextPosition()
-        {
-
-        }
+        private float nextIdleMovementTime;
 
         public void StartIdling()
         {
-            // Set timer after now to start moving
+            nextPosition = Vector3.Lerp(movementBoundsLeft, movementBoundsRight, Random.value);
+            nextIdleMovementTime = Time.realtimeSinceStartup + waitTimeWhenPositionReached;
         }
 
         public void HandleIdleState()
         {
-
-        }
-
-        [ExcludeFromGraph]
-        public void Start()
-        {
-            CalculateNextPosition();
-            if(startIdlingOnStart)
-                StartIdling();
+            if (Time.realtimeSinceStartup >= nextIdleMovementTime)
+                idleMovement?.Invoke();
         }
     }
 }

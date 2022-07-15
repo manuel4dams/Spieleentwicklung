@@ -17,9 +17,10 @@ namespace ScriptGG
 
         public void Check()
         {
+            var o1 = groundCheckOrigin.position;
+            var o2 = o1 + Vector3.down * playerState.groundCheckDistance;
             var hitColliders = new Collider[1];
-            Physics.OverlapSphereNonAlloc(groundCheckOrigin.position, playerState.groundColliderRadius, hitColliders,
-                LayerMask.GetMask(Layer.GROUND));
+            Physics.OverlapCapsuleNonAlloc(o1, o2, playerState.groundCheckRadius, hitColliders, LayerMask.GetMask(Layer.GROUND));
             isGrounded = hitColliders[0];
         }
     }

@@ -1,6 +1,7 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
+using MyBox;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,11 +52,11 @@ namespace ScriptGG
             healthSliderVisible = true;
         }
 
-        void OnDrawGizmos()
+        void OnDrawGizmosSelected()
         {
             if (explosive)
             {
-                Gizmos.color = Color.red;
+                Gizmos.color = Color.red.WithAlphaSetTo(0.3f);
                 Gizmos.DrawSphere(transform.position, explosionParticlePrefab.GetComponent<ExplosionState>().explosionRadius);
             }
         }

@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 806,
+    "serializedVersion": 830,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -131,8 +131,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 800.0,
-                "y": 627.0
+                "x": 932.0,
+                "y": 593.0
             }
         },
         {
@@ -176,8 +176,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1662.0,
-                "y": 897.0
+                "x": 1646.0,
+                "y": 899.0
             }
         },
         {
@@ -192,7 +192,7 @@
             },
             "positionInternal": {
                 "x": 1025.0,
-                "y": 841.0
+                "y": 773.0
             }
         },
         {
@@ -207,7 +207,7 @@
             },
             "positionInternal": {
                 "x": 1056.0,
-                "y": 919.0
+                "y": 851.0
             }
         },
         {
@@ -261,7 +261,7 @@
             },
             "positionInternal": {
                 "x": 1185.0,
-                "y": 1072.0
+                "y": 958.0
             }
         },
         {
@@ -290,8 +290,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 516.0,
-                "y": 1177.0
+                "x": 559.0,
+                "y": 1169.0
             }
         },
         {
@@ -305,8 +305,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 364.0,
-                "y": 1031.0
+                "x": 407.0,
+                "y": 1023.0
             }
         },
         {
@@ -522,7 +522,7 @@
             },
             "positionInternal": {
                 "x": 1414.0,
-                "y": 1218.0
+                "y": 1108.0
             }
         },
         {
@@ -958,6 +958,21 @@
             "positionInternal": {
                 "x": 1916.0,
                 "y": -785.0
+            }
+        },
+        {
+            "idInternal": "b0c88436-76a3-4532-b0b8-f2e9fc7b6d06",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.CharacterControllerIsGrounded, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1602.0,
+                "y": 212.0
             }
         }
     ],
