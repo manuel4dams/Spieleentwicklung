@@ -33,6 +33,10 @@ namespace ScriptGG
         [NonReorderable] // Because unity sucks in drawing their UI, disabling reorder fixes a failure where the first entry overlaps some content
         public List<CompoundWeapon> weapons;
 
+        [Header("Weapons")] //
+        public AudioClip hitSound;
+        public AudioSource audioSource;
+
         // Controlled state
         // TODO Maybe eliminate this intermediate variable?
         public bool isShooting { get; set; }
@@ -40,6 +44,7 @@ namespace ScriptGG
         void Start()
         {
             currentHealthInternal = maxHealth;
+            audioSource.clip = hitSound;
         }
     }
 }

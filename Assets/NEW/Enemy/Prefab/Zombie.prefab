@@ -1532,7 +1532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7897053418195559858}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 36.99, y: 0, z: 2.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1584,7 +1584,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1708,8 +1708,8 @@ MonoBehaviour:
   idleWaitTime: 5
   movementBoundsLeft: {x: -14.02, y: 0, z: 0}
   movementBoundsRight: {x: -1.7, y: 0, z: 0}
-  damage: 0
-  attackRate: 0
+  damage: 1
+  attackRate: 1
   materials:
   - {fileID: 2100000, guid: 5a80a400beac3e64087e7be358f14d8a, type: 2}
   - {fileID: 2100000, guid: 0d4fe62573d2c754cac8c189723b0bda, type: 2}
@@ -1722,8 +1722,17 @@ MonoBehaviour:
   zombieHitParticlesPrefab: {fileID: 6783441696228179145, guid: 52a4cc80e0b8b024c95814436116868f, type: 3}
   ragDollDead: {fileID: 7763697304134475099, guid: 43880eda58b194540ac8b86a5012b677, type: 3}
   deathSound: {fileID: 8300000, guid: 90198d9f89236304096b0a8a4f5bd457, type: 3}
+  idleSounds:
+  - {fileID: 8300000, guid: 5091185618a662e48b58b6f2e7dd0e0d, type: 3}
+  - {fileID: 8300000, guid: eab3de9600084b842a921d12660dd168, type: 3}
+  - {fileID: 8300000, guid: 07c3c6d618f7acf42a107dedb4943130, type: 3}
+  hitSounds:
+  - {fileID: 8300000, guid: 371b43dbced38864a8b96d6fcd115f46, type: 3}
+  - {fileID: 8300000, guid: b04dbe63a86d690448f7d3876b132b9e, type: 3}
+  attackSound: {fileID: 8300000, guid: de49519181dc25e48b7249d96bcae754, type: 3}
   origin: {fileID: 7897053418195559864}
   skinnedMeshRenderer: {fileID: 7897053417215605703}
+  audioSource: {fileID: 7897053418195559869}
 --- !u!114 &7897053418195559875
 MonoBehaviour:
   m_ObjectHideFlags: 0

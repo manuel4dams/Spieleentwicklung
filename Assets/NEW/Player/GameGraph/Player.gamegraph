@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 830,
+    "serializedVersion": 836,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -908,8 +908,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 2257.0,
-                "y": -683.0
+                "x": 1998.0,
+                "y": -580.0
             }
         },
         {
@@ -958,21 +958,6 @@
             "positionInternal": {
                 "x": 1916.0,
                 "y": -785.0
-            }
-        },
-        {
-            "idInternal": "b0c88436-76a3-4532-b0b8-f2e9fc7b6d06",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.CharacterControllerIsGrounded, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": 1602.0,
-                "y": 212.0
             }
         }
     ],
@@ -1339,16 +1324,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
-                "portNameInternal": "!Instance"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
-                "portNameInternal": "playerState"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
                 "portNameInternal": "OnEvent"
             },
@@ -1509,16 +1484,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "17397a32-42e3-40c0-9783-a702256d8878",
-                "portNameInternal": "!Instance"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
-                "portNameInternal": "playerState"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "72c3c9b4-cd73-4dac-be78-4ecefe705a7c",
                 "portNameInternal": "update"
             },
@@ -1555,6 +1520,26 @@
             "inputConnection": {
                 "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
                 "portNameInternal": "UpdateHitIndicator"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c6a51606-8978-4eff-9fd2-e6f98be509bc",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "PlayHitSound"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "17397a32-42e3-40c0-9783-a702256d8878",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "state"
             }
         }
     ],

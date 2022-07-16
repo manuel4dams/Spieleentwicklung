@@ -10,7 +10,7 @@ namespace ScriptGG
     public class PlayerStateController
     {
         // References
-        public PlayerState playerState;
+        public PlayerState state;
 
         // Health
         public float healthAmount { private get; set; }
@@ -31,17 +31,17 @@ namespace ScriptGG
         private bool ApplyHealthChangeInternal()
         {
             // If we cannot pick up health, skip and notify
-            if (playerState.currentHealth >= playerState.maxHealth && healthAmount >= 0f)
+            if (state.currentHealth >= state.maxHealth && healthAmount >= 0f)
                 return false;
 
             if (healthAmount < 0)
-                playerState.playerDamageIndicatorImage.color = new Color(255f, 255f, 255f, 1f);
+                state.playerDamageIndicatorImage.color = new Color(255f, 255f, 255f, 1f);
 
-            playerState.currentHealth += healthAmount;
+            state.currentHealth += healthAmount;
 
             // Cap the health to the max
-            if (playerState.currentHealth > playerState.maxHealth)
-                playerState.currentHealth = playerState.maxHealth;
+            if (state.currentHealth > state.maxHealth)
+                state.currentHealth = state.maxHealth;
 
             // Return that health was picked up
             return true;
@@ -55,7 +55,12 @@ namespace ScriptGG
 
         public void UpdateHitIndicator()
         {
-            playerState.playerDamageIndicatorImage.color = Color.Lerp(playerState.playerDamageIndicatorImage.color, Color.clear, 0.5f);
+            state.playerDamageIndicatorImage.color = Color.Lerp(state.playerDamageIndicatorImage.color, Color.clear, 0.5f);
+        }
+
+        public void PlayHitSound()
+        {
+            state.audioSource.Play();
         }
     }
 }

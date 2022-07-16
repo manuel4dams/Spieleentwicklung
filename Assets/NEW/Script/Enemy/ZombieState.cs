@@ -1,5 +1,6 @@
 using System;
 using GameGraph;
+using MyBox;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -32,10 +33,14 @@ namespace ScriptGG
 
         [Header("Audio")] //
         public AudioClip deathSound;
+        public AudioClip[] idleSounds;
+        public AudioClip[] hitSounds;
+        public AudioClip attackSound;
 
         [Header("References")] //
         public Transform origin;
         public SkinnedMeshRenderer skinnedMeshRenderer;
+        public AudioSource audioSource;
 
         void Start()
         {
@@ -57,14 +62,31 @@ namespace ScriptGG
             // TODO use event and gamegraph to handle the hit
             // all quick fix for now maybe get the actual hit position later
             Instantiate(zombieHitParticlesPrefab, origin.position + new Vector3(0, 1, 0), Quaternion.identity);
+
+            PlayHitSound();
+
             currentHealth -= damage;
 
             if (currentHealth > 0)
                 return;
+            PlayDeathSound();
 
-            AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
             RagDollDeath();
             Destroy(origin.gameObject);
+        }
+
+        public void PlayHitSound()
+        {
+            if (hitSounds.IsNullOrEmpty())
+                return;
+
+            audioSource.clip = hitSounds[Random.Range(0, hitSounds.Length)];
+            audioSource.Play();
+        }
+
+        public void PlayDeathSound()
+        {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
         }
 
         private void RagDollDeath()
