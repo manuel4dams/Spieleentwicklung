@@ -5065,4 +5065,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   maxDistance: 20
+  muzzleOffsetFactor: -1
   lineRenderer: {fileID: 9056474415248784456}

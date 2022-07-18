@@ -88,7 +88,6 @@ namespace ScriptGG
                 transformToInteract = c.transform;
 
                 previousWasFollowing = following;
-                Debug.Log($"PREVIOUS ${previousWasFollowing}");
                 HandleFlags(followDuringAttack && following, true);
             });
             stopAttackTrigger.AddOnTriggerExitListener(c =>
@@ -99,7 +98,6 @@ namespace ScriptGG
                 objectToInteract = c.gameObject;
                 transformToInteract = c.transform;
 
-                Debug.Log($"PREVIOUS ${previousWasFollowing}");
                 HandleFlags(followDuringAttack ? following : previousWasFollowing, false);
             });
         }

@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 5327666727744922731}
   - component: {fileID: 5327666726458817938}
   - component: {fileID: 8604589985081169899}
+  - component: {fileID: 8342236422412882032}
   m_Layer: 7
   m_Name: Crate
   m_TagString: Untagged
@@ -182,6 +183,25 @@ MonoBehaviour:
   objectTransform: {fileID: 5327666726458817936}
   objectGameObject: {fileID: 5327666727744922730}
   healthSlider: {fileID: 8604589986032586543}
+--- !u!114 &8342236422412882032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327666727744922730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc6fe63198b480faa1248a237b47759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  autoAssignSelfTransform: 1
+  source: {fileID: 0}
+  autoAssignMainCameraTransform: 1
+  useX: 0
+  useY: 1
+  useZ: 0
 --- !u!1 &8604589984963342821
 GameObject:
   m_ObjectHideFlags: 0
