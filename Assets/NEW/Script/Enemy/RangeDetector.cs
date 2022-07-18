@@ -44,9 +44,9 @@ namespace ScriptGG
 
         public void PerformDoEvents()
         {
-            if(attacking)
+            if (attacking)
                 doAttack?.Invoke();
-            if(following)
+            if (following)
                 doFollow?.Invoke();
             if (nothing)
                 doNothing?.Invoke();
@@ -110,14 +110,14 @@ namespace ScriptGG
         {
             var newNothing = !newFollowing && !newAttacking;
 
-            if(!newAttacking && attacking)
+            if (!newAttacking && attacking)
                 endAttack?.Invoke();
-            if(!newFollowing && following)
+            if (!newFollowing && following)
                 endFollow?.Invoke();
-            if(!newNothing && nothing)
+            if (!newNothing && nothing)
                 endDoNothing?.Invoke();
 
-            if(newNothing && !nothing)
+            if (newNothing && !nothing)
                 startDoNothing?.Invoke();
             if (newFollowing && !following)
                 startFollow?.Invoke();

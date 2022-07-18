@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 860,
+    "serializedVersion": 912,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -146,9 +146,16 @@
                     "sneaking",
                     "grounded",
                     "shooting",
+                    "MeleeAttack",
                     "horizontalMovementSpeed"
                 ],
                 "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
                     {
                         "type": {
                             "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
@@ -474,7 +481,7 @@
         {
             "idInternal": "b36ba824-5eb6-44ec-9256-100eb69ce371",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.QuaternionToDirection, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.QuaternionToDirection, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
@@ -731,14 +738,14 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1292.0,
-                "y": -1693.0
+                "x": 1323.0,
+                "y": -1995.0
             }
         },
         {
             "idInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.SliderSetValueNew, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.SliderSetValue, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
@@ -755,8 +762,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1465.0,
-                "y": -1816.0
+                "x": 1496.0,
+                "y": -2118.0
             }
         },
         {
@@ -770,8 +777,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1163.0,
-                "y": -1615.0
+                "x": 1194.0,
+                "y": -1917.0
             }
         },
         {
@@ -785,8 +792,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1069.0,
-                "y": -1839.0
+                "x": 1100.0,
+                "y": -2141.0
             }
         },
         {
@@ -869,8 +876,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 2284.0,
-                "y": -964.0
+                "x": 2552.0,
+                "y": -1008.0
             }
         },
         {
@@ -893,7 +900,7 @@
                 ]
             },
             "positionInternal": {
-                "x": 2699.0,
+                "x": 2990.0,
                 "y": -804.0
             }
         },
@@ -908,8 +915,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1998.0,
-                "y": -580.0
+                "x": 2482.0,
+                "y": -645.0
             }
         },
         {
@@ -956,8 +963,32 @@
                 ]
             },
             "positionInternal": {
-                "x": 1916.0,
-                "y": -785.0
+                "x": 2400.0,
+                "y": -791.0
+            }
+        },
+        {
+            "idInternal": "f50ac66d-922c-4b7d-906e-2b4747cf6994",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Merge, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "distinctPerFrame"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 920.0,
+                "y": -1112.0
             }
         }
     ],
@@ -1294,16 +1325,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
-                "portNameInternal": "OnEvent"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
-                "portNameInternal": "ApplyHealthChange"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
                 "portNameInternal": "!Instance"
             },
@@ -1400,16 +1421,6 @@
             "inputConnection": {
                 "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
                 "portNameInternal": "object"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
-                "portNameInternal": "OnPlayerDeathParticlesInstantiated"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
-                "portNameInternal": "Invoke"
             }
         },
         {
@@ -1540,6 +1551,26 @@
             "inputConnection": {
                 "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
                 "portNameInternal": "grounded"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "ApplyHealthChange"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "OnPlayerDeathParticlesInstantiated"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
+                "portNameInternal": "Invoke"
             }
         }
     ],
