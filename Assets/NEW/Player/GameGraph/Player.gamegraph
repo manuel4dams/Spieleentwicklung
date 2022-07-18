@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 859,
+    "serializedVersion": 860,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -1090,16 +1090,6 @@
             "inputConnection": {
                 "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
                 "portNameInternal": "Move"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "05ef98a3-c4e1-403c-a101-009c4f2c60ce",
-                "portNameInternal": "shooting"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
-                "portNameInternal": "shooting"
             }
         },
         {

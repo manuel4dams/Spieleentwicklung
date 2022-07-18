@@ -8,7 +8,7 @@ namespace ScriptGG
 {
     [GameGraph]
     [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-    public class RangeDetector : IStartHook, IUpdateHook
+    public class RangeDetector : IStartHook
     {
         public Collider followTrigger;
         public Collider stopFollowTrigger;
@@ -42,8 +42,7 @@ namespace ScriptGG
             HandleFlags(false, false);
         }
 
-        [ExcludeFromGraph]
-        public void Update()
+        public void PerformDoEvents()
         {
             if(attacking)
                 doAttack?.Invoke();
