@@ -21,7 +21,8 @@ namespace ScriptGG
         {
             animator.SetBool("walk", walking);
             animator.SetBool("run", running);
-            animator.SetBool("attack", attacking);
+            if (attacking)
+                animator.SetTrigger("attack");
         }
     }
 }

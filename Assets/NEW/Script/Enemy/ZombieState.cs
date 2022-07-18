@@ -2,6 +2,7 @@ using System;
 using GameGraph;
 using MyBox;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace ScriptGG
@@ -41,6 +42,9 @@ namespace ScriptGG
         public Transform origin;
         public SkinnedMeshRenderer skinnedMeshRenderer;
         public AudioSource audioSource;
+        public Slider healthSlider;
+
+        private bool healthSliderVisible;
 
         void Start()
         {
@@ -61,11 +65,16 @@ namespace ScriptGG
         {
             // TODO use event and gamegraph to handle the hit
             // all quick fix for now maybe get the actual hit position later
+            if (!healthSliderVisible)
+                ShowHealthSlider();
+
             Instantiate(zombieHitParticlesPrefab, origin.position + new Vector3(0, 1, 0), Quaternion.identity);
 
             PlayHitSound();
 
             currentHealth -= damage;
+
+            healthSlider.value = currentHealth;
 
             if (currentHealth > 0)
                 return;
@@ -73,6 +82,12 @@ namespace ScriptGG
 
             RagDollDeath();
             Destroy(origin.gameObject);
+        }
+
+        private void ShowHealthSlider()
+        {
+            healthSlider.gameObject.SetActive(true);
+            healthSliderVisible = true;
         }
 
         public void PlayHitSound()

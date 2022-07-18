@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 836,
+    "serializedVersion": 859,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -222,7 +222,7 @@
             },
             "positionInternal": {
                 "x": 458.0,
-                "y": 503.0
+                "y": 401.0
             }
         },
         {
@@ -800,8 +800,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 536.0,
-                "y": -260.0
+                "x": 510.0,
+                "y": -178.0
             }
         },
         {
@@ -932,8 +932,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 952.0,
-                "y": -260.0
+                "x": 957.0,
+                "y": -199.0
             }
         },
         {
@@ -962,26 +962,6 @@
         }
     ],
     "edges": [
-        {
-            "outputConnection": {
-                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
-                "portNameInternal": "isGrounded"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
-                "portNameInternal": "grounded"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
-                "portNameInternal": "isGrounded"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
-                "portNameInternal": "grounded"
-            }
-        },
         {
             "outputConnection": {
                 "nodeIdInternal": "04c266d8-be3d-47d9-91f0-04a937392876",
@@ -1540,6 +1520,36 @@
             "inputConnection": {
                 "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
                 "portNameInternal": "state"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "state"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "isGrounded"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "grounded"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "isGrounded"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "grounded"
             }
         }
     ],

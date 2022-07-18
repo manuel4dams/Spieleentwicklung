@@ -17,9 +17,14 @@ namespace ScriptGG
         public GameObject objectGameObject;
         public Slider healthSlider;
 
+        public void Start()
+        {
+            healthSlider.maxValue = healthAmount;
+        }
+
         public void OnHit(float damage)
         {
-            if(hitSound)
+            if (hitSound)
                 PlayHitSound();
 
             if (!destroyable) return;

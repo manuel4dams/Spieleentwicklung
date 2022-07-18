@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb32452169247ce9593eff188d922a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 1
+  healthAmount: 10
   healthPickupSound: {fileID: 8300000, guid: 98e3af002ec34f549abc4c17f3ccf8ab, type: 3}
   audioSourceTransform: {fileID: 9039340277149978927}
 --- !u!114 &8713755683617100559

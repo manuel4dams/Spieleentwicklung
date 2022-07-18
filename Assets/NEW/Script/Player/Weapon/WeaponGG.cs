@@ -16,6 +16,7 @@ namespace ScriptGG
         public int startRounds = 100;
         [ConditionalField(nameof(ammunitionEnabled))] //
         public int maxRounds = 100;
+        public int reloadAmountMultiplier = 1;
 
         [Header("References")] //
         public Transform weaponOrigin;
@@ -77,7 +78,7 @@ namespace ScriptGG
             if (remainingRoundsInternal >= maxRounds)
                 return false;
 
-            remainingRoundsInternal += ammunition;
+            remainingRoundsInternal += ammunition * reloadAmountMultiplier;
 
             // Cap the rounds to the max
             if (remainingRoundsInternal > maxRounds)
