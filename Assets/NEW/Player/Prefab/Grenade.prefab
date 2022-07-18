@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1245e54e08a14bc3af89a3c9d34c6afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 8
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -5023,7 +5023,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c276c37988fdc47a3f35dbff40b51b, type: 2}
+  - {fileID: 2100000, guid: a5d26333419c4e64393ca7e6e4118fd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
