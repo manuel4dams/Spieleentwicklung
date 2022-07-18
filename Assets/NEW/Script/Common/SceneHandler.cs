@@ -5,12 +5,12 @@ namespace ScriptGG
 {
     public class SceneHandler : MonoBehaviour
     {
-        private float initialFixedDeltaTime;
+        // private float initialFixedDeltaTime;
 
-        void Start()
-        {
-            initialFixedDeltaTime = Time.fixedDeltaTime;
-        }
+        // void Start()
+        // {
+        //     initialFixedDeltaTime = Time.fixedDeltaTime;
+        // }
 
         public void SwitchToMenu()
         {
