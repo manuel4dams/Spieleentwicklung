@@ -18,6 +18,9 @@ namespace ScriptGG
         public bool isAlive => godMode || currentHealthInternal > 0;
         public Image playerDamageIndicatorImage;
 
+        [Header(" Visual")] //
+        public GameObject ragDollDead;
+
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;
         public float walkSpeedMultiplier = 1f;

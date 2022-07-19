@@ -62,5 +62,25 @@ namespace ScriptGG
         {
             state.audioSource.Play();
         }
+
+        public void RagDollDeath()
+        {
+            // TODO handle in Controller with gamegraph
+            var ragDollModel = UnityEngine.Object.Instantiate(state.ragDollDead, playerDeathTransform.position, Quaternion.identity) as GameObject;
+            var ragDollJoints = playerDeathTransform.Find("master").GetComponentsInChildren<Transform>();
+            var zombieJoints = ragDollModel.transform.Find("master").GetComponentsInChildren<Transform>();
+
+            foreach (var ragDollJoint in ragDollJoints)
+            {
+                foreach (var zombieJoint in zombieJoints)
+                {
+                    if (zombieJoint.name != ragDollJoint.name) continue;
+                    ragDollJoint.position = zombieJoint.position;
+                    ragDollJoint.rotation = zombieJoint.rotation;
+                    break;
+                }
+            }
+            ragDollModel.transform.rotation = playerDeathTransform.transform.Find("master").rotation;
+        }
     }
 }

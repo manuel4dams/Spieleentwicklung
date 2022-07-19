@@ -79,5 +79,21 @@ PrefabInstance:
       propertyPath: walkSpeedMultiplier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: movementBoundsLeft.x
+      value: 410
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: movementBoundsRight.x
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559874, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559874, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
