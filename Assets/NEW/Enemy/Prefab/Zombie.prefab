@@ -1725,7 +1725,7 @@ MonoBehaviour:
   runSpeedMultiplier: 4
   walkSpeedMultiplier: 1
   turnSpeed: 20
-  idleWaitTime: 1000
+  idleWaitTime: 1
   movementBoundsLeft: {x: 30, y: 0, z: 0}
   movementBoundsRight: {x: 44, y: 0, z: 0}
   damage: 1
