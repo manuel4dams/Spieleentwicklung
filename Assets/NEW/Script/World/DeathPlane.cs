@@ -11,7 +11,7 @@ namespace ScriptGG
             if (excludeTriggers && other.isTrigger)
                 return;
 
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }

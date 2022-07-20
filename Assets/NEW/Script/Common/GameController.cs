@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace ScriptGG
@@ -10,21 +9,20 @@ namespace ScriptGG
         public GameObject zombiePrefab;
         public float zombieSpawnRate = 1f;
         private float nextZombieSpawn;
-        public float maximumZombies = 30f;
+        public int numberOfZombiesToSpawn = 10;
         public GameObject loseMenuContainer;
         public GameObject wonMenuContainer;
         private bool hasWon;
 
-        public Bounds bound;
+        public Bounds gameEndedZombieSpawnBounds;
 
         public void Update()
         {
-            if (hasWon && Time.realtimeSinceStartup > nextZombieSpawn && maximumZombies > 0f)
-                SpawnZombies();
+            MaySpawnZombies();
 
-            if (player.IsUnityNull() && !hasWon)
+            if (!player.activeSelf && !hasWon)
                 ShowDeathMenu(true);
-            if (player.IsUnityNull() && hasWon)
+            if (!player.activeSelf && hasWon)
                 ShowWonMenu(true);
         }
 
@@ -46,24 +44,28 @@ namespace ScriptGG
             wonMenuContainer.SetActive(active);
         }
 
-        private void SpawnZombies()
+        private void MaySpawnZombies()
         {
+            if (!(hasWon && Time.realtimeSinceStartup > nextZombieSpawn && numberOfZombiesToSpawn > 0))
+                return;
+
             Instantiate(
                 zombiePrefab,
                 new Vector3(
-                    Random.Range(bound.min.x, bound.max.x),
-                    bound.center.y,
-                    bound.center.z),
+                    Random.Range(gameEndedZombieSpawnBounds.min.x, gameEndedZombieSpawnBounds.max.x),
+                    Random.Range(gameEndedZombieSpawnBounds.min.y, gameEndedZombieSpawnBounds.max.y),
+                    Random.Range(gameEndedZombieSpawnBounds.min.z, gameEndedZombieSpawnBounds.max.z)
+                ),
                 Quaternion.Euler(Vector3.zero));
 
             nextZombieSpawn = Time.realtimeSinceStartup + zombieSpawnRate;
-            maximumZombies--;
+            numberOfZombiesToSpawn--;
         }
 
         void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawCube(bound.center, bound.extents);
+            Gizmos.DrawCube(gameEndedZombieSpawnBounds.center, gameEndedZombieSpawnBounds.size);
         }
     }
 }

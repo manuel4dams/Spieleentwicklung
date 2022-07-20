@@ -62,6 +62,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: -5475051401550479605, guid: 0c3dc42fa309ac64e903ced590f7f486, type: 3}
+  delegateUpdate: 0
+  delegateFixedUpdate: 0
+  delegateLateUpdate: 0
   parameterInstancesInternal:
     keys:
     - 673fb409-266d-4ede-b699-ed26f4a0d89e

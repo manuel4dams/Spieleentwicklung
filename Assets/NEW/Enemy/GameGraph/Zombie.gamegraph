@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 951,
+    "serializedVersion": 957,
     "parameters": [
         {
             "idInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
@@ -489,117 +489,6 @@
             }
         },
         {
-            "idInternal": "6818fb83-cd92-4697-bcf4-3af41577ca70",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.StringLogger, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [
-                    "message"
-                ],
-                "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "\"Walking\""
-                    }
-                ]
-            },
-            "positionInternal": {
-                "x": 2464.0,
-                "y": 734.0
-            }
-        },
-        {
-            "idInternal": "b6c093ed-37f1-4b8f-b2a2-ea00d402fbce",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.If, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [
-                    "condition"
-                ],
-                "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "false"
-                    }
-                ]
-            },
-            "positionInternal": {
-                "x": 2159.0,
-                "y": 893.0
-            }
-        },
-        {
-            "idInternal": "f494b350-9627-4802-873a-a7c60f6d972d",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": 2040.0,
-                "y": 698.0
-            }
-        },
-        {
-            "idInternal": "abb6e8cf-6d91-43d9-94e3-9d906ad7fde1",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.If, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [
-                    "condition"
-                ],
-                "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "false"
-                    }
-                ]
-            },
-            "positionInternal": {
-                "x": 2159.0,
-                "y": 1063.0
-            }
-        },
-        {
-            "idInternal": "85a7a3d7-34e0-42c3-b47c-ae561ebdffe0",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.StringLogger, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [
-                    "message"
-                ],
-                "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "\"Running\""
-                    }
-                ]
-            },
-            "positionInternal": {
-                "x": 2464.0,
-                "y": 993.0
-            }
-        },
-        {
             "idInternal": "05bcf930-200d-4a44-8394-152a7ed227b9",
             "typeInternal": {
                 "assemblyQualifiedName": "ScriptGG.ZombieState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
@@ -644,7 +533,7 @@
                         "type": {
                             "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater+UpdaterType, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                         },
-                        "objectInternal": "\"FixedUpdate\""
+                        "objectInternal": "\"Update\""
                     }
                 ]
             },
@@ -1027,52 +916,12 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "b6c093ed-37f1-4b8f-b2a2-ea00d402fbce",
-                "portNameInternal": "true"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "6818fb83-cd92-4697-bcf4-3af41577ca70",
-                "portNameInternal": "Log"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
-                "portNameInternal": "isWalking"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "b6c093ed-37f1-4b8f-b2a2-ea00d402fbce",
-                "portNameInternal": "condition"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "abb6e8cf-6d91-43d9-94e3-9d906ad7fde1",
-                "portNameInternal": "true"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "85a7a3d7-34e0-42c3-b47c-ae561ebdffe0",
-                "portNameInternal": "Log"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "5924ea5a-6e7b-4e6b-84ae-cf56ae98628e",
                 "portNameInternal": "false"
             },
             "inputConnection": {
                 "nodeIdInternal": "db716294-4340-4803-8a92-3685351c9ba1",
                 "portNameInternal": "In2"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "0164bca7-182d-4232-8acf-97aac10b5d17",
-                "portNameInternal": "isRunning"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "abb6e8cf-6d91-43d9-94e3-9d906ad7fde1",
-                "portNameInternal": "condition"
             }
         },
         {

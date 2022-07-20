@@ -2,6 +2,7 @@ using System;
 using GameGraph;
 using GameGraph.Common.Helper;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace ScriptGG
@@ -44,6 +45,9 @@ namespace ScriptGG
 
         public void PerformDoEvents()
         {
+            if (!objectToInteract.IsUnityNull() && !objectToInteract.activeSelf)
+                HandleFlags(false, false);
+
             if (attacking)
                 doAttack?.Invoke();
             if (following)
@@ -72,7 +76,7 @@ namespace ScriptGG
                 objectToInteract = c.gameObject;
                 transformToInteract = c.transform;
 
-                HandleFlags(false, attacking);
+                HandleFlags(false, false);
             });
         }
 

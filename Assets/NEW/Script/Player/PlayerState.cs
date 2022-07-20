@@ -18,7 +18,9 @@ namespace ScriptGG
         public bool isAlive => godMode || currentHealthInternal > 0;
         public Image playerDamageIndicatorImage;
 
-        [Header(" Visual")] //
+        [Header("Visual")] //
+        // TODO Rename to prefab
+        // TODO Does not belong here
         public GameObject ragDollDead;
 
         [Header("Movement parameters")] //

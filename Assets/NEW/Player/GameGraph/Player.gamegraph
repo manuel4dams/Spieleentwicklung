@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 916,
+    "serializedVersion": 976,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -645,8 +645,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1251.0,
-                "y": -821.0
+                "x": 1399.0,
+                "y": -720.0
             }
         },
         {
@@ -708,7 +708,7 @@
                 ]
             },
             "positionInternal": {
-                "x": 1708.0,
+                "x": 1927.0,
                 "y": -1008.0
             }
         },
@@ -807,23 +807,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 510.0,
-                "y": -178.0
-            }
-        },
-        {
-            "idInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
-            "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.Destroy, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-            },
-            "parameterIdInternal": "",
-            "propertyValuesInternal": {
-                "keys": [],
-                "values": []
-            },
-            "positionInternal": {
-                "x": 1896.0,
-                "y": -365.0
+                "x": 616.0,
+                "y": -165.0
             }
         },
         {
@@ -852,8 +837,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 985.0,
-                "y": -413.0
+                "x": 988.0,
+                "y": -440.0
             }
         },
         {
@@ -968,27 +953,57 @@
             }
         },
         {
-            "idInternal": "f50ac66d-922c-4b7d-906e-2b4747cf6994",
+            "idInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.Merge, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GameObjectActive, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
                 "keys": [
-                    "distinctPerFrame"
+                    "setActive"
                 ],
                 "values": [
                     {
                         "type": {
                             "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                         },
-                        "objectInternal": "true"
+                        "objectInternal": "false"
                     }
                 ]
             },
             "positionInternal": {
-                "x": 920.0,
-                "y": -1112.0
+                "x": 1927.0,
+                "y": -425.0
+            }
+        },
+        {
+            "idInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.InvokeOnlyOnce, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1251.0,
+                "y": -178.0
+            }
+        },
+        {
+            "idInternal": "13c7aabc-a3d2-4c1b-9780-edc7d81902a5",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1025.0,
+                "y": -362.0
             }
         }
     ],
@@ -1415,16 +1430,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
-                "portNameInternal": "gameObject"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
-                "portNameInternal": "object"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "48e2f86a-890a-423d-8972-7ac817c03c92",
                 "portNameInternal": "!Instance"
             },
@@ -1481,16 +1486,6 @@
             "inputConnection": {
                 "nodeIdInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
                 "portNameInternal": "condition"
-            }
-        },
-        {
-            "outputConnection": {
-                "nodeIdInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
-                "portNameInternal": "false"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
-                "portNameInternal": "InstantiatePlayerDeathParticles"
             }
         },
         {
@@ -1565,12 +1560,22 @@
         },
         {
             "outputConnection": {
+                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
+                "portNameInternal": "gameObject"
+            }
+        },
+        {
+            "outputConnection": {
                 "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
                 "portNameInternal": "OnPlayerDeathParticlesInstantiated"
             },
             "inputConnection": {
-                "nodeIdInternal": "427bdaa1-69e0-405f-874c-14e40d47dca3",
-                "portNameInternal": "Invoke"
+                "nodeIdInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
+                "portNameInternal": "Set"
             }
         },
         {
@@ -1579,8 +1584,38 @@
                 "portNameInternal": "false"
             },
             "inputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "out"
+            },
+            "inputConnection": {
                 "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
                 "portNameInternal": "RagDollDeath"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "out"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "InstantiatePlayerDeathParticles"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "13c7aabc-a3d2-4c1b-9780-edc7d81902a5",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerTransform"
             }
         }
     ],

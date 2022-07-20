@@ -10001,6 +10001,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: -5475051401550479605, guid: c00110a47335bb34f9e94a1a38a1d91a, type: 3}
+  delegateUpdate: 1
+  delegateFixedUpdate: 0
+  delegateLateUpdate: 0
   parameterInstancesInternal:
     keys:
     - 8cb449eb-bc92-4ecc-8363-a0e3b99a84f1

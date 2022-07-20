@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7897053418195559858, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: m_Name
-      value: Zombie Deadly
+      value: Zombie End Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559864, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: m_RootOrder
@@ -55,9 +55,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559871, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: attackRate
@@ -69,23 +73,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: currentHealth
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: runSpeedMultiplier
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: walkSpeedMultiplier
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: movementBoundsLeft.x
-      value: 410
+      value: 161
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: movementBoundsRight.x
-      value: 425
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559874, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: m_Radius
@@ -94,6 +98,30 @@ PrefabInstance:
     - target: {fileID: 7897053418195559874, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631056597827278, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631056597827278, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631056597827278, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631057406082257, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631057406082257, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9014631057406082257, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}

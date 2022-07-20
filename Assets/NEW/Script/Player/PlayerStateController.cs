@@ -20,6 +20,7 @@ namespace ScriptGG
         // Death
         public GameObject playerDeathParticlesPrefab;
         public Transform playerDeathTransform;
+        public Transform playerTransform;
         public event Action OnPlayerDeathParticlesInstantiated;
 
         public void ApplyHealthChange()
@@ -66,21 +67,30 @@ namespace ScriptGG
         public void RagDollDeath()
         {
             // TODO handle in Controller with gamegraph
-            var ragDollModel = UnityEngine.Object.Instantiate(state.ragDollDead, playerDeathTransform.position, Quaternion.identity) as GameObject;
-            var ragDollJoints = playerDeathTransform.Find("master").GetComponentsInChildren<Transform>();
-            var zombieJoints = ragDollModel.transform.Find("master").GetComponentsInChildren<Transform>();
+            var ragDoll = UnityEngine.Object.Instantiate(state.ragDollDead, playerDeathTransform.position, Quaternion.identity);
+            var originalJoints = playerTransform.GetComponentsInChildren<Transform>();
+            var ragDollJoints = ragDoll.GetComponentsInChildren<Transform>();
 
-            foreach (var ragDollJoint in ragDollJoints)
+            foreach (var originalJoin in originalJoints)
             {
-                foreach (var zombieJoint in zombieJoints)
+                var found = false;
+
+                foreach (var ragDollJoint in ragDollJoints)
                 {
-                    if (zombieJoint.name != ragDollJoint.name) continue;
-                    ragDollJoint.position = zombieJoint.position;
-                    ragDollJoint.rotation = zombieJoint.rotation;
+                    if (ragDollJoint.name != originalJoin.name)
+                        continue;
+
+                    found = true;
+                    ragDollJoint.position = originalJoin.position;
+                    ragDollJoint.rotation = originalJoin.rotation;
                     break;
                 }
+
+                if (found)
+                    break;
             }
-            ragDollModel.transform.rotation = playerDeathTransform.transform.Find("master").rotation;
+
+            ragDoll.transform.rotation = playerTransform.rotation;
         }
     }
 }
