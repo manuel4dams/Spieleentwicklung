@@ -25,15 +25,15 @@ Screenshot referenz:  https://screens.famboot.de/michi/2022-07-19_20-59-34.png
 
 
 Level
-* 1 - Die Plattformen sollten ein bisschen näher zueinander
+* 1 - ~~Die Plattformen sollten ein bisschen näher zueinander~~
       https://docs.unity3d.com/ScriptReference/Transform-hasChanged.html
       Alternativ ein Editor Script machen (MonoBehaviour mit MyBox \[ButtonMethod\])
 * 1 - ~~Im Menu blocken sich die 2 Zombies im Käfig~~
-* 1 - Der Zombie nach dem ersten Haus beim Feuer ist ein bisschen arg im Vordergrund
-* 2 - Mehr Kisten als Obstacles wären gut
-* 1 - Bei der 3. Plattform sind 5 Zombies bei einander. War bei mir gerade jedes mal so
-* 3 - Beim letzten Haus fehlt noch Feuerwerk und irgendiwe läuft man da gegen die Türe
-* 1 - Der Zombie nach dem ersten Haus läuft immer gegen das Fass
+* 1 - ~~Der Zombie nach dem ersten Haus beim Feuer ist ein bisschen arg im Vordergrund~~
+* 2 - ~~Mehr Kisten als Obstacles wären gut~~
+* 1 - ~~Bei der 3. Plattform sind 5 Zombies bei einander. War bei mir gerade jedes mal so~~
+* 3 - Beim letzten Haus fehlt noch Feuerwerk ~~und irgendiwe läuft man da gegen die Türe~~
+* 1 - ~~Der Zombie nach dem ersten Haus läuft immer gegen das Fass~~
 * 2 - ~~Ich würde die Zombies am Ende all links spawnen lassen, und dann mit dem ewig großen Collider zum Spieler rennen. Dann kommen die schön der Reihe nach da rein~~
       ~~Vielleicht auch deren Walk Speed reduzieren~~
       ~~Und man sollte die Zombies langsamer Spawnen~~
