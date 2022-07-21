@@ -130,6 +130,7 @@ MonoBehaviour:
   speed: 25
   lifeTime: 2
   explosionSound: {fileID: 8300000, guid: fd6917ec39ff3b7488888ef63d8d3c87, type: 3}
+  explosionLoudness: 3
   rigidbody: {fileID: 5518600324068420236}
   explosion: {fileID: 297262251776650037, guid: 0b0bb13c4b1d3de47aee2ff8d7bcc7ef, type: 3}
 --- !u!1 &5518600326110520554

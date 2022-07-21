@@ -11,6 +11,7 @@ namespace ScriptGG
 
         [Header("Grenade Audio")] //
         public AudioClip explosionSound;
+        public float explosionLoudness = 1f;
 
         [Header("References")] //
         public new Rigidbody rigidbody;
@@ -51,7 +52,7 @@ namespace ScriptGG
 
             // Spawn fire at impact location
             Instantiate(explosion, position, explosion.transform.rotation);
-            AudioSource.PlayClipAtPoint(explosionSound, position, 2f);
+            AudioSource.PlayClipAtPoint(explosionSound, position, explosionLoudness);
 
             // Finally destroy the object, because we hit something
             Destroy(gameObject);
