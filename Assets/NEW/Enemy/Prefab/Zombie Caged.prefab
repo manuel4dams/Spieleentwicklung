@@ -60,6 +60,10 @@ PrefabInstance:
       value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
+      propertyPath: runSpeedMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897053418195559873, guid: 94acc8a4e02617e44b0627099a36fa87, type: 3}
       propertyPath: movementBoundsLeft.x
       value: 38
       objectReference: {fileID: 0}

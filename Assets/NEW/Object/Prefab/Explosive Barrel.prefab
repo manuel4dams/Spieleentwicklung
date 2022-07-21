@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 6550428447634291538}
   - component: {fileID: 6550428447634291547}
   - component: {fileID: 6550428447634291546}
+  - component: {fileID: 3323916606611522566}
   m_Layer: 7
   m_Name: Explosive Barrel
   m_TagString: Barrel
@@ -663,3 +664,22 @@ MonoBehaviour:
   objectGameObject: {fileID: 6550428447634291541}
   healthSlider: {fileID: 5509400101583376698}
   explosionParticlePrefab: {fileID: 297262251776650037, guid: 0b0bb13c4b1d3de47aee2ff8d7bcc7ef, type: 3}
+--- !u!114 &3323916606611522566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6550428447634291541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc6fe63198b480faa1248a237b47759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  autoAssignSelfTransform: 1
+  source: {fileID: 0}
+  autoAssignMainCameraTransform: 1
+  useX: 0
+  useY: 1
+  useZ: 0

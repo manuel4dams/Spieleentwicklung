@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 626,
+    "serializedVersion": 633,
     "parameters": [
         {
             "idInternal": "673fb409-266d-4ede-b699-ed26f4a0d89e",
@@ -45,16 +45,25 @@
         {
             "idInternal": "b2039d3c-b68e-4440-9a0e-fe630d7b4853",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandlerNew, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandler, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
-                "keys": [],
-                "values": []
+                "keys": [
+                    "registerOnStart"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
             },
             "positionInternal": {
-                "x": 808.0,
-                "y": 284.0
+                "x": 803.0,
+                "y": 286.0
             }
         },
         {
@@ -68,14 +77,14 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 467.0
+                "x": 1084.0,
+                "y": 492.0
             }
         },
         {
             "idInternal": "0dc6780a-1ac4-45c0-89d4-9ca54537e1c3",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.PlayClipAtPoint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.PlayClipAtPoint, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
@@ -192,7 +201,7 @@
                 ]
             },
             "positionInternal": {
-                "x": 1258.0,
+                "x": 1356.0,
                 "y": 354.0
             }
         },
@@ -231,8 +240,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 735.0,
-                "y": 580.0
+                "x": 813.0,
+                "y": 586.0
             }
         },
         {

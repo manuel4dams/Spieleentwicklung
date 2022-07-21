@@ -172,14 +172,14 @@
       "url": "https://packages.unity.com"
     },
     "de.michiruf.gamegraph": {
-      "version": "https://github.com/michiruf/GameGraph.git?path=/GameGraph#upgrade-2021",
+      "version": "https://github.com/michiruf/GameGraph.git?path=/GameGraph#312111783d6deaa246d6e6d874ec1a3a37dc6164",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.ide.rider": "1.1.4",
         "com.unity.ide.vscode": "1.1.4"
       },
-      "hash": "9b36294ae04baec87a2ddfe34660bcde8ba41358"
+      "hash": "312111783d6deaa246d6e6d874ec1a3a37dc6164"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

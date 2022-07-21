@@ -58,14 +58,20 @@ namespace ScriptGG
             // Running
             if (shellRun)
             {
-                rigidbody.MovePosition(Vector3.MoveTowards(originY0, positionY0, zombieState.runSpeedMultiplier * Time.deltaTime));
+                rigidbody.MovePosition(
+                    Vector3.MoveTowards(originY0, positionY0, zombieState.runSpeedMultiplier * Time.deltaTime)
+                        .SetY(rigidbody.transform.position.y)
+                );
                 isWalking = false;
                 isRunning = true;
             }
             // Walking
             else
             {
-                rigidbody.MovePosition(Vector3.MoveTowards(originY0, positionY0, zombieState.walkSpeedMultiplier * Time.deltaTime));
+                rigidbody.MovePosition(
+                    Vector3.MoveTowards(originY0, positionY0, zombieState.walkSpeedMultiplier * Time.deltaTime)
+                        .SetY(rigidbody.transform.position.y)
+                );
                 isWalking = true;
                 isRunning = false;
             }

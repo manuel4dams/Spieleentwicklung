@@ -20,6 +20,7 @@ namespace ScriptGG
         // Death
         public GameObject playerDeathParticlesPrefab;
         public Transform playerDeathTransform;
+        public Transform playerTransform;
         public event Action OnPlayerDeathParticlesInstantiated;
 
         public void ApplyHealthChange()
@@ -61,6 +62,35 @@ namespace ScriptGG
         public void PlayHitSound()
         {
             state.audioSource.Play();
+        }
+
+        public void RagDollDeath()
+        {
+            // TODO handle in Controller with gamegraph
+            var ragDoll = UnityEngine.Object.Instantiate(state.ragDollDead, playerDeathTransform.position, Quaternion.identity);
+            var originalJoints = playerTransform.GetComponentsInChildren<Transform>();
+            var ragDollJoints = ragDoll.GetComponentsInChildren<Transform>();
+
+            foreach (var originalJoin in originalJoints)
+            {
+                var found = false;
+
+                foreach (var ragDollJoint in ragDollJoints)
+                {
+                    if (ragDollJoint.name != originalJoin.name)
+                        continue;
+
+                    found = true;
+                    ragDollJoint.position = originalJoin.position;
+                    ragDollJoint.rotation = originalJoin.rotation;
+                    break;
+                }
+
+                if (found)
+                    break;
+            }
+
+            ragDoll.transform.rotation = playerTransform.rotation;
         }
     }
 }

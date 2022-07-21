@@ -6,6 +6,7 @@ namespace ScriptGG
     {
         [Header("Bullet parameters")] //
         public float maxDistance;
+        public float muzzleOffsetFactor;
 
         [Header("References")] //
         public LineRenderer lineRenderer;
@@ -15,7 +16,7 @@ namespace ScriptGG
             var position = origin.position;
             var shootRay = new Ray
             {
-                origin = position,
+                origin = position + direction.normalized * muzzleOffsetFactor,
                 direction = direction
             };
             lineRenderer.SetPosition(0, position);

@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 239,
+    "serializedVersion": 245,
     "parameters": [
         {
             "idInternal": "4851eaa1-3ca7-4d69-975a-b654dc79b427",
@@ -334,6 +334,30 @@
                 "x": 183.0,
                 "y": 756.0
             }
+        },
+        {
+            "idInternal": "5b64c99c-23c3-47e4-8aaf-e323e9d9316e",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "updateType"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater+UpdaterType, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"FixedUpdate\""
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": -32.0,
+                "y": 300.0
+            }
         }
     ],
     "edges": [
@@ -465,6 +489,16 @@
             "inputConnection": {
                 "nodeIdInternal": "d1eadf38-78cb-4e31-b751-0a63c241ee0e",
                 "portNameInternal": "followTrigger"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5b64c99c-23c3-47e4-8aaf-e323e9d9316e",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "d1eadf38-78cb-4e31-b751-0a63c241ee0e",
+                "portNameInternal": "PerformDoEvents"
             }
         }
     ],

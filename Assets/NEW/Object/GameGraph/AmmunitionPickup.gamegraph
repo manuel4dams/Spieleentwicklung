@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 549,
+    "serializedVersion": 559,
     "parameters": [
         {
             "idInternal": "673fb409-266d-4ede-b699-ed26f4a0d89e",
@@ -45,12 +45,21 @@
         {
             "idInternal": "b2039d3c-b68e-4440-9a0e-fe630d7b4853",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandlerNew, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandler, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
-                "keys": [],
-                "values": []
+                "keys": [
+                    "registerOnStart"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
             },
             "positionInternal": {
                 "x": 817.0,
@@ -68,8 +77,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 735.0,
-                "y": 569.0
+                "x": 817.0,
+                "y": 592.0
             }
         },
         {
@@ -92,8 +101,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1288.0,
-                "y": 354.0
+                "x": 1387.0,
+                "y": 342.0
             }
         },
         {
@@ -107,8 +116,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 480.0
+                "x": 1111.0,
+                "y": 479.0
             }
         },
         {
@@ -138,7 +147,7 @@
         {
             "idInternal": "0dc6780a-1ac4-45c0-89d4-9ca54537e1c3",
             "typeInternal": {
-                "assemblyQualifiedName": "GameGraph.Common.Blocks.PlayClipAtPoint, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.PlayClipAtPoint, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "parameterIdInternal": "",
             "propertyValuesInternal": {
@@ -207,8 +216,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 1242.0
+                "x": 1046.0,
+                "y": 1331.0
             }
         },
         {
@@ -246,8 +255,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 1095.0
+                "x": 1046.0,
+                "y": 1184.0
             }
         }
     ],

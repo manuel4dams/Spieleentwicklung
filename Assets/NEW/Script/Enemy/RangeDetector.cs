@@ -2,13 +2,14 @@ using System;
 using GameGraph;
 using GameGraph.Common.Helper;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace ScriptGG
 {
     [GameGraph]
     [UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
-    public class RangeDetector : IStartHook, IUpdateHook
+    public class RangeDetector : IStartHook
     {
         public Collider followTrigger;
         public Collider stopFollowTrigger;
@@ -42,12 +43,14 @@ namespace ScriptGG
             HandleFlags(false, false);
         }
 
-        [ExcludeFromGraph]
-        public void Update()
+        public void PerformDoEvents()
         {
-            if(attacking)
+            if (!objectToInteract.IsUnityNull() && !objectToInteract.activeSelf)
+                HandleFlags(false, false);
+
+            if (attacking)
                 doAttack?.Invoke();
-            if(following)
+            if (following)
                 doFollow?.Invoke();
             if (nothing)
                 doNothing?.Invoke();
@@ -73,7 +76,7 @@ namespace ScriptGG
                 objectToInteract = c.gameObject;
                 transformToInteract = c.transform;
 
-                HandleFlags(false, attacking);
+                HandleFlags(false, false);
             });
         }
 
@@ -88,7 +91,6 @@ namespace ScriptGG
                 transformToInteract = c.transform;
 
                 previousWasFollowing = following;
-                Debug.Log($"PREVIOUS ${previousWasFollowing}");
                 HandleFlags(followDuringAttack && following, true);
             });
             stopAttackTrigger.AddOnTriggerExitListener(c =>
@@ -99,7 +101,6 @@ namespace ScriptGG
                 objectToInteract = c.gameObject;
                 transformToInteract = c.transform;
 
-                Debug.Log($"PREVIOUS ${previousWasFollowing}");
                 HandleFlags(followDuringAttack ? following : previousWasFollowing, false);
             });
         }
@@ -113,14 +114,14 @@ namespace ScriptGG
         {
             var newNothing = !newFollowing && !newAttacking;
 
-            if(!newAttacking && attacking)
+            if (!newAttacking && attacking)
                 endAttack?.Invoke();
-            if(!newFollowing && following)
+            if (!newFollowing && following)
                 endFollow?.Invoke();
-            if(!newNothing && nothing)
+            if (!newNothing && nothing)
                 endDoNothing?.Invoke();
 
-            if(newNothing && !nothing)
+            if (newNothing && !nothing)
                 startDoNothing?.Invoke();
             if (newFollowing && !following)
                 startFollow?.Invoke();

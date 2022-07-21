@@ -5060,9 +5060,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 917b314ca95b4aca95efd16056851d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0.5
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 128
   maxDistance: 20
+  muzzleOffsetFactor: -1
   lineRenderer: {fileID: 9056474415248784456}

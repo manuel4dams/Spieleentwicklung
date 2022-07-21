@@ -16,6 +16,9 @@ namespace ScriptGG
         {
             currentWeapon.weapons.ForEach(part =>
             {
+                if (Time.timeScale == 0f)
+                    return;
+
                 if (Input.GetAxisRaw(part.keyBind) > 0f)
                     // TODO Maybe involve the mouse position later
                     //      Then we need to call this method from the PlayerWeaponController

@@ -19,7 +19,7 @@ namespace ScriptGG
         void Start()
         {
             age = Time.realtimeSinceStartup + lifeTime;
-            rigidbody.AddForce(direction * speed, ForceMode.Impulse);
+            rigidbody.AddForce(direction * speed, ForceMode.VelocityChange);
         }
 
         private void Update()
