@@ -38,7 +38,6 @@ namespace ScriptGG
         {
             isWalking = false;
             isRunning = false;
-            FinalizeRotation();
         }
 
         private void Move(Vector3 position)
@@ -81,19 +80,9 @@ namespace ScriptGG
 
         private void Rotate(Vector3 direction)
         {
-            var targetRotation = Quaternion.LookRotation(Vector3.forward * Mathf.Sign(direction.x));
+            var targetRotation = Quaternion.LookRotation(direction);
             var result = Quaternion.RotateTowards(rigidbody.transform.rotation, targetRotation, zombieState.turnSpeed);
             rigidbody.transform.rotation = result;
-        }
-
-        private void FinalizeRotation()
-        {
-            // Rotate towards the closest direction from the point where the player is currently facing to fully turn left or right if we stop
-            // movement during turn phase
-            var directionLeftOrRight = Mathf.Sign(rigidbody.transform.forward.z);
-            var quaternionLeftOrRight = Quaternion.LookRotation(Vector3.forward * directionLeftOrRight);
-            var resultLeftOrRight = Quaternion.RotateTowards(rigidbody.transform.rotation, quaternionLeftOrRight, zombieState.turnSpeed);
-            rigidbody.transform.rotation = resultLeftOrRight;
         }
     }
 }

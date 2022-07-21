@@ -1,4 +1,4 @@
-Screenshot referenz:  https://screens.famboot.de/michi/2022-07-19_20-59-34.png
+Screenshot referenz: https://screens.famboot.de/michi/2022-07-19_20-59-34.png
 
 * 1 - ~~Man kriegt noch Dmg Sound wenn man tot ist~~
       ~~Du kannst da einfach bei dem PlaySoundAtPoint ne if alive davor machen~~
@@ -38,3 +38,17 @@ Level
       ~~Vielleicht auch deren Walk Speed reduzieren~~
       ~~Und man sollte die Zombies langsamer Spawnen~~
 * 1 - ~~Zombies werden außerhalb der Box gespawned, wenn das Spiel endet~~
+
+
+
+Iteration 2
+* ~~Also die Kisten, die einem die Sicht blocken sind viiiiel zu viele~~
+  ~~Man checkt garnicht durch~~
+  ~~Mit ner Granate haben wir uns gerade einen Stein in den Weg geballert, sofern der nicht eh schon dort ist~~
+* ~~Explosion vom Fass ist zu leise~~ (oder zu dumpf)
+* ~~Die Hitbox vom Flammenwerfer ist zu breit. Man steckt manchmal "off-path" (also nicht auf unserer z beschränkten Ebene) Sachen in Brandt und stirbt dann, obwohl man an dem Objekt vor sich nicht dran war~~
+* Evtl. macht ein Feuerwerk noch Sinn?
+* ~~Nach dem ersten Haus, die Zombies klemmen wieder komplett~~
+* Die Zombies relativ nah an der Laufebene irritieren noch immer
+* ~~Den Nebel überm letzten Haus find ich komisch~~
+* ~~Zombie Rotation nicht nur links/rechts~~
