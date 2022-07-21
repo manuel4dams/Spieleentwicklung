@@ -1,0 +1,230 @@
+{
+    "serializedVersion": 110,
+    "parameters": [
+        {
+            "idInternal": "8cb449eb-bc92-4ecc-8363-a0e3b99a84f1",
+            "nameInternal": "Fire",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.Fire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": true
+        },
+        {
+            "idInternal": "c0ba9583-d3c9-44c5-a97c-6568564b5b5b",
+            "nameInternal": "Collider",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        }
+    ],
+    "nodes": [
+        {
+            "idInternal": "5c626db9-8616-44b4-a535-d65d8728d1cd",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.DamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "damage"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1001.0,
+                "y": 386.0
+            }
+        },
+        {
+            "idInternal": "b5bd3d34-312c-4d80-9cda-1f0ee9e195d2",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.Fire, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "8cb449eb-bc92-4ecc-8363-a0e3b99a84f1",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 364.0,
+                "y": 508.0
+            }
+        },
+        {
+            "idInternal": "278354c7-bcd9-45d6-b7a6-13bcc6e754d8",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.TriggerHandler, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "registerOnStart"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 364.0,
+                "y": 218.0
+            }
+        },
+        {
+            "idInternal": "51bf19ab-4fa0-4180-95b4-08016a474887",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Collider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "c0ba9583-d3c9-44c5-a97c-6568564b5b5b",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 222.0,
+                "y": 359.0
+            }
+        },
+        {
+            "idInternal": "2c201a97-f82a-4395-8c38-9ff6b866c061",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GetGameObject, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 671.0,
+                "y": 452.0
+            }
+        },
+        {
+            "idInternal": "f6954801-27a6-4f46-accf-abed7b5a501a",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Timer, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "duration",
+                    "avoidDuplicateStart"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "true"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 697.0,
+                "y": 218.0
+            }
+        }
+    ],
+    "edges": [
+        {
+            "outputConnection": {
+                "nodeIdInternal": "51bf19ab-4fa0-4180-95b4-08016a474887",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "278354c7-bcd9-45d6-b7a6-13bcc6e754d8",
+                "portNameInternal": "collider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b5bd3d34-312c-4d80-9cda-1f0ee9e195d2",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2c201a97-f82a-4395-8c38-9ff6b866c061",
+                "portNameInternal": "component"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "2c201a97-f82a-4395-8c38-9ff6b866c061",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5c626db9-8616-44b4-a535-d65d8728d1cd",
+                "portNameInternal": "source"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b5bd3d34-312c-4d80-9cda-1f0ee9e195d2",
+                "portNameInternal": "damage"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5c626db9-8616-44b4-a535-d65d8728d1cd",
+                "portNameInternal": "damage"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "278354c7-bcd9-45d6-b7a6-13bcc6e754d8",
+                "portNameInternal": "hitGameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5c626db9-8616-44b4-a535-d65d8728d1cd",
+                "portNameInternal": "target"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "278354c7-bcd9-45d6-b7a6-13bcc6e754d8",
+                "portNameInternal": "onStay"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "f6954801-27a6-4f46-accf-abed7b5a501a",
+                "portNameInternal": "Start"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b5bd3d34-312c-4d80-9cda-1f0ee9e195d2",
+                "portNameInternal": "fireTickRate"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "f6954801-27a6-4f46-accf-abed7b5a501a",
+                "portNameInternal": "duration"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "f6954801-27a6-4f46-accf-abed7b5a501a",
+                "portNameInternal": "onEnd"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5c626db9-8616-44b4-a535-d65d8728d1cd",
+                "portNameInternal": "Fire"
+            }
+        }
+    ],
+    "autoSave": true
+}

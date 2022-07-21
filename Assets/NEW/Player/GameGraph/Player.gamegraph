@@ -1,0 +1,1623 @@
+{
+    "serializedVersion": 976,
+    "parameters": [
+        {
+            "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "nameInternal": "PlayerState",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": true
+        },
+        {
+            "idInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "nameInternal": "PlayerTransform",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "17d266c4-66f5-4be6-89a7-eea4846a70b0",
+            "nameInternal": "Rigidbody",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Rigidbody, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "6f19110d-1c7f-492a-969a-448360bbcc7e",
+            "nameInternal": "Animator",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "24287dcd-37bf-488e-bd8c-b8e01ff471be",
+            "nameInternal": "GroundCheckTransform",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "bdfe87ab-338d-477d-abcc-b14012fa60f7",
+            "nameInternal": "WeaponUIImage",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "6b65a84a-4b66-4b0c-911d-d8c3f1caa827",
+            "nameInternal": "HealthSlider",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "8c604c64-9477-47c3-ab84-7f4d7c7c85f8",
+            "nameInternal": "PlayerDeathParticlesPrefab",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "b29e630d-847b-4e6f-a4aa-dceb007d3171",
+            "nameInternal": "PlayerDeathTransform",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        }
+    ],
+    "nodes": [
+        {
+            "idInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerMovementController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "horizontalMovement",
+                    "shellSneak",
+                    "shellJump",
+                    "grounded"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1240.0,
+                "y": 312.0
+            }
+        },
+        {
+            "idInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.GroundedCheck, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 932.0,
+                "y": 593.0
+            }
+        },
+        {
+            "idInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerAnimation, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "sneaking",
+                    "grounded",
+                    "shooting",
+                    "MeleeAttack",
+                    "horizontalMovementSpeed"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1646.0,
+                "y": 899.0
+            }
+        },
+        {
+            "idInternal": "04c266d8-be3d-47d9-91f0-04a937392876",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1025.0,
+                "y": 773.0
+            }
+        },
+        {
+            "idInternal": "5060630d-00d3-4448-b519-f78fd7c80413",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Rigidbody, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "17d266c4-66f5-4be6-89a7-eea4846a70b0",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1056.0,
+                "y": 851.0
+            }
+        },
+        {
+            "idInternal": "e579be1f-31bd-4b1c-bfe2-29d05d3f54db",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 458.0,
+                "y": 401.0
+            }
+        },
+        {
+            "idInternal": "dc5bc129-d2c1-4714-b415-2fe4aada6e12",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "updateType"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater+UpdaterType, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"FixedUpdate\""
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 504.0,
+                "y": 209.0
+            }
+        },
+        {
+            "idInternal": "d4c82f50-8f12-45d6-9d42-5ae45e2104f0",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1185.0,
+                "y": 958.0
+            }
+        },
+        {
+            "idInternal": "05ef98a3-c4e1-403c-a101-009c4f2c60ce",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.InputDetector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 981.0,
+                "y": 345.0
+            }
+        },
+        {
+            "idInternal": "8af8b2c9-1d67-4117-8400-853e9648eec9",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "24287dcd-37bf-488e-bd8c-b8e01ff471be",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 559.0,
+                "y": 1169.0
+            }
+        },
+        {
+            "idInternal": "b65ab389-5259-4dca-b106-a001c8ce35d3",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 407.0,
+                "y": 1023.0
+            }
+        },
+        {
+            "idInternal": "69075125-0452-4036-adea-ee2d280ec6a2",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.If, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "condition"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 904.0,
+                "y": 209.0
+            }
+        },
+        {
+            "idInternal": "5432f41b-cb52-4a2e-9e9b-a4d400f25e74",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerShootController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "shootDirection"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":0,\"y\":0,\"z\":0}"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1326.0,
+                "y": 1942.0
+            }
+        },
+        {
+            "idInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerWeaponController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "restockAmmunitionAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 753.0,
+                "y": 2015.0
+            }
+        },
+        {
+            "idInternal": "c9abac81-de50-4a5e-92ad-3868086c28c4",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.InputDetector, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 395.0,
+                "y": 1814.0
+            }
+        },
+        {
+            "idInternal": "3d8329b8-637f-4ba4-ab3b-900e2dfc88e4",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Starter, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 489.0,
+                "y": 1736.0
+            }
+        },
+        {
+            "idInternal": "a629b0d0-a617-45a3-8397-fa75999ce3c1",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 708.0,
+                "y": 1843.0
+            }
+        },
+        {
+            "idInternal": "43014673-3d1e-458e-b121-7a0d696b5f61",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.TransformGetData, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 397.0,
+                "y": 2916.0
+            }
+        },
+        {
+            "idInternal": "d1f952fc-1aef-43fc-a29d-c0f1a5119f37",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 254.0,
+                "y": 2916.0
+            }
+        },
+        {
+            "idInternal": "11595626-5201-4a4d-8a50-e8cd9be853b9",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 335.0,
+                "y": 2266.0
+            }
+        },
+        {
+            "idInternal": "b36ba824-5eb6-44ec-9256-100eb69ce371",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.QuaternionToDirection, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "input"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":1,\"y\":0,\"z\":0}"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 559.0,
+                "y": 2916.0
+            }
+        },
+        {
+            "idInternal": "dfccae15-5826-46eb-8e15-3a2c61b4a2eb",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "bdfe87ab-338d-477d-abcc-b14012fa60f7",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 436.0,
+                "y": 2718.0
+            }
+        },
+        {
+            "idInternal": "a4503582-b821-4e88-8105-4802be966f7f",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "6f19110d-1c7f-492a-969a-448360bbcc7e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1414.0,
+                "y": 1108.0
+            }
+        },
+        {
+            "idInternal": "c0d9a917-9ad2-458b-923a-ce7a74a3bbba",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.AmmunitionPickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "ammunitionAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 299.0,
+                "y": 2062.0
+            }
+        },
+        {
+            "idInternal": "7086a6d4-8602-4718-a425-07205edc0085",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.AmmunitionPickupResultEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "ammunitionPickedUp"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1609.0,
+                "y": 2266.0
+            }
+        },
+        {
+            "idInternal": "321637f6-3e61-4196-93de-fcca3782257a",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GetGameObject, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1397.0,
+                "y": 2531.0
+            }
+        },
+        {
+            "idInternal": "91497730-b6fb-4246-9794-840833c3b3aa",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1221.0,
+                "y": 2566.0
+            }
+        },
+        {
+            "idInternal": "5bb74eeb-c0be-4df9-addd-fbcc91366c61",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": -64.0,
+                "y": 2310.0
+            }
+        },
+        {
+            "idInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerStateController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "healthAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1399.0,
+                "y": -720.0
+            }
+        },
+        {
+            "idInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 667.0,
+                "y": -821.0
+            }
+        },
+        {
+            "idInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.HealthPickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "healthAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 641.0,
+                "y": -1044.0
+            }
+        },
+        {
+            "idInternal": "3b139bc6-269a-4e2b-b1a8-eed15578afac",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.HealthPickupResultEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "healthPickedUp"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1927.0,
+                "y": -1008.0
+            }
+        },
+        {
+            "idInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GetGameObject, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 985.0,
+                "y": -645.0
+            }
+        },
+        {
+            "idInternal": "292c6fca-a182-47fc-8fbb-3e9986ad1a7c",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "6b65a84a-4b66-4b0c-911d-d8c3f1caa827",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1323.0,
+                "y": -1995.0
+            }
+        },
+        {
+            "idInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.SliderSetValue, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "value"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1496.0,
+                "y": -2118.0
+            }
+        },
+        {
+            "idInternal": "f3564296-115b-41d0-8d85-8cb9913866ce",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1194.0,
+                "y": -1917.0
+            }
+        },
+        {
+            "idInternal": "4c04024f-d8dd-4b6b-9f91-2a59fe7d9b24",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1100.0,
+                "y": -2141.0
+            }
+        },
+        {
+            "idInternal": "72c3c9b4-cd73-4dac-be78-4ecefe705a7c",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 616.0,
+                "y": -165.0
+            }
+        },
+        {
+            "idInternal": "48e2f86a-890a-423d-8972-7ac817c03c92",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "8c604c64-9477-47c3-ab84-7f4d7c7c85f8",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 957.0,
+                "y": -518.0
+            }
+        },
+        {
+            "idInternal": "0f34c43f-4e55-4ffb-95fa-68b87b039da4",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "b29e630d-847b-4e6f-a4aa-dceb007d3171",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 988.0,
+                "y": -440.0
+            }
+        },
+        {
+            "idInternal": "c6a51606-8978-4eff-9fd2-e6f98be509bc",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.DamageEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "damage"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 2552.0,
+                "y": -1008.0
+            }
+        },
+        {
+            "idInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerStateController, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "healthAmount"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 2990.0,
+                "y": -804.0
+            }
+        },
+        {
+            "idInternal": "17397a32-42e3-40c0-9783-a702256d8878",
+            "typeInternal": {
+                "assemblyQualifiedName": "ScriptGG.PlayerState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 2482.0,
+                "y": -645.0
+            }
+        },
+        {
+            "idInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.If, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "condition"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 957.0,
+                "y": -199.0
+            }
+        },
+        {
+            "idInternal": "14d1d1f1-c3f0-4363-a90b-413251551a17",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "updateType"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "GameGraph.Common.Blocks.Updater+UpdaterType, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"FixedUpdate\""
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 2400.0,
+                "y": -791.0
+            }
+        },
+        {
+            "idInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.GameObjectActive, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "setActive"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1927.0,
+                "y": -425.0
+            }
+        },
+        {
+            "idInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.InvokeOnlyOnce, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1251.0,
+                "y": -178.0
+            }
+        },
+        {
+            "idInternal": "13c7aabc-a3d2-4c1b-9780-edc7d81902a5",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "2486140a-7e58-4c1f-867d-ecc853a30db2",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1025.0,
+                "y": -362.0
+            }
+        }
+    ],
+    "edges": [
+        {
+            "outputConnection": {
+                "nodeIdInternal": "04c266d8-be3d-47d9-91f0-04a937392876",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "playerTransform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5060630d-00d3-4448-b519-f78fd7c80413",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "rigidbody"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "isSneaking"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "sneaking"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "currentHorizontalMovementSpeed"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "horizontalMovementSpeed"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d4c82f50-8f12-45d6-9d42-5ae45e2104f0",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "Handle"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "05ef98a3-c4e1-403c-a101-009c4f2c60ce",
+                "portNameInternal": "sneaking"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "shellSneak"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "05ef98a3-c4e1-403c-a101-009c4f2c60ce",
+                "portNameInternal": "jumping"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "shellJump"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "05ef98a3-c4e1-403c-a101-009c4f2c60ce",
+                "portNameInternal": "horizontal"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "horizontalMovement"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "8af8b2c9-1d67-4117-8400-853e9648eec9",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "groundCheckOrigin"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b65ab389-5259-4dca-b106-a001c8ce35d3",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "Check"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "dc5bc129-d2c1-4714-b415-2fe4aada6e12",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "69075125-0452-4036-adea-ee2d280ec6a2",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "e579be1f-31bd-4b1c-bfe2-29d05d3f54db",
+                "portNameInternal": "isAlive"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "69075125-0452-4036-adea-ee2d280ec6a2",
+                "portNameInternal": "condition"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "69075125-0452-4036-adea-ee2d280ec6a2",
+                "portNameInternal": "true"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "Move"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "e579be1f-31bd-4b1c-bfe2-29d05d3f54db",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "playerState"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "playerState"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "playerState"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c9abac81-de50-4a5e-92ad-3868086c28c4",
+                "portNameInternal": "swapWeaponPressed"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "SwapWeapon"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "3d8329b8-637f-4ba4-ab3b-900e2dfc88e4",
+                "portNameInternal": "start"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "Init"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a629b0d0-a617-45a3-8397-fa75999ce3c1",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5432f41b-cb52-4a2e-9e9b-a4d400f25e74",
+                "portNameInternal": "DetectShootButton"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "currentWeapon"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5432f41b-cb52-4a2e-9e9b-a4d400f25e74",
+                "portNameInternal": "currentWeapon"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d1f952fc-1aef-43fc-a29d-c0f1a5119f37",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "43014673-3d1e-458e-b121-7a0d696b5f61",
+                "portNameInternal": "transform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "11595626-5201-4a4d-8a50-e8cd9be853b9",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "playerState"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "43014673-3d1e-458e-b121-7a0d696b5f61",
+                "portNameInternal": "rotation"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "b36ba824-5eb6-44ec-9256-100eb69ce371",
+                "portNameInternal": "quaternion"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b36ba824-5eb6-44ec-9256-100eb69ce371",
+                "portNameInternal": "direction"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "5432f41b-cb52-4a2e-9e9b-a4d400f25e74",
+                "portNameInternal": "shootDirection"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a4503582-b821-4e88-8105-4802be966f7f",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "animator"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c0d9a917-9ad2-458b-923a-ce7a74a3bbba",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "RestockAmmunition"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c0d9a917-9ad2-458b-923a-ce7a74a3bbba",
+                "portNameInternal": "ammunitionAmount"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "restockAmmunitionAmount"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c0d9a917-9ad2-458b-923a-ce7a74a3bbba",
+                "portNameInternal": "source"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7086a6d4-8602-4718-a425-07205edc0085",
+                "portNameInternal": "target"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "321637f6-3e61-4196-93de-fcca3782257a",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7086a6d4-8602-4718-a425-07205edc0085",
+                "portNameInternal": "source"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "restockHappened"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7086a6d4-8602-4718-a425-07205edc0085",
+                "portNameInternal": "ammunitionPickedUp"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "afterRestock"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "7086a6d4-8602-4718-a425-07205edc0085",
+                "portNameInternal": "Fire"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "91497730-b6fb-4246-9794-840833c3b3aa",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "321637f6-3e61-4196-93de-fcca3782257a",
+                "portNameInternal": "component"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "dfccae15-5826-46eb-8e15-3a2c61b4a2eb",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "weaponImage"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "5bb74eeb-c0be-4df9-addd-fbcc91366c61",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "UpdateAmmunitionSlider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+                "portNameInternal": "component"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "3b139bc6-269a-4e2b-b1a8-eed15578afac",
+                "portNameInternal": "source"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
+                "portNameInternal": "source"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "3b139bc6-269a-4e2b-b1a8-eed15578afac",
+                "portNameInternal": "target"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "OnHealthChanged"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "3b139bc6-269a-4e2b-b1a8-eed15578afac",
+                "portNameInternal": "Fire"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "healthChanged"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "3b139bc6-269a-4e2b-b1a8-eed15578afac",
+                "portNameInternal": "healthPickedUp"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
+                "portNameInternal": "healthAmount"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "healthAmount"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "292c6fca-a182-47fc-8fbb-3e9986ad1a7c",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
+                "portNameInternal": "slider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "f3564296-115b-41d0-8d85-8cb9913866ce",
+                "portNameInternal": "currentHealth"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
+                "portNameInternal": "value"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "4c04024f-d8dd-4b6b-9f91-2a59fe7d9b24",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
+                "portNameInternal": "SetValue"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "48e2f86a-890a-423d-8972-7ac817c03c92",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerDeathParticlesPrefab"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0f34c43f-4e55-4ffb-95fa-68b87b039da4",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerDeathTransform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c6a51606-8978-4eff-9fd2-e6f98be509bc",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "ApplyHealthChange"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c6a51606-8978-4eff-9fd2-e6f98be509bc",
+                "portNameInternal": "damage"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "healthAmount"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "72c3c9b4-cd73-4dac-be78-4ecefe705a7c",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+                "portNameInternal": "isAlive"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
+                "portNameInternal": "condition"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "14d1d1f1-c3f0-4363-a90b-413251551a17",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "UpdateHitIndicator"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c6a51606-8978-4eff-9fd2-e6f98be509bc",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "PlayHitSound"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "17397a32-42e3-40c0-9783-a702256d8878",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "59fc6f4b-c180-473f-a7cd-80d2db07f891",
+                "portNameInternal": "state"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "d52cf96c-879a-4fff-9999-f7596021a234",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "state"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "isGrounded"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "grounded"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "isGrounded"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "grounded"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b7d0ca4e-9091-495c-83b3-cb30cb3dee6e",
+                "portNameInternal": "OnEvent"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "ApplyHealthChange"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "0e0cdc60-4e8b-4449-b320-f87149bbfd06",
+                "portNameInternal": "gameObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
+                "portNameInternal": "gameObject"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "OnPlayerDeathParticlesInstantiated"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "43029dc7-46de-4962-b50a-d0d4406b91a7",
+                "portNameInternal": "Set"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "6615c367-11c1-4864-a3d9-82527d75268e",
+                "portNameInternal": "false"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "out"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "RagDollDeath"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "25f42617-76c2-4c1d-812a-ede9cf8ccc03",
+                "portNameInternal": "out"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "InstantiatePlayerDeathParticles"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "13c7aabc-a3d2-4c1b-9780-edc7d81902a5",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
+                "portNameInternal": "playerTransform"
+            }
+        }
+    ],
+    "autoSave": true
+}
