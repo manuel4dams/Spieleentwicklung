@@ -24,6 +24,12 @@ namespace ScriptGG
             SceneManager.LoadScene("MainGG");
         }
 
+        public void SwitchToSettings()
+        {
+            SetGameActive(true);
+            SceneManager.LoadScene("Settings");
+        }
+
         public void SetGameActive(bool active)
         {
             Time.timeScale = active ? 1f : 0f;

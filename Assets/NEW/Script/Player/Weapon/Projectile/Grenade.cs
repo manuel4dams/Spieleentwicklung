@@ -1,3 +1,4 @@
+using Project;
 using UnityEngine;
 
 namespace ScriptGG
@@ -52,7 +53,7 @@ namespace ScriptGG
 
             // Spawn fire at impact location
             Instantiate(explosion, position, explosion.transform.rotation);
-            AudioSource.PlayClipAtPoint(explosionSound, position, explosionLoudness);
+            MyAudioSource.PlayClipAtPoint(explosionSound, position, explosionLoudness);
 
             // Finally destroy the object, because we hit something
             Destroy(gameObject);

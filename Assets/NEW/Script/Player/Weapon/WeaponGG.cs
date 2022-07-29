@@ -40,6 +40,9 @@ namespace ScriptGG
             // Play equip sound
             if (equipSound)
             {
+                // Hot fix for weapon sound is way to loud
+                weaponAudioSource.GetComponent<Project.AudioConfiguration>().ConfigureVolume();
+                
                 weaponAudioSource.clip = equipSound;
                 weaponAudioSource.Play();
             }

@@ -1,6 +1,7 @@
 using System;
 using GameGraph;
 using MyBox;
+using Project;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -78,8 +79,8 @@ namespace ScriptGG
 
             if (currentHealth > 0)
                 return;
+            
             PlayDeathSound();
-
             RagDollDeath();
             Destroy(origin.gameObject);
         }
@@ -101,7 +102,7 @@ namespace ScriptGG
 
         public void PlayDeathSound()
         {
-            AudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
+            MyAudioSource.PlayClipAtPoint(deathSound, transform.position, 2f);
         }
 
         private void RagDollDeath()

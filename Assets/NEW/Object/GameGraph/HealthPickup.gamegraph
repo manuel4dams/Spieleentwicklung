@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 633,
+    "serializedVersion": 639,
     "parameters": [
         {
             "idInternal": "673fb409-266d-4ede-b699-ed26f4a0d89e",
@@ -39,7 +39,7 @@
             },
             "positionInternal": {
                 "x": 668.0,
-                "y": 434.0
+                "y": 433.6000061035156
             }
         },
         {
@@ -62,8 +62,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 803.0,
-                "y": 286.0
+                "x": 803.2000122070313,
+                "y": 285.6000061035156
             }
         },
         {
@@ -78,7 +78,7 @@
             },
             "positionInternal": {
                 "x": 1084.0,
-                "y": 492.0
+                "y": 492.0000305175781
             }
         },
         {
@@ -109,7 +109,7 @@
             },
             "positionInternal": {
                 "x": 1288.0,
-                "y": 891.0
+                "y": 890.3999633789063
             }
         },
         {
@@ -123,8 +123,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1722.0,
-                "y": 1039.0
+                "x": 1722.4000244140625,
+                "y": 1038.4000244140625
             }
         },
         {
@@ -138,8 +138,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 1242.0
+                "x": 1015.2000122070313,
+                "y": 1241.5999755859375
             }
         },
         {
@@ -162,8 +162,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1010.0,
-                "y": 891.0
+                "x": 1010.4000244140625,
+                "y": 890.3999633789063
             }
         },
         {
@@ -177,8 +177,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1015.0,
-                "y": 1095.0
+                "x": 1015.2000122070313,
+                "y": 1094.4000244140625
             }
         },
         {
@@ -202,7 +202,7 @@
             },
             "positionInternal": {
                 "x": 1356.0,
-                "y": 354.0
+                "y": 353.6000061035156
             }
         },
         {
@@ -225,8 +225,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 713.0,
-                "y": 891.0
+                "x": 712.7999877929688,
+                "y": 890.3999633789063
             }
         },
         {
@@ -240,8 +240,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 813.0,
-                "y": 586.0
+                "x": 812.7999877929688,
+                "y": 585.5999755859375
             }
         },
         {
@@ -255,8 +255,39 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 663.0,
-                "y": 1117.0
+                "x": 663.2000122070313,
+                "y": 1116.7999267578125
+            }
+        },
+        {
+            "idInternal": "cf1c4a85-cc7e-4193-a408-f51fe4b68ead",
+            "typeInternal": {
+                "assemblyQualifiedName": "Project.AudioConfigurationGameGraph, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "type",
+                    "loudnessFactor"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "Project.AudioConfiguration+Type, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"Sound\""
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0.4"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 878.4000244140625,
+                "y": 1410.4000244140625
             }
         }
     ],
@@ -409,6 +440,16 @@
             "inputConnection": {
                 "nodeIdInternal": "0dc6780a-1ac4-45c0-89d4-9ca54537e1c3",
                 "portNameInternal": "clip"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "cf1c4a85-cc7e-4193-a408-f51fe4b68ead",
+                "portNameInternal": "volume"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "0dc6780a-1ac4-45c0-89d4-9ca54537e1c3",
+                "portNameInternal": "volume"
             }
         }
     ],

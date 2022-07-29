@@ -1,5 +1,6 @@
 using GameGraph;
 using JetBrains.Annotations;
+using Project;
 using UnityEngine;
 
 namespace ScriptGG
@@ -28,7 +29,7 @@ namespace ScriptGG
 
         public void PlayHitSound()
         {
-            AudioSource.PlayClipAtPoint(hitSound, objectTransform.position, hitVolume);
+            MyAudioSource.PlayClipAtPoint(hitSound, objectTransform.position, hitVolume);
         }
     }
 }
