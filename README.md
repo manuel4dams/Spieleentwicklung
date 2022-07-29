@@ -2,10 +2,11 @@
 
 ## Feedback offiziell 29.07.2022
 
-* 1 @ Michi - Einstellungsmenu (Gamma, Sound)
+* ~~1 @ Michi - Einstellungsmenu (Gamma, Sound)~~
 * 0 - Spieler sieht man bisschen schlecht -> Lichtquelle geben
   1 - Headlight! Eventuell Vignette und alles heller?
-* 1 @ Michi - Ganz dunkles Licht von unten nach oben stahlen mit sehr dunklem Grün (fill Light)
+* ~~1 @ Michi - Ganz dunkles Licht von unten nach oben stahlen mit sehr dunklem Grün (fill Light)~~
+  Hat nur so mittel geklappt (mittelhelles Blau)
 * 1 - Letzter Raum kann man durch die Türe glitchen (Türe löschen)
 * 0 - Kein Physikalischen Sprung. Eine Kraft für hoch, langsamerer Fall
   0 - Animation ist komisch mit dem Bein
