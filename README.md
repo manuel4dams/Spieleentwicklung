@@ -17,8 +17,9 @@
 * 0 - Barrel lässt einen über Zombies glitchen
 * 1 - Nebel bei den normalen Schluchten anheben
 * 1 - Mündungen sind oberhalb der Kiste -> Kiste hoch skalieren
-* 1 @ Michi - Spielen sollte nicht von Kisten ab-bouncen (fühlt sich bisschen strange an)
-  Passiert, wenn der Spieler von weiter weg auf Kisten springt
+* ~~1 @ Michi - Spielen sollte nicht von Kisten ab-bouncen (fühlt sich bisschen strange an)~~
+  ~~Passiert, wenn der Spieler von weiter weg auf Kisten springt~~
+  Spieler hat nun desswegen einen Box Collider. Dafür rutscht man von Kisten nicht mehr langsam runter.
 * 0 - Eventuell das Element, dass Zombies in den Abgrund stürzen bzw. dumm sind, ausbauen
 * 1 - Waffen auf 1 2 3 legen
 * 1 - Granate sollte man vergrößern, ruhig 3-4 mal so groß und langsam bewegen lassen
