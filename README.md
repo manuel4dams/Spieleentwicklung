@@ -1,5 +1,45 @@
+# Spieleentwicklung Zombie
+
+## Feedback offiziell 29.07.2022
+
+* 1 @ Michi - Einstellungsmenu (Gamma, Sound)
+* 0 - Spieler sieht man bisschen schlecht -> Lichtquelle geben
+  1 - Headlight! Eventuell Vignette und alles heller?
+* 1 @ Michi - Ganz dunkles Licht von unten nach oben stahlen mit sehr dunklem Grün (fill Light)
+* 1 - Letzter Raum kann man durch die Türe glitchen (Türe löschen)
+* 0 - Kein Physikalischen Sprung. Eine Kraft für hoch, langsamerer Fall
+  0 - Animation ist komisch mit dem Bein
+* 0? - Wenn Kiste schräg steht, dann kann man zu hoch springen
+* 0 - Flammenwerfer sollte aus gleichem Tank ziehen und unterschiedlich verbrauchen
+  0 - Oder aber separate Waffen draus machen
+  1 - Vielleicht eine Mine? Falle, Laserschranke (Mine ersetzt großen Flammenwerfer!)
+* 0 - Barrel lässt einen über Zombies glitchen
+* 1 - Nebel bei den normalen Schluchten anheben
+* 1 - Mündungen sind oberhalb der Kiste -> Kiste hoch skalieren
+* 1 @ Michi - Spielen sollte nicht von Kisten ab-bouncen (fühlt sich bisschen strange an)
+  Passiert, wenn der Spieler von weiter weg auf Kisten springt
+* 0 - Eventuell das Element, dass Zombies in den Abgrund stürzen bzw. dumm sind, ausbauen
+* 1 - Waffen auf 1 2 3 legen
+* 1 - Granate sollte man vergrößern, ruhig 3-4 mal so groß und langsam bewegen lassen
+* 1 @ Michi - Canvas scaler für GUI
+* 1 @ Michi - Auf einer Kiste stehen und Flammenwerfer macht einem selbst schaden (Collider von kleinem Flammenwerfer anpassen)
+* 1 - UI beim Spieler sollte es geben. Kisten UI ist zu arg im Vordergrund.
+* 1 - Zombie sollte schreien, wenn er einen Spieler sieht
+* 0 - Ende ist komisch, falls man nicht stirbt
+  0 - Irgend ne Endcondition wäre gut
+  0 - Vielleicht doch auf das sterben verzichten
+  1 - Bevor die Zombies spawnen, kommt ein Text mit "You won"!!!!
+
+## Feedback Freunde
+
+* Jump zu niedrig
+* Jump zu horizontalem Movement Verhältnis passt nicht!
+
+## Internes Feedback
+
 Screenshot referenz: https://screens.famboot.de/michi/2022-07-19_20-59-34.png
 
+### Iteration 1
 * 1 - ~~Man kriegt noch Dmg Sound wenn man tot ist~~
       ~~Du kannst da einfach bei dem PlaySoundAtPoint ne if alive davor machen~~
       ~~Wenn man stirbt, und viele Zombies um einen rum sind. Dann laggts irgendwie extrem. Als ich eben auf denen drauf stand hats nicht so gelaggt~~
@@ -22,9 +62,7 @@ Screenshot referenz: https://screens.famboot.de/michi/2022-07-19_20-59-34.png
 * 1 - ~~Im Hauptmenu und Menu sollten die keybinds stehen~~
 * 1 - ~~Die keybinds sollte man noch machen (Mausrad Waffe wechseln bspw.)~~
 
-
-
-Level
+### Iteration 1 - Level
 * 1 - ~~Die Plattformen sollten ein bisschen näher zueinander~~
       https://docs.unity3d.com/ScriptReference/Transform-hasChanged.html
       Alternativ ein Editor Script machen (MonoBehaviour mit MyBox \[ButtonMethod\])
@@ -39,9 +77,7 @@ Level
       ~~Und man sollte die Zombies langsamer Spawnen~~
 * 1 - ~~Zombies werden außerhalb der Box gespawned, wenn das Spiel endet~~
 
-
-
-Iteration 2
+### Iteration 2
 * ~~Also die Kisten, die einem die Sicht blocken sind viiiiel zu viele~~
   ~~Man checkt garnicht durch~~
   ~~Mit ner Granate haben wir uns gerade einen Stein in den Weg geballert, sofern der nicht eh schon dort ist~~
