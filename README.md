@@ -22,7 +22,7 @@
 * 0 - Eventuell das Element, dass Zombies in den Abgrund stürzen bzw. dumm sind, ausbauen
 * 1 - Waffen auf 1 2 3 legen
 * 1 - Granate sollte man vergrößern, ruhig 3-4 mal so groß und langsam bewegen lassen
-* 1 @ Michi - Canvas scaler für GUI
+* ~~1 @ Michi - Canvas scaler für GUI~~
 * 1 @ Michi - Auf einer Kiste stehen und Flammenwerfer macht einem selbst schaden (Collider von kleinem Flammenwerfer anpassen)
 * 1 - UI beim Spieler sollte es geben. Kisten UI ist zu arg im Vordergrund.
 * 1 - Zombie sollte schreien, wenn er einen Spieler sieht
