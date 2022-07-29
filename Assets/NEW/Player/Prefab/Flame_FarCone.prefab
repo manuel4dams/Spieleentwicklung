@@ -4913,7 +4913,7 @@ MonoBehaviour:
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  speed: 3
+  speed: 6
   rigidbody: {fileID: 3317519905226833647}
   fire: {fileID: 6168854518808056783, guid: 55b15a1c79f3b234083447dcf35ef0d6, type: 3}
 --- !u!114 &3418609417017490676
@@ -4928,7 +4928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a634dc5f08a5c6c4796e8acd7e856281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 4
+  lifetime: 1
 --- !u!1 &6369924843639342231
 GameObject:
   m_ObjectHideFlags: 0

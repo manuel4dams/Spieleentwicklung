@@ -2542,7 +2542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99a8f6e034e4742b6e8ef493c80c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loudnessFactor: 1
+  loudnessFactor: 0.5
   type: 1
   isPersistent: 0
   isUniqueGameObjectName: 0
@@ -25081,7 +25081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99a8f6e034e4742b6e8ef493c80c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loudnessFactor: 1
+  loudnessFactor: 0.5
   type: 1
   isPersistent: 0
   isUniqueGameObjectName: 0
@@ -34899,7 +34899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99a8f6e034e4742b6e8ef493c80c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loudnessFactor: 1
+  loudnessFactor: 0.5
   type: 1
   isPersistent: 0
   isUniqueGameObjectName: 0
@@ -37537,7 +37537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99a8f6e034e4742b6e8ef493c80c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loudnessFactor: 1
+  loudnessFactor: 0.5
   type: 1
   isPersistent: 0
   isUniqueGameObjectName: 0
@@ -37870,7 +37870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99a8f6e034e4742b6e8ef493c80c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loudnessFactor: 1
+  loudnessFactor: 0.5
   type: 1
   isPersistent: 0
   isUniqueGameObjectName: 0
