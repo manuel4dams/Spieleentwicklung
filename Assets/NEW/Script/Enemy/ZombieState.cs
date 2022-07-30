@@ -1,10 +1,9 @@
-using System;
 using GameGraph;
 using MyBox;
 using Project;
 using UnityEngine;
-using UnityEngine.UI;
-using Random = UnityEngine.Random;
+using UnityEngine.UIElements;
+using Slider = UnityEngine.UI.Slider;
 
 namespace ScriptGG
 {
@@ -13,10 +12,12 @@ namespace ScriptGG
     {
         [Header("Health")] //
         public float maxHealth = 10f;
+
         public float currentHealth;
 
         [Header("Movement parameters")] //
         public float runSpeedMultiplier = 2f;
+
         public float walkSpeedMultiplier = 1f;
         public float turnSpeed = 20;
         public float idleWaitTime;
@@ -25,33 +26,44 @@ namespace ScriptGG
 
         [Header("Damage")] //
         public float damage;
+
         public float attackRate;
 
         [Header("Visual")] //
         public Material[] materials;
+
         public Material material;
         public GameObject zombieHitParticlesPrefab;
         public GameObject ragDollDead;
 
         [Header("Audio")] //
         public AudioClip deathSound;
+
         public AudioClip[] idleSounds;
+        public AudioClip detectSound;
         public AudioClip[] hitSounds;
         public AudioClip attackSound;
 
         [Header("References")] //
         public Transform origin;
+        public Vector3 Vector3Position;
+
         public SkinnedMeshRenderer skinnedMeshRenderer;
         public AudioSource audioSource;
         public Slider healthSlider;
 
         private bool healthSliderVisible;
 
-        void Start()
+        public void Start()
         {
             currentHealth = maxHealth;
 
             SetupMaterial();
+        }
+        
+        public void Update()
+        {
+            Vector3Position = transform.position;
         }
 
         private void SetupMaterial()
@@ -79,7 +91,7 @@ namespace ScriptGG
 
             if (currentHealth > 0)
                 return;
-            
+
             PlayDeathSound();
             RagDollDeath();
             Destroy(origin.gameObject);
@@ -89,6 +101,17 @@ namespace ScriptGG
         {
             healthSlider.gameObject.SetActive(true);
             healthSliderVisible = true;
+        }
+
+        public void PlayDetectSound()
+        {
+            var tmpVolume = audioSource.volume;
+            if (detectSound != null)
+                return;
+            audioSource.clip = detectSound;
+            audioSource.volume = 3f;
+            audioSource.Play();
+            audioSource.volume = tmpVolume;
         }
 
         public void PlayHitSound()
@@ -122,6 +145,7 @@ namespace ScriptGG
                     break;
                 }
             }
+
             ragDollModel.transform.rotation = origin.transform.Find("master").rotation;
 
             ragDollModel.transform.Find("master").GetComponent<Renderer>().material = material;

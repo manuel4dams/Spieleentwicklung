@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ScriptGG
 {
@@ -12,6 +13,7 @@ namespace ScriptGG
         public int numberOfZombiesToSpawn = 10;
         public GameObject loseMenuContainer;
         public GameObject wonMenuContainer;
+        public GameObject wonText;
         private bool hasWon;
 
         public Bounds gameEndedZombieSpawnBounds;
@@ -31,6 +33,7 @@ namespace ScriptGG
             if (!other.CompareTag("Player"))
                 return;
 
+            wonText.SetActive(true);
             hasWon = true;
         }
 
@@ -41,6 +44,7 @@ namespace ScriptGG
 
         private void ShowWonMenu(bool active)
         {
+            wonText.SetActive(false);
             wonMenuContainer.SetActive(active);
         }
 

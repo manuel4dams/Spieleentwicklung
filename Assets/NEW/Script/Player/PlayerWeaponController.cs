@@ -1,6 +1,8 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
+using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 namespace ScriptGG
@@ -32,7 +34,18 @@ namespace ScriptGG
         {
             // Swap the weapon
             currentWeapon.active = false;
-            equippedWeaponIndex = (equippedWeaponIndex + 1) % playerState.weapons.Count;
+            // if (weaponIndex != -1 && weaponIndex <= playerState.weapons.Count)
+            // {
+            //     Debug.Log("key pressed:" + weaponIndex);
+            //     Debug.Log("weapon count: " + playerState.weapons.Count);
+            //
+            //     equippedWeaponIndex = weaponIndex - 1;
+            // }
+            // else
+            // {
+                equippedWeaponIndex = (equippedWeaponIndex + 1) % playerState.weapons.Count;
+            // }
+
             currentWeapon.active = true;
 
             // Update the icon
@@ -47,6 +60,7 @@ namespace ScriptGG
                 foreach (var weaponPart in compoundWeapon.weapons)
                     restocked |= weaponPart.weapon.RestockAmmunition(restockAmmunitionAmount);
             }
+
             restockHappened = restocked;
             afterRestock?.Invoke();
         }

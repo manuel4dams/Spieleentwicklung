@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 957,
+    "serializedVersion": 1001,
     "parameters": [
         {
             "idInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
@@ -541,6 +541,37 @@
                 "x": -382.0,
                 "y": 516.0
             }
+        },
+        {
+            "idInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.PlayClipAtPoint, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "position",
+                    "volume"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "{\"x\":0,\"y\":0,\"z\":0}"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "10"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 943.0,
+                "y": 321.0
+            }
         }
     ],
     "edges": [
@@ -952,6 +983,36 @@
             "inputConnection": {
                 "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
                 "portNameInternal": "PerformDoEvents"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "detectSound"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
+                "portNameInternal": "clip"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b458d861-6349-4656-9be0-efc5a88261b9",
+                "portNameInternal": "startFollow"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
+                "portNameInternal": "Invoke"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "eb7e65c3-0360-4d7c-881e-a7e9282ffb78",
+                "portNameInternal": "Vector3Position"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
+                "portNameInternal": "position"
             }
         }
     ],

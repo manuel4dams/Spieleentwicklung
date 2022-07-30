@@ -1763,9 +1763,9 @@ MonoBehaviour:
   ragDollDead: {fileID: 7763697304134475099, guid: 43880eda58b194540ac8b86a5012b677, type: 3}
   deathSound: {fileID: 8300000, guid: 90198d9f89236304096b0a8a4f5bd457, type: 3}
   idleSounds:
-  - {fileID: 8300000, guid: 5091185618a662e48b58b6f2e7dd0e0d, type: 3}
-  - {fileID: 8300000, guid: eab3de9600084b842a921d12660dd168, type: 3}
   - {fileID: 8300000, guid: 07c3c6d618f7acf42a107dedb4943130, type: 3}
+  - {fileID: 8300000, guid: eab3de9600084b842a921d12660dd168, type: 3}
+  detectSound: {fileID: 8300000, guid: 5091185618a662e48b58b6f2e7dd0e0d, type: 3}
   hitSounds:
   - {fileID: 8300000, guid: 371b43dbced38864a8b96d6fcd115f46, type: 3}
   - {fileID: 8300000, guid: b04dbe63a86d690448f7d3876b132b9e, type: 3}

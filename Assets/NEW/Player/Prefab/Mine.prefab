@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4517830469867822513}
-  - component: {fileID: 5483684882918055027}
-  m_Layer: 0
+  - component: {fileID: 6795640504671420340}
+  m_Layer: 11
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,15 +25,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311956674569190833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.501, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5518600324068420467}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &5483684882918055027
-SphereCollider:
+--- !u!65 &6795640504671420340
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -43,7 +43,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Size: {x: 2, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5518600324068420466
 GameObject:
@@ -56,9 +56,9 @@ GameObject:
   - component: {fileID: 5518600324068420467}
   - component: {fileID: 5518600324068420237}
   - component: {fileID: 5518600324068420236}
-  - component: {fileID: 2305594380024168810}
+  - component: {fileID: 5631669530488326711}
   m_Layer: 0
-  m_Name: Grenade
+  m_Name: Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,9 +109,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 122
   m_CollisionDetection: 0
---- !u!114 &2305594380024168810
+--- !u!114 &5631669530488326711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,15 +120,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5518600324068420466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1245e54e08a14bc3af89a3c9d34c6afc, type: 3}
+  m_Script: {fileID: 11500000, guid: bc4e7f7765a85a54bbdcda5fcf47faed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 10
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  speed: 20
-  lifeTime: 2
+  speed: 1
   explosionSound: {fileID: 8300000, guid: fd6917ec39ff3b7488888ef63d8d3c87, type: 3}
   explosionLoudness: 3
   rigidbody: {fileID: 5518600324068420236}
@@ -4990,7 +4989,7 @@ Transform:
   m_GameObject: {fileID: 8547911675108159072}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5518600324068420467}

@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 977,
+    "serializedVersion": 1026,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -70,6 +70,14 @@
             "nameInternal": "PlayerDeathTransform",
             "typeInternal": {
                 "assemblyQualifiedName": "UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "isGameGraphTypeInternal": false
+        },
+        {
+            "idInternal": "17fd4b00-a4b2-41b4-9028-a56bbf5b30f4",
+            "nameInternal": "HealthSliderFloating",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
             },
             "isGameGraphTypeInternal": false
         }
@@ -762,8 +770,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1496.0,
-                "y": -2118.0
+                "x": 1708.0,
+                "y": -2141.0
             }
         },
         {
@@ -1004,6 +1012,45 @@
             "positionInternal": {
                 "x": 1025.0,
                 "y": -362.0
+            }
+        },
+        {
+            "idInternal": "b00020a7-2641-4114-b73c-a6d08d338070",
+            "typeInternal": {
+                "assemblyQualifiedName": "UnityEngine.UI.Slider, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "17fd4b00-a4b2-41b4-9028-a56bbf5b30f4",
+            "propertyValuesInternal": {
+                "keys": [],
+                "values": []
+            },
+            "positionInternal": {
+                "x": 1323.0,
+                "y": -2296.0
+            }
+        },
+        {
+            "idInternal": "36a14b5c-cbc1-437a-bd2c-297f2484e0bb",
+            "typeInternal": {
+                "assemblyQualifiedName": "GameGraph.Common.Blocks.SliderSetValue, GameGraph.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "value"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": 1708.0,
+                "y": -2296.0
             }
         }
     ],
@@ -1400,16 +1447,6 @@
         },
         {
             "outputConnection": {
-                "nodeIdInternal": "292c6fca-a182-47fc-8fbb-3e9986ad1a7c",
-                "portNameInternal": "!Instance"
-            },
-            "inputConnection": {
-                "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
-                "portNameInternal": "slider"
-            }
-        },
-        {
-            "outputConnection": {
                 "nodeIdInternal": "f3564296-115b-41d0-8d85-8cb9913866ce",
                 "portNameInternal": "currentHealth"
             },
@@ -1616,6 +1653,46 @@
             "inputConnection": {
                 "nodeIdInternal": "26868460-6bf2-4b6d-9ec8-ae778d113f1f",
                 "portNameInternal": "playerTransform"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "292c6fca-a182-47fc-8fbb-3e9986ad1a7c",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "2ae017d3-98cf-47b1-b3df-c579a2439823",
+                "portNameInternal": "slider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "b00020a7-2641-4114-b73c-a6d08d338070",
+                "portNameInternal": "!Instance"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "36a14b5c-cbc1-437a-bd2c-297f2484e0bb",
+                "portNameInternal": "slider"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "4c04024f-d8dd-4b6b-9f91-2a59fe7d9b24",
+                "portNameInternal": "update"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "36a14b5c-cbc1-437a-bd2c-297f2484e0bb",
+                "portNameInternal": "SetValue"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "f3564296-115b-41d0-8d85-8cb9913866ce",
+                "portNameInternal": "currentHealth"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "36a14b5c-cbc1-437a-bd2c-297f2484e0bb",
+                "portNameInternal": "value"
             }
         }
     ],
