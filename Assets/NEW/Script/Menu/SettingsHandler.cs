@@ -1,7 +1,5 @@
 ﻿using System;
-using Cinemachine.Editor;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;

@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using Vector3 = GameGraph.Common.Blocks.Vector3;
 
 namespace ScriptGG
 {

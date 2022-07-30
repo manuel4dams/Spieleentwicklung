@@ -1,8 +1,6 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
-using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.UI;
 
 namespace ScriptGG

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using MyBox;
 using UnityEngine;
+using AudioConfiguration = Project.AudioConfiguration;
 
 namespace ScriptGG
 {
@@ -41,7 +42,7 @@ namespace ScriptGG
             if (equipSound)
             {
                 // Hot fix for weapon sound is way to loud
-                weaponAudioSource.GetComponent<Project.AudioConfiguration>().ConfigureVolume();
+                weaponAudioSource.GetComponent<AudioConfiguration>().ConfigureVolume();
                 
                 weaponAudioSource.clip = equipSound;
                 weaponAudioSource.Play();

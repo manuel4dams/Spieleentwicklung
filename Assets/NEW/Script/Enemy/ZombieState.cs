@@ -2,8 +2,7 @@ using GameGraph;
 using MyBox;
 using Project;
 using UnityEngine;
-using UnityEngine.UIElements;
-using Slider = UnityEngine.UI.Slider;
+using UnityEngine.UI;
 
 namespace ScriptGG
 {
