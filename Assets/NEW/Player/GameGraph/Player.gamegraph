@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 1026,
+    "serializedVersion": 1062,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -139,8 +139,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 932.0,
-                "y": 593.0
+                "x": 887.2000122070313,
+                "y": 593.5999755859375
             }
         },
         {
@@ -153,23 +153,13 @@
                 "keys": [
                     "sneaking",
                     "grounded",
+                    "distanceToGround",
+                    "verticalSpeed",
+                    "horizontalMovementSpeed",
                     "shooting",
-                    "MeleeAttack",
-                    "horizontalMovementSpeed"
+                    "MeleeAttack"
                 ],
                 "values": [
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "false"
-                    },
-                    {
-                        "type": {
-                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                        },
-                        "objectInternal": "false"
-                    },
                     {
                         "type": {
                             "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
@@ -187,12 +177,36 @@
                             "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                         },
                         "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "0"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "false"
                     }
                 ]
             },
             "positionInternal": {
-                "x": 1646.0,
-                "y": 899.0
+                "x": 1663.199951171875,
+                "y": 835.199951171875
             }
         },
         {
@@ -206,8 +220,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1025.0,
-                "y": 773.0
+                "x": 1022.4000244140625,
+                "y": 844.0
             }
         },
         {
@@ -221,8 +235,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1056.0,
-                "y": 851.0
+                "x": 1052.800048828125,
+                "y": 924.0
             }
         },
         {
@@ -305,8 +319,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 559.0,
-                "y": 1169.0
+                "x": 558.4000244140625,
+                "y": 1234.4000244140625
             }
         },
         {
@@ -320,8 +334,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 407.0,
-                "y": 1023.0
+                "x": 407.20001220703127,
+                "y": 1085.5999755859375
             }
         },
         {
@@ -422,8 +436,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 489.0,
-                "y": 1736.0
+                "x": 487.20001220703127,
+                "y": 1587.199951171875
             }
         },
         {
@@ -452,8 +466,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 397.0,
-                "y": 2916.0
+                "x": 713.5999755859375,
+                "y": 2464.800048828125
             }
         },
         {
@@ -467,8 +481,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 254.0,
-                "y": 2916.0
+                "x": 571.2000122070313,
+                "y": 2464.800048828125
             }
         },
         {
@@ -482,8 +496,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 335.0,
-                "y": 2266.0
+                "x": 290.3999938964844,
+                "y": 2250.400146484375
             }
         },
         {
@@ -506,8 +520,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 559.0,
-                "y": 2916.0
+                "x": 876.0,
+                "y": 2464.800048828125
             }
         },
         {
@@ -521,8 +535,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 611.2000122070313,
-                "y": 2516.800048828125
+                "x": 596.0,
+                "y": 2365.60009765625
             }
         },
         {
@@ -560,8 +574,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 299.0,
-                "y": 2062.0
+                "x": 299.20001220703127,
+                "y": 2035.9998779296875
             }
         },
         {
@@ -584,8 +598,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 1609.0,
-                "y": 2266.0
+                "x": 1536.800048828125,
+                "y": 2306.400146484375
             }
         },
         {
@@ -599,8 +613,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1397.0,
-                "y": 2531.0
+                "x": 1137.5999755859375,
+                "y": 2655.2001953125
             }
         },
         {
@@ -614,8 +628,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 1221.0,
-                "y": 2566.0
+                "x": 961.5999755859375,
+                "y": 2690.400146484375
             }
         },
         {
@@ -629,8 +643,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": -64.0,
-                "y": 2310.0
+                "x": 240.0,
+                "y": 1668.0
             }
         },
         {
@@ -1693,6 +1707,26 @@
             "inputConnection": {
                 "nodeIdInternal": "36a14b5c-cbc1-437a-bd2c-297f2484e0bb",
                 "portNameInternal": "value"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "96dc55db-43b9-40f6-9dc1-985b5b971778",
+                "portNameInternal": "distanceToFirstHitGroundObject"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "distanceToGround"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "53bd6fe4-e373-4d9f-a994-de9085cdceac",
+                "portNameInternal": "currentVerticalMovement"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
+                "portNameInternal": "verticalSpeed"
             }
         }
     ],

@@ -24,6 +24,7 @@ namespace ScriptGG
         public bool isSneaking { get; private set; }
         public bool isRunning { get; private set; }
         public float currentHorizontalMovementSpeed { get; private set; }
+        public float currentVerticalMovement { get; private set; }
 
         // Variables
         private float nextJumpTimeAllowed;
@@ -57,6 +58,7 @@ namespace ScriptGG
             // TODO Was only horizontal movement without runSpeedMultiplier before
             //      Test this
             currentHorizontalMovementSpeed = Mathf.Abs(rigidbody.velocity.x);
+            currentVerticalMovement = rigidbody.velocity.y;
 
             Rotate();
         }

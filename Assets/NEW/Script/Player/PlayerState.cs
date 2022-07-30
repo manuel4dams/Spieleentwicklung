@@ -32,7 +32,8 @@ namespace ScriptGG
         public float jumpHeight = 10f;
         public float jumpTimeout = 0.1f;
         public float groundCheckRadius = 0.1f;
-        public float groundCheckDistance= 0.2f;
+        public float groundCheckDistance = 1f;
+        public float groundedDistance = 0.2f;
 
         [Header("Weapons")] //
         [NonReorderable] // Because unity sucks in drawing their UI, disabling reorder fixes a failure where the first entry overlaps some content
