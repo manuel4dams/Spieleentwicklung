@@ -2,6 +2,7 @@
   "dependencies": {
     "com.domybest.mybox": "https://github.com/Deadcows/MyBox.git",
     "de.michiruf.gamegraph": "https://github.com/michiruf/GameGraph.git?path=/GameGraph#312111783d6deaa246d6e6d874ec1a3a37dc6164",
+    "com.unity.postprocessing": "https://github.com/Unity-Technologies/PostProcessing.git#2.1.7",
     "com.unity.cinemachine": "2.8.6",
     "com.unity.collab-proxy": "1.17.0",
     "com.unity.feature.development": "1.0.1",

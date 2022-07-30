@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7897053416827044550}
   - component: {fileID: 2947189158292437921}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7897053416827044548}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000014901166}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0000010430813, y: 2}
-  m_SizeDelta: {x: 10, y: 2}
+  m_AnchoredPosition: {x: 0, y: 1.7}
+  m_SizeDelta: {x: 5, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7897053416827044544
 Canvas:
@@ -1020,7 +1020,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 20}
+  m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7897053417542587245
 MonoBehaviour:
@@ -1041,7 +1041,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1590,9 +1590,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.4
-  m_Height: 1.7
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: -0.1}
+  m_Center: {x: 0, y: 0.89, z: -0.1}
 --- !u!82 &7897053418195559869
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   idleWaitTime: 1
   movementBoundsLeft: {x: 30, y: 0, z: 0}
   movementBoundsRight: {x: 44, y: 0, z: 0}
-  damage: 1
+  damage: 2
   attackRate: 1
   materials:
   - {fileID: 2100000, guid: 5a80a400beac3e64087e7be358f14d8a, type: 2}
@@ -1765,12 +1765,14 @@ MonoBehaviour:
   idleSounds:
   - {fileID: 8300000, guid: 07c3c6d618f7acf42a107dedb4943130, type: 3}
   - {fileID: 8300000, guid: eab3de9600084b842a921d12660dd168, type: 3}
-  detectSound: {fileID: 8300000, guid: 5091185618a662e48b58b6f2e7dd0e0d, type: 3}
+  - {fileID: 8300000, guid: 5091185618a662e48b58b6f2e7dd0e0d, type: 3}
+  detectSound: {fileID: 8300000, guid: 9dd86a4092c35f642be5c99fc636642b, type: 3}
   hitSounds:
   - {fileID: 8300000, guid: 371b43dbced38864a8b96d6fcd115f46, type: 3}
   - {fileID: 8300000, guid: b04dbe63a86d690448f7d3876b132b9e, type: 3}
   attackSound: {fileID: 8300000, guid: de49519181dc25e48b7249d96bcae754, type: 3}
   origin: {fileID: 7897053418195559864}
+  Vector3Position: {x: 0, y: 0, z: 0}
   skinnedMeshRenderer: {fileID: 7897053417215605703}
   audioSource: {fileID: 7897053418195559869}
   healthSlider: {fileID: 7897053417542587245}

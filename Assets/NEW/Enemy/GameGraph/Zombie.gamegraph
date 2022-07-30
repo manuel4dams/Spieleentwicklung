@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 1001,
+    "serializedVersion": 1025,
     "parameters": [
         {
             "idInternal": "5ccac80b-e18e-45a4-bde4-41740bb464b1",
@@ -564,13 +564,44 @@
                         "type": {
                             "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
                         },
-                        "objectInternal": "10"
+                        "objectInternal": "0"
                     }
                 ]
             },
             "positionInternal": {
-                "x": 943.0,
-                "y": 321.0
+                "x": 561.0,
+                "y": 2408.0
+            }
+        },
+        {
+            "idInternal": "7b77d012-4ddf-40c8-8e2f-49ea64a7481c",
+            "typeInternal": {
+                "assemblyQualifiedName": "Project.AudioConfigurationGameGraph, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+            },
+            "parameterIdInternal": "",
+            "propertyValuesInternal": {
+                "keys": [
+                    "type",
+                    "loudnessFactor"
+                ],
+                "values": [
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "Project.AudioConfiguration+Type, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                        },
+                        "objectInternal": "\"Sound\""
+                    },
+                    {
+                        "type": {
+                            "assemblyQualifiedName": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                        },
+                        "objectInternal": "20"
+                    }
+                ]
+            },
+            "positionInternal": {
+                "x": -57.0,
+                "y": 2335.0
             }
         }
     ],
@@ -1013,6 +1044,16 @@
             "inputConnection": {
                 "nodeIdInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
                 "portNameInternal": "position"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "7b77d012-4ddf-40c8-8e2f-49ea64a7481c",
+                "portNameInternal": "volume"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "50b9a87d-de92-42f0-b5c0-91e4e332272d",
+                "portNameInternal": "volume"
             }
         }
     ],

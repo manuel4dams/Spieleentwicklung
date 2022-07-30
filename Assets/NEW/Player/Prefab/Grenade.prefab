@@ -39,7 +39,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311956674569190833}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ddd7bc4093ce1594ebe73dea97b3d9bc, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -127,7 +127,7 @@ MonoBehaviour:
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  speed: 20
+  speed: 15
   lifeTime: 2
   explosionSound: {fileID: 8300000, guid: fd6917ec39ff3b7488888ef63d8d3c87, type: 3}
   explosionLoudness: 3

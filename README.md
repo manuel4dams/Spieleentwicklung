@@ -3,33 +3,36 @@
 ## Feedback offiziell 29.07.2022
 
 * ~~1 @ Michi - Einstellungsmenu (Gamma, Sound)~~
-* 0 - Spieler sieht man bisschen schlecht -> Lichtquelle geben
-  1 - ~~Headlight!~~ Eventuell Vignette und alles heller?
+* 0 - ~~Spieler sieht man bisschen schlecht -> Lichtquelle geben~~
+  1 - ~~Headlight!~~ 
+* 1 - ~~Eventuell Vignette~~
 * ~~1 @ Michi - Ganz dunkles Licht von unten nach oben stahlen mit sehr dunklem Grün (fill Light)~~
   Hat nur so mittel geklappt (mittelhelles Blau)
 * 1 - ~~Letzter Raum kann man durch die Türe glitchen (Türe löschen)~~
 * 0 - Kein Physikalischen Sprung. Eine Kraft für hoch, langsamerer Fall
-  0 - Animation ist komisch mit dem Bein
-* 0? - Wenn Kiste schräg steht, dann kann man zu hoch springen
-* 0 - Flammenwerfer sollte aus gleichem Tank ziehen und unterschiedlich verbrauchen
-  0 - Oder aber separate Waffen draus machen
+  0? - Animation ist komisch mit dem Bein
+* 0 - Wenn Kiste schräg steht, dann kann man zu hoch springen
+* 0 - ~~Flammenwerfer sollte aus gleichem Tank ziehen und unterschiedlich verbrauchen~~
+  0 - ~~Oder aber separate Waffen draus machen~~
   1 - ~~Vielleicht eine Mine?~~ Falle, Laserschranke ~~(Mine ersetzt großen Flammenwerfer!)~~
 * 0 - Barrel lässt einen über Zombies glitchen
 * 1 - ~~Nebel bei den normalen Schluchten anheben~~
 * 1 - ~~Mündungen sind oberhalb der Kiste -> Kiste hoch skalieren~~
-* ~~1 @ Michi - Spielen sollte nicht von Kisten ab-bouncen (fühlt sich bisschen strange an)~~
-  ~~Passiert, wenn der Spieler von weiter weg auf Kisten springt~~
-  Spieler hat nun desswegen einen Box Collider. Dafür rutscht man von Kisten nicht mehr langsam runter.
+* 0 @ Michi - Spielen sollte nicht von Kisten ab-bouncen (fühlt sich bisschen strange an)
+  Passiert, wenn der Spieler von weiter weg auf Kisten springt
+  Problem ist, dass der Spieler einen Capsule Collider hat und mit diesem auf die Kiste drauf rutschen kann
+  Box Collider als Lösung würde sehr viele andere Probleme ergeben (nicht von Kisten runter rutschen wenn man nur wenig drauf steht, kleine Slopes im Level können nicht überwunden werden)
 * 0 - Eventuell das Element, dass Zombies in den Abgrund stürzen bzw. dumm sind, ausbauen
 * 1 - Waffen auf 1 2 3 legen
 * 1 - ~~Granate sollte man vergrößern, ruhig 3-4 mal so groß und langsam bewegen lassen~~
 * ~~1 @ Michi - Canvas scaler für GUI~~
 * ~~1 @ Michi - Auf einer Kiste stehen und Flammenwerfer macht einem selbst schaden (Collider von kleinem Flammenwerfer anpassen)~~
-* 1 - ~~UI beim Spieler sollte es geben.~~ Kisten UI ist zu arg im Vordergrund.
+* 1 - ~~UI beim Spieler sollte es geben.~~ 
+* 1- ~~Kisten UI ist zu arg im Vordergrund.~~
 * 1 - ~~Zombie sollte schreien, wenn er einen Spieler sieht~~
-* 0 - Ende ist komisch, falls man nicht stirbt
+* 0 - ~~Ende ist komisch, falls man nicht stirbt~~
   0 - Irgend ne Endcondition wäre gut
-  0 - Vielleicht doch auf das sterben verzichten
+  0 - ~~Vielleicht doch auf das sterben verzichten~~
   1 - ~~Bevor die Zombies spawnen, kommt ein Text mit "You won"!!!!~~
 
 ## Feedback Freunde
