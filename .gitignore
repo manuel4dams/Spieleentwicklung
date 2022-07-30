@@ -1,3 +1,11 @@
+# Ignore whole rider directory, because its annoying
+.idea/
+
+# Ignore StreamingAssets directory and its meta file, because it gets created at every build
+Assets/StreamingAssets
+Assets/StreamingAssets.meta
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/windows,rider,unity
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,rider,unity
 
