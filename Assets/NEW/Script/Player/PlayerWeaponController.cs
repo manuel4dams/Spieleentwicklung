@@ -1,7 +1,6 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
-using UnityEngine;
 using UnityEngine.UI;
 
 namespace ScriptGG
@@ -32,7 +31,6 @@ namespace ScriptGG
 
         public void SwapWeapon()
         {
-            Debug.Log(playerState.weapons.Count);
             // Swap the weapon
             currentWeapon.active = false;
             if (weaponIndex != -1 && weaponIndex < playerState.weapons.Count)
