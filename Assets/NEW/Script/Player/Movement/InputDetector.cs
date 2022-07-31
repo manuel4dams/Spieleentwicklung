@@ -14,6 +14,7 @@ namespace ScriptGG
         public bool sneaking { get; private set; }
         public bool jumping { get; private set; }
         public bool swapWeapon { get; private set; }
+        public int weaponIndex { get; private set; }
         public event Action swapWeaponPressed;
 
         [ExcludeFromGraph]
@@ -25,6 +26,7 @@ namespace ScriptGG
                 sneaking = false;
                 jumping = false;
                 swapWeapon = false;
+                weaponIndex = -1;
                 return;
             }
 
@@ -32,8 +34,33 @@ namespace ScriptGG
             sneaking = Input.GetButton("Fire3");
             jumping = Input.GetButton("Jump");
             swapWeapon = Input.GetButtonDown("Submit");
-            if(swapWeapon)
+            if (swapWeapon)
                 swapWeaponPressed?.Invoke();
+
+            SetPressedNumber();
+        }
+
+        public void SetPressedNumber()
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                weaponIndex = 0;
+                swapWeaponPressed?.Invoke();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                weaponIndex = 1;
+                swapWeaponPressed?.Invoke();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                weaponIndex = 2;
+                swapWeaponPressed?.Invoke();
+            }
+
+            weaponIndex = -1;
         }
     }
 }

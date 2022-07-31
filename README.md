@@ -23,7 +23,7 @@
   Problem ist, dass der Spieler einen Capsule Collider hat und mit diesem auf die Kiste drauf rutschen kann
   Box Collider als Lösung würde sehr viele andere Probleme ergeben (nicht von Kisten runter rutschen wenn man nur wenig drauf steht, kleine Slopes im Level können nicht überwunden werden)
 * 0 - Eventuell das Element, dass Zombies in den Abgrund stürzen bzw. dumm sind, ausbauen
-* 1 - Waffen auf 1 2 3 legen
+* 1 - ~~Waffen auf 1 2 3 legen~~
 * 1 - ~~Granate sollte man vergrößern, ruhig 3-4 mal so groß und langsam bewegen lassen~~
 * ~~1 @ Michi - Canvas scaler für GUI~~
 * ~~1 @ Michi - Auf einer Kiste stehen und Flammenwerfer macht einem selbst schaden (Collider von kleinem Flammenwerfer anpassen)~~

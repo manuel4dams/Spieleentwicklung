@@ -1,5 +1,5 @@
 {
-    "serializedVersion": 1062,
+    "serializedVersion": 1069,
     "parameters": [
         {
             "idInternal": "843fea78-b9fd-4048-8a77-4f1c50e3802e",
@@ -304,8 +304,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 981.0,
-                "y": 345.0
+                "x": 884.0,
+                "y": 346.0
             }
         },
         {
@@ -406,8 +406,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 753.0,
-                "y": 2015.0
+                "x": 763.0,
+                "y": 2012.0
             }
         },
         {
@@ -421,7 +421,7 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 395.0,
+                "x": 254.0,
                 "y": 1814.0
             }
         },
@@ -451,8 +451,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 708.0,
-                "y": 1843.0
+                "x": 876.0,
+                "y": 1766.0
             }
         },
         {
@@ -496,8 +496,8 @@
                 "values": []
             },
             "positionInternal": {
-                "x": 290.3999938964844,
-                "y": 2250.400146484375
+                "x": 280.0,
+                "y": 2293.0
             }
         },
         {
@@ -574,8 +574,8 @@
                 ]
             },
             "positionInternal": {
-                "x": 299.20001220703127,
-                "y": 2035.9998779296875
+                "x": 280.0,
+                "y": 2088.0
             }
         },
         {
@@ -1727,6 +1727,16 @@
             "inputConnection": {
                 "nodeIdInternal": "bf051580-e6ed-4b5c-9b8a-86ddd52dd54d",
                 "portNameInternal": "verticalSpeed"
+            }
+        },
+        {
+            "outputConnection": {
+                "nodeIdInternal": "c9abac81-de50-4a5e-92ad-3868086c28c4",
+                "portNameInternal": "weaponIndex"
+            },
+            "inputConnection": {
+                "nodeIdInternal": "a5890e27-78de-4425-933e-739e66a80ce7",
+                "portNameInternal": "weaponIndex"
             }
         }
     ],

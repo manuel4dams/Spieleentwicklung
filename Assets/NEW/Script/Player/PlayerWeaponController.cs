@@ -1,6 +1,7 @@
 using System;
 using GameGraph;
 using JetBrains.Annotations;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace ScriptGG
@@ -15,6 +16,7 @@ namespace ScriptGG
 
         // Input
         public int restockAmmunitionAmount { private get; set; }
+        public int weaponIndex { private get; set; }
 
         // Output
         public int equippedWeaponIndex { get; private set; }
@@ -30,19 +32,17 @@ namespace ScriptGG
 
         public void SwapWeapon()
         {
+            Debug.Log(playerState.weapons.Count);
             // Swap the weapon
             currentWeapon.active = false;
-            // if (weaponIndex != -1 && weaponIndex <= playerState.weapons.Count)
-            // {
-            //     Debug.Log("key pressed:" + weaponIndex);
-            //     Debug.Log("weapon count: " + playerState.weapons.Count);
-            //
-            //     equippedWeaponIndex = weaponIndex - 1;
-            // }
-            // else
-            // {
+            if (weaponIndex != -1 && weaponIndex < playerState.weapons.Count)
+            {
+                equippedWeaponIndex = weaponIndex;
+            }
+            else
+            {
                 equippedWeaponIndex = (equippedWeaponIndex + 1) % playerState.weapons.Count;
-            // }
+            }
 
             currentWeapon.active = true;
 
