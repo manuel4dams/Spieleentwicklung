@@ -4,16 +4,28 @@ namespace ScriptGG
 {
     public class MenuHandler : MonoBehaviour
     {
+        public bool allowMenuToggle = false;
         public SceneHandler sceneHandler;
         public GameObject menuContainer;
+        public GameObject settingsContainer;
 
         void Update()
         {
-            if (Input.GetButtonDown("Cancel"))
+            if (!Input.GetButtonDown("Cancel"))
+                return;
+
+            if (settingsContainer.activeSelf)
+            {
+                Debug.Log("bla");
+                HideSettingsShowMenu();
+                return;
+            }
+
+            if (allowMenuToggle)
                 ToggleMenu();
         }
 
-        public void ToggleMenu()
+        private void ToggleMenu()
         {
             SetMenuActive(!menuContainer.activeSelf);
         }
@@ -32,6 +44,12 @@ namespace ScriptGG
         {
             sceneHandler.SetGameActive(!active);
             menuContainer.SetActive(active);
+        }
+
+        private void HideSettingsShowMenu()
+        {
+            settingsContainer.SetActive(false);
+            menuContainer.SetActive(true);
         }
     }
 }

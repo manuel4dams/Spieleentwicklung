@@ -32,7 +32,6 @@ namespace Project
                 return;
             }
 
-
             void NotifySoundVolumeChange()
             {
                 AudioConfiguration.NotifyVolume();
@@ -59,7 +58,7 @@ namespace Project
             gammaSlider.onValueChanged.AddListener(
                 e => ProcessFloat(e, Prefs.Gamma, gammaSlider, gammaInput));
             gammaInput.onValueChanged.AddListener(
-                e => ProcessInput(e, Prefs.Gamma, gammaSlider, gammaInput));
+                e => ProcessInput(e, Prefs.Gamma, gammaSlider, gammaInput, null ,-1f));
         }
 
         void Update()
@@ -72,11 +71,11 @@ namespace Project
             }
         }
 
-        private void ProcessInput(string input, Prefs prefs, Slider slider, TMP_InputField inputField, Action callback = null)
+        private void ProcessInput(string input, Prefs prefs, Slider slider, TMP_InputField inputField, Action callback = null, float clampMin = 0f, float clampMax = 1f)
         {
             var stripped = input.Replace("%", "").Trim();
             float.TryParse(stripped, out var parsed);
-            var result = Mathf.Clamp01(parsed / 100f);
+            var result = Mathf.Clamp(parsed / 100f, clampMin, clampMax);
             ProcessFloat(result, prefs, slider, inputField, callback);
         }
 
