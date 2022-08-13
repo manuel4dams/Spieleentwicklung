@@ -13,7 +13,7 @@ namespace Project
         public TMP_InputField masterVolumeInput;
         public Slider soundVolumeSlider;
         public TMP_InputField soundVolumeInput;
-        public AudioClip soundSample;
+        public AudioSource soundSampleAudio;
         public float soundSampleDelay;
         public Slider musicVolumeSlider;
         public TMP_InputField musicVolumeInput;
@@ -58,7 +58,7 @@ namespace Project
             gammaSlider.onValueChanged.AddListener(
                 e => ProcessFloat(e, Prefs.Gamma, gammaSlider, gammaInput));
             gammaInput.onValueChanged.AddListener(
-                e => ProcessInput(e, Prefs.Gamma, gammaSlider, gammaInput, null ,-1f));
+                e => ProcessInput(e, Prefs.Gamma, gammaSlider, gammaInput, null, -1f));
         }
 
         void Update()
@@ -66,12 +66,14 @@ namespace Project
             if (Time.realtimeSinceStartup >= soundSampleNextTimeToPlay)
             {
                 // ReSharper disable once RedundantArgumentDefaultValue
-                MyAudioSource.PlayClipAtPoint(soundSample, Camera.main!.transform.position, 1f, AudioConfiguration.Type.Sound);
+                // MyAudioSource.PlayClipAtPoint(soundSample, Camera.main!.transform.position, 1f, AudioConfiguration.Type.Sound);
+                soundSampleAudio.Play();
                 soundSampleNextTimeToPlay = float.PositiveInfinity;
             }
         }
 
-        private void ProcessInput(string input, Prefs prefs, Slider slider, TMP_InputField inputField, Action callback = null, float clampMin = 0f, float clampMax = 1f)
+        private void ProcessInput(string input, Prefs prefs, Slider slider, TMP_InputField inputField, Action callback = null, float clampMin = 0f,
+            float clampMax = 1f)
         {
             var stripped = input.Replace("%", "").Trim();
             float.TryParse(stripped, out var parsed);
