@@ -1,5 +1,10 @@
 # Spieleentwicklung Zombie
 
+Abgabe:
+* Sourcecode
+* Video
+* 
+
 ## Feedback offiziell 29.07.2022
 
 * ~~1 @ Michi - Einstellungsmenu (Gamma, Sound)~~
